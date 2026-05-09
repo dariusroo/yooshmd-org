@@ -7,8 +7,8 @@ export default function Home() {
         <TrustBar />
         <WhySection />
         <HowItWorks />
-        <Reviews />
         <Pricing />
+        <Reviews />
       </main>
       <Footer />
     </div>
