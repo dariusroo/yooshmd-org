@@ -8,7 +8,7 @@ export default function Home() {
         <WhySection />
         <HowItWorks />
         <Reviews />
-        <LeadMagnet />
+        <Pricing />
       </main>
       <Footer />
     </div>
@@ -51,7 +51,7 @@ function Nav() {
           (909) 293-8095
         </a>
 
-        <BookButton href="https://www.yooshmd.com" size="sm">
+        <BookButton href="https://appointment.yooshmd.com" size="sm">
           Book Free Consultation
         </BookButton>
       </div>
@@ -98,7 +98,7 @@ function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <BookButton href="https://www.yooshmd.com" size="lg">
+            <BookButton href="https://appointment.yooshmd.com" size="lg">
               Book FREE Consultation
             </BookButton>
             <a
@@ -358,7 +358,7 @@ function HowItWorks() {
         </p>
 
         <div className="mt-10">
-          <BookButton href="https://www.yooshmd.com" size="lg">
+          <BookButton href="https://appointment.yooshmd.com" size="lg">
             Book Your Free Consultation
           </BookButton>
         </div>
@@ -433,56 +433,200 @@ function Reviews() {
   );
 }
 
-/* ─── Lead Magnet ─────────────────────────────────────────────── */
+/* ─── Pricing ─────────────────────────────────────────────────── */
 
-function LeadMagnet() {
+function Pricing() {
+  const plans = [
+    {
+      name: "Starter",
+      duration: "3 months",
+      goal: "5–10% body weight loss",
+      highlight: false,
+    },
+    {
+      name: "Standard",
+      duration: "6 months",
+      goal: "10–15% body weight loss",
+      highlight: true,
+    },
+    {
+      name: "Complete",
+      duration: "12 months",
+      goal: "15%+ body weight loss",
+      highlight: false,
+    },
+  ];
+
+  const included = [
+    "Monthly 1:1 physician visits",
+    "Unlimited direct messaging with Dr. Roohani",
+    "Lab review",
+    "Lifestyle plan",
+    "Medication cost guidance",
+    "Medication prescription with taper plan",
+    "Cancel anytime",
+  ];
+
   return (
     <section
       className="py-20 sm:py-28"
-      style={{ backgroundColor: "var(--green-deep)" }}
+      style={{ backgroundColor: "var(--green-light)" }}
     >
-      <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-green-200 mb-4">
-          Free Clinical Guide
-        </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
-          Considering stopping your weight loss medication?
-        </h2>
-        <p className="text-green-100 text-lg leading-relaxed mb-8">
-          Get our free guide — a clinical overview of what to expect when
-          stopping weight loss medication, what factors predict success, and
-          how to plan your transition.
-        </p>
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        {/* Header */}
+        <div className="max-w-2xl mb-12">
+          <SectionLabel>Simple, Transparent Pricing</SectionLabel>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
+            One flat monthly rate. No surprises.
+          </h2>
+          <p className="text-lg text-gray-600 mt-4 leading-relaxed">
+            All plans are{" "}
+            <span className="font-semibold text-gray-900">$149/month</span>.
+            Dr. Roohani recommends the right plan at your free initial
+            consultation based on your goals and medical history.
+          </p>
+        </div>
 
-        <form
-          action="https://www.yooshmd.com"
-          method="GET"
-          className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+        {/* Plan cards */}
+        <div className="grid sm:grid-cols-3 gap-5 mb-10">
+          {plans.map((plan) => (
+            <div
+              key={plan.name}
+              className={`rounded-2xl p-7 border ${
+                plan.highlight
+                  ? "border-2 text-white"
+                  : "bg-white border-gray-100"
+              }`}
+              style={
+                plan.highlight
+                  ? {
+                      backgroundColor: "var(--green-deep)",
+                      borderColor: "var(--green-deep)",
+                    }
+                  : undefined
+              }
+            >
+              {plan.highlight && (
+                <span
+                  className="inline-block text-xs font-bold uppercase tracking-widest mb-3 px-3 py-1 rounded-full"
+                  style={{ backgroundColor: "rgba(255,255,255,0.15)", color: "#fff" }}
+                >
+                  Most popular
+                </span>
+              )}
+              <p
+                className={`text-2xl font-bold mb-1 ${
+                  plan.highlight ? "text-white" : "text-gray-900"
+                }`}
+              >
+                {plan.name}
+              </p>
+              <p
+                className={`text-sm font-medium mb-4 ${
+                  plan.highlight ? "text-green-200" : "text-gray-500"
+                }`}
+              >
+                {plan.duration}
+              </p>
+              <div
+                className={`text-sm rounded-xl px-4 py-3 mb-5 ${
+                  plan.highlight ? "text-green-100" : "text-gray-600"
+                }`}
+                style={
+                  plan.highlight
+                    ? { backgroundColor: "rgba(255,255,255,0.1)" }
+                    : { backgroundColor: "var(--green-light)" }
+                }
+              >
+                <span className="font-semibold">Goal: </span>
+                {plan.goal}*
+              </div>
+              <p
+                className={`text-xs ${
+                  plan.highlight ? "text-green-200" : "text-gray-400"
+                }`}
+              >
+                ✓ Exit plan included &nbsp;·&nbsp; Medication costs separate
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* What's included */}
+        <div className="bg-white rounded-2xl border border-gray-100 p-7 mb-6">
+          <p className="font-semibold text-gray-900 mb-5">All plans include:</p>
+          <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+            {included.map((item) => (
+              <li key={item} className="flex items-center gap-3 text-sm text-gray-700">
+                <CheckIcon />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Initial consult callout */}
+        <div
+          className="rounded-2xl border p-7 mb-6"
+          style={{
+            backgroundColor: "var(--green-light)",
+            borderColor: "var(--green-border)",
+          }}
         >
-          <input
-            type="text"
-            name="first_name"
-            placeholder="First name"
-            required
-            className="flex-1 h-12 rounded-full px-5 text-gray-900 text-sm bg-white placeholder-gray-400 border-0 outline-none focus:ring-2 focus:ring-white/50"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email address"
-            required
-            className="flex-1 h-12 rounded-full px-5 text-gray-900 text-sm bg-white placeholder-gray-400 border-0 outline-none focus:ring-2 focus:ring-white/50"
-          />
-          <button
-            type="submit"
-            className="h-12 px-6 rounded-full bg-white font-semibold text-sm cursor-pointer transition-opacity hover:opacity-90"
-            style={{ color: "var(--green-deep)" }}
-          >
-            Send my guide
-          </button>
-        </form>
-        <p className="text-green-200/60 text-xs mt-4">
-          We respect your privacy. No spam, ever.
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <p className="font-semibold text-gray-900 text-lg">
+                Initial consultation with Dr. Roohani —{" "}
+                <span style={{ color: "var(--green-deep)" }}>FREE</span>
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                30-minute video visit · Comprehensive medical review · Goal
+                exploration · Medication overview
+              </p>
+              <p className="text-sm text-gray-500 mt-1">
+                No ongoing charges until you decide to continue. Individual
+                visits without a plan are $199.
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <BookButton href="https://appointment.yooshmd.com" size="lg">
+                Book Free Visit
+              </BookButton>
+            </div>
+          </div>
+        </div>
+
+        {/* Medication cost note */}
+        <div className="bg-white rounded-2xl border border-gray-100 p-7 mb-6">
+          <p className="font-semibold text-gray-900 mb-3">
+            We help make medication as affordable as possible
+          </p>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            Medication costs are separate from the plan fee — but we don&apos;t
+            leave you to figure them out alone. At your first visit, Dr.
+            Roohani reviews every available option to reduce what you pay out of
+            pocket, including manufacturer savings programs, pharmacy discount
+            cards, and dose optimization strategies.
+          </p>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            If you have insurance, Dr. Roohani personally oversees the prior
+            authorization process — including letters of medical necessity,
+            clinical documentation, and appeal support. While approval is never
+            guaranteed, his direct involvement gives you the strongest possible
+            case for coverage.
+          </p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            We also provide a Superbill after every visit — an itemized receipt
+            with the diagnosis and procedure codes your insurer needs to process
+            a reimbursement claim. Many patients recover a meaningful portion of
+            their physician fees this way, depending on their out-of-network
+            benefits.
+          </p>
+        </div>
+
+        <p className="text-xs text-gray-400">
+          *Individual results vary. Percentage estimates are derived from
+          clinical trial data and may not reflect outcomes in practice.
         </p>
       </div>
     </section>
@@ -555,7 +699,7 @@ function Footer() {
             published clinical trial data and may not reflect outcomes in
             practice.{" "}
             <a
-              href="https://www.yooshmd.com"
+              href="https://appointment.yooshmd.com"
               className="underline hover:text-gray-300 transition-colors"
             >
               Full disclosures →
