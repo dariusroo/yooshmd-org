@@ -371,28 +371,59 @@ function HowItWorks() {
 function Reviews() {
   const reviews = [
     {
+      initials: "GY",
       quote:
-        "An excellent doctor who truly cares about his patients and takes the time to understand the issues they face. Incredibly thankful.",
+        "He reviewed my medications and identified some that could be causing weight gain. No one had ever discussed this with me before. He was very thoughtful and helped me with weight loss. I highly recommend his services.",
     },
     {
+      initials: "HM",
       quote:
-        "Very thorough, professional, and caring. Never felt rushed and his follow-up questions were useful.",
+        "Excellent doctor. He is very caring and has great bedside manners. Very knowledgeable about medication and the process. I am seeing progress.",
     },
     {
+      initials: "AD",
       quote:
-        "This was my first visit and I was very impressed. He was thoughtful, knowledgeable, and made me feel comfortable right away.",
+        "Dr. Roohani has excellent bedside manners and is very professional. He truly listens and ensures his treatment plans are aligned with your goals. He also generated a superbill for me to submit to my insurance which was helpful. Would highly recommend!!",
     },
     {
+      initials: "SS",
       quote:
-        "Professional, personable, and takes the time to really listen. He is very patient and explains things in a way I can understand.",
+        "Dr. Roohani is the kindest and most diligent doctor I've ever worked with. I was anxious about both starting a new medication and my weight loss journey, but he made me feel comfortable from the very first visit. He took the time to answer all of my questions and laid out a clear plan tailored to my goals. He's been with me every step of the way, checking in and adjusting things as needed.",
     },
     {
+      initials: "AS",
       quote:
-        "Extremely pleased. Confident in his ability to provide excellent care and explain things clearly.",
+        "My insurance wouldn't cover weight loss meds so I found this doctor and gave it a shot. I was absolutely impressed with the experience and results. He talked to me for longer than any doctor I've ever had, helped explain how to get cost effective meds, and has been with me every step of the way. He's very practical and honest, with nonstop recommendations on diet, calorie count, exercise, and medication.",
     },
     {
+      initials: "AA",
       quote:
-        "Very thorough. I'm very blessed to have him as my doctor. He always listens and explains things clearly.",
+        "Working with Dr. Roohani felt very different from my past experiences. He was patient, attentive, and made sure the plan actually fit into my routine.",
+    },
+    {
+      initials: "CI",
+      quote:
+        "Dr. Roohani was very easy to talk to and didn't make me feel judged at all. He explained my options clearly and helped me come up with a plan that actually feels doable. I appreciated that he focuses on long-term results, not just quick fixes.",
+    },
+    {
+      initials: "SE",
+      quote:
+        "Dr. Roohani has been a huge help in my weight loss journey. He really took my PCOS into account and made sure my plan actually made sense for me. I appreciate that he doesn't just focus on medication. With his help, I now have a realistic nutrition plan that I can stick to. You can tell he genuinely cares and listens.",
+    },
+    {
+      initials: "SE",
+      quote:
+        "Dr. Roohani really understands how challenging obesity can be. He takes a practical, no-judgment approach and focuses on what actually works long term. I've felt supported the whole way and have finally been able to make steady progress.",
+    },
+    {
+      initials: "ME",
+      quote:
+        "I was honestly embarrassed to even bring it up, but Dr. Roohani made the whole experience completely judgment-free. He was straightforward, respectful, and focused on what would actually work for me.",
+    },
+    {
+      initials: "MS",
+      quote:
+        "At 54, I didn't think weight loss would be realistic for me anymore, but Dr. Roohani proved me wrong. He created a plan that actually fits my lifestyle and pace, and nothing feels extreme or overwhelming. I've been able to make steady progress and feel better than I have in years.",
     },
   ];
 
@@ -407,10 +438,18 @@ function Reviews() {
               <SectionLabel>Patient Experience</SectionLabel>
               <div className="flex items-center gap-2 mt-4">
                 <StarRow />
-                <span className="font-bold text-gray-900 text-xl">4.8 / 5</span>
+                <span className="font-bold text-gray-900 text-xl">5.0 / 5</span>
               </div>
               <p className="text-sm text-gray-500 mt-1">
-                Verified reviews collected by Press-Ganey · 2025
+                Verified reviews from{" "}
+                <a
+                  href="https://www.zocdoc.com/doctor/darius-roohani-md-720799"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gray-700 transition-colors"
+                >
+                  ZocDoc
+                </a>
               </p>
             </div>
 
@@ -418,16 +457,18 @@ function Reviews() {
               {reviews.map((r, i) => (
                 <blockquote
                   key={i}
-                  className="rounded-2xl p-6 border border-gray-100 bg-gray-50 text-gray-700 text-sm leading-relaxed relative"
+                  className="rounded-2xl p-6 border border-gray-100 bg-gray-50 text-gray-700 text-sm leading-relaxed"
                 >
-                  <span
-                    className="absolute top-4 left-5 text-4xl font-serif leading-none"
-                    style={{ color: "var(--green-border)" }}
-                    aria-hidden
-                  >
-                    &ldquo;
-                  </span>
-                  <p className="pt-5">{r.quote}</p>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div
+                      className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+                      style={{ backgroundColor: "var(--green-deep)" }}
+                    >
+                      {r.initials}
+                    </div>
+                    <StarRow small />
+                  </div>
+                  <p>{r.quote}</p>
                 </blockquote>
               ))}
             </div>
@@ -800,13 +841,14 @@ function CheckIcon() {
   );
 }
 
-function StarRow() {
+function StarRow({ small = false }: { small?: boolean }) {
+  const size = small ? "w-3.5 h-3.5" : "w-5 h-5";
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
-          className="w-5 h-5"
+          className={size}
           style={{ color: "var(--green-deep)" }}
           viewBox="0 0 20 20"
           fill="currentColor"
