@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1">
@@ -134,13 +136,13 @@ function Hero() {
             borderColor: "var(--green-border)",
           }}
         >
-          {/* Avatar placeholder — replace src with actual photo */}
-          <div
-            className="w-14 h-14 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold text-lg"
-            style={{ backgroundColor: "var(--green-deep)" }}
-          >
-            DR
-          </div>
+          <Image
+            src="/dr-roohani.jpg"
+            alt="Dr. Darius Roohani, MD"
+            width={56}
+            height={56}
+            className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+          />
           <div>
             <p className="font-semibold text-gray-900">
               Dr. Darius Roohani, MD
