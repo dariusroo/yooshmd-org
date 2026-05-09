@@ -494,11 +494,11 @@ function Pricing() {
         <div className="max-w-2xl mb-12">
           <SectionLabel>Simple, Transparent Pricing</SectionLabel>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
-            One flat monthly rate. No surprises.
+            One flat monthly rate. No surprises.{" "}
+            <span style={{ color: "#7C2D3E" }}>$149/month.</span>
           </h2>
           <p className="text-lg text-gray-600 mt-4 leading-relaxed">
-            <span className="text-2xl font-bold" style={{ color: "#7C2D3E" }}>$149/month</span>{" "}
-            regardless of program length. At your free consultation, Dr.
+            Regardless of program length. At your free consultation, Dr.
             Roohani reviews your history and goals and recommends which program
             is appropriate — most patients don&apos;t choose their plan, it&apos;s
             prescribed for them.
