@@ -497,7 +497,7 @@ function Pricing() {
             One flat monthly rate. No surprises.
           </h2>
           <p className="text-lg text-gray-600 mt-4 leading-relaxed">
-            <span className="font-semibold text-gray-900">$149/month</span>{" "}
+            <span className="text-2xl font-bold" style={{ color: "#7C2D3E" }}>$149/month</span>{" "}
             regardless of program length. At your free consultation, Dr.
             Roohani reviews your history and goals and recommends which program
             is appropriate — most patients don&apos;t choose their plan, it&apos;s
