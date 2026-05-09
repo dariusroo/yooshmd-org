@@ -583,6 +583,10 @@ function Pricing() {
           </ul>
         </div>
 
+        <p className="text-sm text-gray-500 mb-6 px-1">
+          Individual visits without a plan are $199.
+        </p>
+
         {/* Initial consult callout */}
         <div
           className="rounded-2xl border p-7 mb-6"
@@ -602,8 +606,7 @@ function Pricing() {
                 exploration · Medication overview
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                No ongoing charges until you decide to continue. Individual
-                visits without a plan are $199.
+                No ongoing charges until you decide to continue.
               </p>
             </div>
             <div className="flex-shrink-0">
