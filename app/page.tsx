@@ -376,11 +376,6 @@ function Reviews() {
         "He reviewed my medications and identified some that could be causing weight gain. No one had ever discussed this with me before. He was very thoughtful and helped me with weight loss. I highly recommend his services.",
     },
     {
-      initials: "HM",
-      quote:
-        "Excellent doctor. He is very caring and has great bedside manners. Very knowledgeable about medication and the process. I am seeing progress.",
-    },
-    {
       initials: "AD",
       quote:
         "Dr. Roohani has excellent bedside manners and is very professional. He truly listens and ensures his treatment plans are aligned with your goals. He also generated a superbill for me to submit to my insurance which was helpful. Would highly recommend!!",
