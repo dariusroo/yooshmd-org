@@ -588,8 +588,8 @@ function Pricing() {
                 {plan.duration}
               </p>
               <p
-                className={`text-xs ${
-                  plan.highlight ? "text-green-200" : "text-gray-400"
+                className={`text-sm font-medium ${
+                  plan.highlight ? "text-green-200" : "text-gray-500"
                 }`}
               >
                 ✓ Exit plan included &nbsp;·&nbsp; Medication costs separate
