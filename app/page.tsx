@@ -147,8 +147,8 @@ function Hero() {
             </div>
           </div>
 
-          {/* Hero image — large screens only */}
-          <div className="hidden lg:block flex-shrink-0 w-[460px] xl:w-[520px]">
+          {/* Hero image */}
+          <div className="mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[460px] xl:w-[520px]">
             <Image
               src="/hero-art.avif"
               alt=""
@@ -443,7 +443,7 @@ function Reviews() {
           </div>
 
           {/* Doctor photo */}
-          <div className="hidden lg:block flex-shrink-0 w-[340px] xl:w-[400px] mt-2">
+          <div className="mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[340px] xl:w-[400px]">
             <Image
               src="/dr-roohani.jpg"
               alt="Dr. Darius Roohani, MD"
