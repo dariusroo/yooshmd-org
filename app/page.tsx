@@ -578,28 +578,15 @@ function Pricing() {
                   plan.highlight ? "text-white" : "text-gray-900"
                 }`}
               >
-                {plan.name}
+                {plan.name}*
               </p>
               <p
-                className={`text-sm font-medium mb-4 ${
+                className={`text-sm font-medium mb-5 ${
                   plan.highlight ? "text-green-200" : "text-gray-500"
                 }`}
               >
                 {plan.duration}
               </p>
-              <div
-                className={`text-sm rounded-xl px-4 py-3 mb-5 ${
-                  plan.highlight ? "text-green-100" : "text-gray-600"
-                }`}
-                style={
-                  plan.highlight
-                    ? { backgroundColor: "rgba(255,255,255,0.1)" }
-                    : { backgroundColor: "var(--green-light)" }
-                }
-              >
-                <span className="font-semibold">Goal: </span>
-                {plan.goal}*
-              </div>
               <p
                 className={`text-xs ${
                   plan.highlight ? "text-green-200" : "text-gray-400"
