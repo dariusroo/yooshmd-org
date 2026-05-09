@@ -408,7 +408,7 @@ function Reviews() {
   return (
     <section className="bg-white py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
 
           {/* Reviews column */}
           <div className="flex-1 min-w-0">
