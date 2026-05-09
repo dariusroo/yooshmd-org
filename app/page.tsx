@@ -53,7 +53,7 @@ function Nav() {
           (909) 293-8095
         </a>
 
-        <BookButton href="https://appointment.yooshmd.com" size="sm">
+        <BookButton href="https://appointment.yooshmd.com" size="sm" color="green">
           Book Free Consultation
         </BookButton>
       </div>
@@ -766,10 +766,12 @@ function Footer() {
 function BookButton({
   href,
   size = "md",
+  color = "burgundy",
   children,
 }: {
   href: string;
   size?: "sm" | "md" | "lg";
+  color?: "green" | "burgundy";
   children: React.ReactNode;
 }) {
   const heights: Record<string, string> = {
@@ -777,13 +779,14 @@ function BookButton({
     md: "h-11 px-5 text-sm",
     lg: "h-13 px-7 text-base",
   };
+  const bg = color === "green" ? "var(--green-deep)" : "#7C2D3E";
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center justify-center rounded-full font-semibold text-white transition-opacity hover:opacity-90 ${heights[size]}`}
-      style={{ backgroundColor: "var(--green-deep)" }}
+      style={{ backgroundColor: bg }}
     >
       {children}
     </a>
