@@ -67,92 +67,98 @@ function Hero() {
   return (
     <section className="bg-white pt-16 pb-12 sm:pt-24 sm:pb-20">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <p
-            className="text-sm font-semibold uppercase tracking-widest mb-5"
-            style={{ color: "var(--green-mid)" }}
-          >
-            Physician-Guided Weight Loss · California &amp; Nevada
-          </p>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
 
-          {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
-            Medical weight loss.{" "}
-            <span className="block sm:inline">
-              Start with medication,{" "}
-            </span>
-            <span
-              className="italic"
-              style={{ color: "var(--green-deep)" }}
+          {/* Text column */}
+          <div className="flex-1 min-w-0">
+            <p
+              className="text-sm font-semibold uppercase tracking-widest mb-5"
+              style={{ color: "var(--green-mid)" }}
             >
-              finish without it.
-            </span>
-          </h1>
+              Physician-Guided Weight Loss · California &amp; Nevada
+            </p>
 
-          {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
-            A physician-guided program designed around a real exit strategy
-            — not indefinite medication. From your first visit, we outline
-            a personalized plan to help you maintain your results after
-            treatment.
-          </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+              Medical weight loss.{" "}
+              <span className="block sm:inline">Start with medication, </span>
+              <span className="italic" style={{ color: "var(--green-deep)" }}>
+                finish without it.
+              </span>
+            </h1>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <BookButton href="https://appointment.yooshmd.com" size="lg">
-              Book FREE Consultation
-            </BookButton>
-            <a
-              href="tel:+19092938095"
-              className="inline-flex items-center justify-center h-13 px-6 rounded-full border-2 border-gray-200 text-gray-700 font-semibold text-base hover:border-gray-300 hover:bg-gray-50 transition-colors"
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
+              A physician-guided program designed around a real exit strategy
+              — not indefinite medication. From your first visit, we outline a
+              personalized plan to help you maintain your results after
+              treatment.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <BookButton href="https://appointment.yooshmd.com" size="lg">
+                Book FREE Consultation
+              </BookButton>
+              <a
+                href="tel:+19092938095"
+                className="inline-flex items-center justify-center h-13 px-6 rounded-full border-2 border-gray-200 text-gray-700 font-semibold text-base hover:border-gray-300 hover:bg-gray-50 transition-colors"
+              >
+                Call or text (909) 293-8095
+              </a>
+            </div>
+
+            <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-500 mb-10">
+              {[
+                "One-time consultation",
+                "No ongoing charges until you decide",
+                "No insurance required",
+                "Transparent pricing",
+                "100% online",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-1.5">
+                  <CheckIcon />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            {/* Doctor credential card */}
+            <div
+              className="inline-flex items-center gap-4 rounded-2xl px-5 py-4 border"
+              style={{
+                backgroundColor: "var(--green-light)",
+                borderColor: "var(--green-border)",
+              }}
             >
-              Call or text (909) 293-8095
-            </a>
+              <Image
+                src="/dr-roohani.jpg"
+                alt="Dr. Darius Roohani, MD"
+                width={56}
+                height={56}
+                className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+              />
+              <div>
+                <p className="font-semibold text-gray-900">
+                  Dr. Darius Roohani, MD
+                </p>
+                <p className="text-sm text-gray-600">
+                  Double board-certified · Internal Medicine &amp; Obesity Medicine
+                </p>
+                <p className="text-sm text-gray-500">Cedars-Sinai trained</p>
+              </div>
+            </div>
           </div>
 
-          {/* Micro-trust */}
-          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-500">
-            {[
-              "One-time consultation",
-              "No ongoing charges until you decide",
-              "No insurance required",
-              "Transparent pricing",
-              "100% online",
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-1.5">
-                <CheckIcon />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Doctor credential card */}
-        <div
-          className="mt-12 inline-flex items-center gap-4 rounded-2xl px-5 py-4 border"
-          style={{
-            backgroundColor: "var(--green-light)",
-            borderColor: "var(--green-border)",
-          }}
-        >
-          <Image
-            src="/dr-roohani.jpg"
-            alt="Dr. Darius Roohani, MD"
-            width={56}
-            height={56}
-            className="w-14 h-14 rounded-full object-cover flex-shrink-0"
-          />
-          <div>
-            <p className="font-semibold text-gray-900">
-              Dr. Darius Roohani, MD
-            </p>
-            <p className="text-sm text-gray-600">
-              Double board-certified · Internal Medicine &amp; Obesity
-              Medicine
-            </p>
-            <p className="text-sm text-gray-500">Cedars-Sinai trained</p>
+          {/* Hero image — large screens only */}
+          <div className="hidden lg:block flex-shrink-0 w-[460px] xl:w-[520px]">
+            <Image
+              src="/hero-art.avif"
+              alt=""
+              width={520}
+              height={620}
+              className="w-full h-auto rounded-3xl object-cover"
+              priority
+            />
           </div>
+
         </div>
       </div>
     </section>
