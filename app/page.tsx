@@ -408,33 +408,51 @@ function Reviews() {
   return (
     <section className="bg-white py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="text-center mb-12">
-          <SectionLabel className="justify-center">Patient Experience</SectionLabel>
-          <div className="flex items-center justify-center gap-2 mt-4">
-            <StarRow />
-            <span className="font-bold text-gray-900 text-xl">4.8 / 5</span>
-          </div>
-          <p className="text-sm text-gray-500 mt-1">
-            Verified reviews collected by Press-Ganey · 2025
-          </p>
-        </div>
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {reviews.map((r, i) => (
-            <blockquote
-              key={i}
-              className="rounded-2xl p-6 border border-gray-100 bg-gray-50 text-gray-700 text-sm leading-relaxed relative"
-            >
-              <span
-                className="absolute top-4 left-5 text-4xl font-serif leading-none"
-                style={{ color: "var(--green-border)" }}
-                aria-hidden
-              >
-                &ldquo;
-              </span>
-              <p className="pt-5">{r.quote}</p>
-            </blockquote>
-          ))}
+          {/* Reviews column */}
+          <div className="flex-1 min-w-0">
+            <div className="mb-10">
+              <SectionLabel>Patient Experience</SectionLabel>
+              <div className="flex items-center gap-2 mt-4">
+                <StarRow />
+                <span className="font-bold text-gray-900 text-xl">4.8 / 5</span>
+              </div>
+              <p className="text-sm text-gray-500 mt-1">
+                Verified reviews collected by Press-Ganey · 2025
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-5">
+              {reviews.map((r, i) => (
+                <blockquote
+                  key={i}
+                  className="rounded-2xl p-6 border border-gray-100 bg-gray-50 text-gray-700 text-sm leading-relaxed relative"
+                >
+                  <span
+                    className="absolute top-4 left-5 text-4xl font-serif leading-none"
+                    style={{ color: "var(--green-border)" }}
+                    aria-hidden
+                  >
+                    &ldquo;
+                  </span>
+                  <p className="pt-5">{r.quote}</p>
+                </blockquote>
+              ))}
+            </div>
+          </div>
+
+          {/* Doctor photo */}
+          <div className="hidden lg:block flex-shrink-0 w-[340px] xl:w-[400px] mt-2">
+            <Image
+              src="/dr-roohani.jpg"
+              alt="Dr. Darius Roohani, MD"
+              width={400}
+              height={500}
+              className="w-full h-auto rounded-3xl object-cover"
+            />
+          </div>
+
         </div>
       </div>
     </section>
