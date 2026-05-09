@@ -699,7 +699,7 @@ function Footer() {
             published clinical trial data and may not reflect outcomes in
             practice.{" "}
             <a
-              href="https://appointment.yooshmd.com"
+              href="https://www.yooshmd.com/disclaimers"
               className="underline hover:text-gray-300 transition-colors"
             >
               Full disclosures →
