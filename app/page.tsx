@@ -455,19 +455,19 @@ function Reviews() {
 function Pricing() {
   const plans = [
     {
-      name: "Starter",
+      name: "5–10% Body Weight Loss",
       duration: "3 months",
       goal: "5–10% body weight loss",
       highlight: false,
     },
     {
-      name: "Standard",
+      name: "10–15% Body Weight Loss",
       duration: "6 months",
       goal: "10–15% body weight loss",
       highlight: true,
     },
     {
-      name: "Complete",
+      name: "15%+ Body Weight Loss",
       duration: "12 months",
       goal: "15%+ body weight loss",
       highlight: false,
@@ -497,10 +497,11 @@ function Pricing() {
             One flat monthly rate. No surprises.
           </h2>
           <p className="text-lg text-gray-600 mt-4 leading-relaxed">
-            All plans are{" "}
-            <span className="font-semibold text-gray-900">$149/month</span>.
-            Dr. Roohani recommends the right plan at your free initial
-            consultation based on your goals and medical history.
+            <span className="font-semibold text-gray-900">$149/month</span>{" "}
+            regardless of program length. At your free consultation, Dr.
+            Roohani reviews your history and goals and recommends which program
+            is appropriate — most patients don&apos;t choose their plan, it&apos;s
+            prescribed for them.
           </p>
         </div>
 
@@ -532,7 +533,7 @@ function Pricing() {
                 </span>
               )}
               <p
-                className={`text-2xl font-bold mb-1 ${
+                className={`text-lg font-bold mb-1 leading-snug ${
                   plan.highlight ? "text-white" : "text-gray-900"
                 }`}
               >
