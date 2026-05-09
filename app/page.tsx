@@ -335,10 +335,6 @@ function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
             Your exit strategy starts at visit one.
           </h2>
-          <p className="text-gray-600 mt-4 text-lg leading-relaxed">
-            Most patients begin noticing meaningful changes in appetite within
-            the first several weeks of treatment.*
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-8">
@@ -359,11 +355,6 @@ function HowItWorks() {
             </div>
           ))}
         </div>
-
-        <p className="text-xs text-gray-400 mt-8">
-          *Individual results vary. Timing estimates reflect general program
-          experience and are not a guarantee of any specific outcome.
-        </p>
 
         <div className="mt-10">
           <BookButton href="https://appointment.yooshmd.com" size="lg">
