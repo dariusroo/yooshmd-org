@@ -120,6 +120,18 @@ function Hero() {
               ))}
             </ul>
 
+            {/* Hero image — mobile only, shown above credential card */}
+            <div className="block lg:hidden mt-8 mb-8">
+              <Image
+                src="/hero-art.avif"
+                alt=""
+                width={520}
+                height={620}
+                className="w-full h-auto rounded-3xl object-cover"
+                priority
+              />
+            </div>
+
             {/* Doctor credential card */}
             <div
               className="inline-flex items-center gap-4 rounded-2xl px-5 py-4 border"
@@ -147,8 +159,8 @@ function Hero() {
             </div>
           </div>
 
-          {/* Hero image */}
-          <div className="mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[460px] xl:w-[520px]">
+          {/* Hero image — desktop only */}
+          <div className="hidden lg:block mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[460px] xl:w-[520px]">
             <Image
               src="/hero-art.avif"
               alt=""
@@ -448,6 +460,17 @@ function Reviews() {
               </p>
             </div>
 
+            {/* Doctor photo — mobile only, shown below ZocDoc heading */}
+            <div className="block lg:hidden mb-8">
+              <Image
+                src="/dr-roohani.jpg"
+                alt="Dr. Darius Roohani, MD"
+                width={400}
+                height={500}
+                className="w-full h-auto rounded-3xl object-cover"
+              />
+            </div>
+
             <div className="grid sm:grid-cols-2 gap-5">
               {reviews.map((r, i) => (
                 <blockquote
@@ -469,8 +492,8 @@ function Reviews() {
             </div>
           </div>
 
-          {/* Doctor photo */}
-          <div className="mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[340px] xl:w-[400px]">
+          {/* Doctor photo — desktop only */}
+          <div className="hidden lg:block mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[340px] xl:w-[400px]">
             <Image
               src="/dr-roohani.jpg"
               alt="Dr. Darius Roohani, MD"
@@ -536,8 +559,7 @@ function Pricing() {
           <p className="text-lg text-gray-600 mt-4 leading-relaxed">
             Regardless of program length. At your free consultation, Dr.
             Roohani reviews your history and goals and recommends which program
-            is appropriate — most patients don&apos;t choose their plan, it&apos;s
-            prescribed for them.
+            is appropriate.
           </p>
         </div>
 
