@@ -607,7 +607,7 @@ function Pricing() {
         </div>
 
         <p className="text-sm text-gray-500 mb-6 px-1">
-          Individual visits without a plan are $199.
+          Individual visits without a plan are $249.
         </p>
 
         {/* Initial consult callout */}
