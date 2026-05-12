@@ -101,7 +101,7 @@ function Hero() {
                 href="tel:+19092938095"
                 className="inline-flex items-center justify-center h-13 px-6 rounded-full border-2 border-gray-200 text-gray-700 font-semibold text-base hover:border-gray-300 hover:bg-gray-50 transition-colors"
               >
-                Call or text (909) 293-8095
+                Call (909) 293-8095
               </a>
             </div>
 
