@@ -7,6 +7,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <TrustBar />
+        <TableOfContents />
         <WhySection />
         <HowItWorks />
         <Pricing />
@@ -221,7 +222,7 @@ function TrustBar() {
 
 function WhySection() {
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section id="why" className="bg-white py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-12">
           <SectionLabel>What Makes Us Different</SectionLabel>
@@ -338,6 +339,7 @@ function HowItWorks() {
 
   return (
     <section
+      id="how-it-works"
       className="py-20 sm:py-28"
       style={{ backgroundColor: "var(--green-light)" }}
     >
@@ -435,7 +437,7 @@ function Reviews() {
   ];
 
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section id="reviews" className="bg-white py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
 
@@ -545,6 +547,7 @@ function Pricing() {
 
   return (
     <section
+      id="pricing"
       className="py-20 sm:py-28"
       style={{ backgroundColor: "var(--green-light)" }}
     >
@@ -696,6 +699,33 @@ function Pricing() {
         </p>
       </div>
     </section>
+  );
+}
+
+/* ─── Table of Contents ───────────────────────────────────────── */
+
+function TableOfContents() {
+  const links = [
+    { href: "#why", label: "Why YooshMD" },
+    { href: "#how-it-works", label: "How It Works" },
+    { href: "#pricing", label: "Pricing" },
+    { href: "#reviews", label: "Patient Reviews" },
+  ];
+
+  return (
+    <nav className="bg-white border-b border-gray-100">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-3 flex flex-wrap gap-x-1 gap-y-1">
+        {links.map(({ href, label }) => (
+          <a
+            key={href}
+            href={href}
+            className="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+    </nav>
   );
 }
 
