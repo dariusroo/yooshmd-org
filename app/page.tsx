@@ -1,4 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import Footer from "./components/Footer";
+import LanguageToggle from "./components/LanguageToggle";
+import { useLanguage } from "./lib/LanguageContext";
 
 export default function Home() {
   return (
@@ -11,7 +17,10 @@ export default function Home() {
         <WhySection />
         <HowItWorks />
         <Pricing />
+        <MedicationOptions />
         <Reviews />
+        <FAQSection />
+        <InstagramSection />
       </main>
       <Footer />
     </div>
@@ -21,42 +30,114 @@ export default function Home() {
 /* ─── Navigation ──────────────────────────────────────────────── */
 
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useLanguage();
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
           <span
-            className="text-xl font-bold tracking-tight"
+            className="text-2xl sm:text-3xl font-bold tracking-tight"
             style={{ color: "var(--green-deep)" }}
           >
             YooshMD
           </span>
         </a>
 
-        {/* Phone — hidden on smallest screens */}
-        <a
-          href="tel:+19092938095"
-          className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
-          (909) 293-8095
-        </a>
+        {/* Actions — grouped together on the right */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          <BookButton href="https://intakeq.com/new/tfe8ap" size="sm" color="green">
+            <span className="sm:hidden">{t.nav.bookShort}</span>
+            <span className="hidden sm:inline">{t.nav.bookFull}</span>
+          </BookButton>
 
-        <BookButton href="https://appointment.yooshmd.com" size="sm" color="green">
-          Book Free Consultation
-        </BookButton>
+          {/* Menu toggle */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-expanded={menuOpen}
+            aria-controls="nav-links-panel"
+            className="flex-shrink-0 flex items-center justify-center h-9 px-4 rounded-full text-sm font-bold text-gray-600 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 transition-colors"
+          >
+            {t.nav.menu}
+          </button>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div
+          id="nav-links-panel"
+          className="border-t border-gray-100 bg-white"
+        >
+          <div className="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex flex-col items-end gap-3">
+            <a
+              href="https://mqiu0i.intakeq.com/portal"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.patientPortal}
+            </a>
+            <a
+              href="#pricing"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.pricing}
+            </a>
+            <a
+              href="#reviews"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.about}
+            </a>
+            <a
+              href="#faq"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.faq}
+            </a>
+            <a
+              href="https://blog.yooshmd.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.blog}
+            </a>
+          </div>
+        </div>
+      )}
+
+      {/* Phone — below the dropdown menu */}
+      <div className="border-t border-gray-100 bg-white">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 py-2 flex items-center justify-between">
+          <a
+            href="tel:+19092938095"
+            className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            {t.nav.phone}
+          </a>
+          <LanguageToggle />
+        </div>
       </div>
     </header>
   );
@@ -65,73 +146,68 @@ function Nav() {
 /* ─── Hero ────────────────────────────────────────────────────── */
 
 function Hero() {
+  const { t } = useLanguage();
+
   return (
-    <section className="bg-white pt-16 pb-12 sm:pt-24 sm:pb-20">
+    <section className="bg-white pt-6 pb-12 sm:pt-10 sm:pb-20">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
 
           {/* Text column */}
           <div className="flex-1 min-w-0">
-            <p
-              className="text-sm font-semibold uppercase tracking-widest mb-5"
-              style={{ color: "var(--green-mid)" }}
-            >
-              Physician-Guided Weight Loss · California &amp; Nevada
-            </p>
+            <FadeIn>
+              <p
+                className="text-sm font-semibold uppercase tracking-widest mb-5"
+                style={{ color: "var(--green-mid)" }}
+              >
+                {withDagger(t.hero.eyebrow)}
+              </p>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
-              Medical weight loss.{" "}
-              <span className="block sm:inline">Start with medication, </span>
-              <span className="italic" style={{ color: "var(--green-deep)" }}>
-                finish without it.
-              </span>
-            </h1>
+              {/* Hero image — mobile only, shown above the headline */}
+              <div className="block lg:hidden mb-4">
+                <Image
+                  src="/hero-art.avif"
+                  alt=""
+                  width={520}
+                  height={620}
+                  className="w-full h-auto rounded-3xl object-cover"
+                  priority
+                />
+              </div>
 
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
-              A physician-guided program designed around a real exit strategy
-              — not indefinite medication. From your first visit, we outline a
-              personalized plan to help you maintain your results after
-              treatment.
-            </p>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                {t.hero.titlePre}
+                <span className="italic" style={{ color: "var(--green-deep)" }}>
+                  {t.hero.titleEmph}
+                </span>
+                {t.hero.titlePost}
+              </h1>
+
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
+                {t.hero.subhead}
+              </p>
+            </FadeIn>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
-              <BookButton href="https://appointment.yooshmd.com" size="lg">
-                Book FREE Consultation
+              <BookButton href="https://intakeq.com/new/tfe8ap" size="lg">
+                {t.hero.ctaBook}
               </BookButton>
               <a
                 href="tel:+19092938095"
                 className="inline-flex items-center justify-center h-13 px-6 rounded-full border-2 border-gray-200 text-gray-700 font-semibold text-base hover:border-gray-300 hover:bg-gray-50 transition-colors"
               >
-                Call (909) 293-8095
+                {t.hero.ctaCall}
               </a>
             </div>
 
             <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-500 mb-10">
-              {[
-                "One-time consultation",
-                "No ongoing charges until you decide",
-                "No insurance required",
-                "Transparent pricing",
-                "100% online",
-              ].map((item) => (
+              {t.hero.checklist.map((item) => (
                 <li key={item} className="flex items-center gap-1.5">
                   <CheckIcon />
                   {item}
                 </li>
               ))}
             </ul>
-
-            {/* Hero image — mobile only, shown above credential card */}
-            <div className="block lg:hidden mt-8 mb-8">
-              <Image
-                src="/hero-art.avif"
-                alt=""
-                width={520}
-                height={620}
-                className="w-full h-auto rounded-3xl object-cover"
-                priority
-              />
-            </div>
 
             {/* Doctor credential card */}
             <div
@@ -142,7 +218,7 @@ function Hero() {
               }}
             >
               <Image
-                src="/dr-roohani.jpg"
+                src="/dr-roohani.jpeg"
                 alt="Dr. Darius Roohani, MD"
                 width={56}
                 height={56}
@@ -150,13 +226,22 @@ function Hero() {
               />
               <div>
                 <p className="font-semibold text-gray-900">
-                  Dr. Darius Roohani, MD
+                  {t.hero.doctorName}
                 </p>
                 <p className="text-sm text-gray-600">
-                  Double board-certified · Internal Medicine &amp; Obesity Medicine
+                  {t.hero.doctorCred}
                 </p>
-                <p className="text-sm text-gray-500">Cedars-Sinai trained</p>
               </div>
+            </div>
+
+            <div className="mt-4 flex justify-center sm:justify-start">
+              <a
+                href="#reviews"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold text-white transition-opacity hover:opacity-90 h-9 px-4 text-sm"
+                style={{ backgroundColor: "var(--green-deep)" }}
+              >
+                {t.hero.readMore}
+              </a>
             </div>
           </div>
 
@@ -181,12 +266,8 @@ function Hero() {
 /* ─── Trust Bar ───────────────────────────────────────────────── */
 
 function TrustBar() {
-  const items = [
-    { value: "4.8 / 5", label: "Patient rating", sub: "Press-Ganey 2025" },
-    { value: "Board-certified", label: "Obesity Medicine", sub: "Internal Medicine" },
-    { value: "100% online", label: "Telehealth visits", sub: "CA & NV" },
-    { value: "Transparent", label: "Flat-rate pricing", sub: "No hidden fees" },
-  ];
+  const { t } = useLanguage();
+  const items = t.trustBar;
 
   return (
     <section
@@ -197,22 +278,23 @@ function TrustBar() {
       }}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {items.map((item) => (
             <div key={item.value} className="text-center">
               <p
-                className="text-2xl font-bold"
+                className="text-lg sm:text-2xl font-bold"
                 style={{ color: "var(--green-deep)" }}
               >
                 {item.value}
               </p>
-              <p className="text-sm font-semibold text-gray-800 mt-0.5">
-                {item.label}
+              <p className="text-xs sm:text-sm font-semibold text-gray-800 mt-0.5">
+                {withDagger(item.label)}
               </p>
-              <p className="text-xs text-gray-500 mt-0.5">{item.sub}</p>
+              <p className="text-sm text-gray-500 mt-0.5">{item.sub}</p>
             </div>
           ))}
         </div>
+        <p className="text-xs text-gray-500 mt-6 text-center">{withDagger(t.trustBarDisclaimer)}</p>
       </div>
     </section>
   );
@@ -221,48 +303,43 @@ function TrustBar() {
 /* ─── Why Section ─────────────────────────────────────────────── */
 
 function WhySection() {
+  const { t } = useLanguage();
+
   return (
-    <section id="why" className="bg-white py-20 sm:py-28">
+    <section id="why" className="bg-white scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="max-w-2xl mb-12">
-          <SectionLabel>What Makes Us Different</SectionLabel>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
-            Most programs focus on the prescription. We focus on what comes
-            next.
-          </h2>
-          <p className="text-lg text-gray-600 mt-5 leading-relaxed">
-            Weight loss medication can be a powerful tool — but most programs
-            treat it as an indefinite prescription. At YooshMD, every visit
-            is structured around a clear transition plan.
-          </p>
-        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+          <div className="flex-1 min-w-0">
+            <FadeIn className="max-w-2xl mb-12">
+              <SectionLabel>{t.why.eyebrow}</SectionLabel>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
+                {t.why.heading}
+              </h2>
+              <p className="text-lg text-gray-600 mt-5 leading-relaxed">
+                {t.why.body}
+              </p>
+            </FadeIn>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          <CompareCard
-            type="other"
-            title="Other programs"
-            points={[
-              "Prescribe medication, refill indefinitely",
-              "Little guidance on lifestyle change",
-              "No plan for stopping or reducing medication",
-              "Results often reverse when medication ends",
-            ]}
-          />
-          <CompareCard
-            type="us"
-            title="YooshMD"
-            points={[
-              "Medication as a strategic, time-limited tool",
-              "Lifestyle protocol built into every visit",
-              "Medically supervised transition planning",
-              "Help building habits that support lasting results",
-            ]}
-          />
-        </div>
+            <div className="max-w-xl">
+              <CompareCard
+                type="us"
+                title={t.why.cardTitle}
+                points={t.why.points}
+              />
+            </div>
+          </div>
 
-        <p className="text-sm text-gray-400 mt-6">
-          *Individual results vary. See full disclosures.
-        </p>
+          {/* Image — desktop only */}
+          <div className="hidden lg:block mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[460px] xl:w-[520px]">
+            <Image
+              src="/subhero-image.png"
+              alt=""
+              width={1254}
+              height={1254}
+              className="w-full h-auto rounded-3xl object-cover"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -275,12 +352,12 @@ function CompareCard({
 }: {
   type: "other" | "us";
   title: string;
-  points: string[];
+  points: readonly string[];
 }) {
   const isUs = type === "us";
   return (
     <div
-      className={`rounded-2xl p-7 border ${
+      className={`rounded-2xl p-7 border transition-transform duration-300 hover:scale-[1.03] ${
         isUs
           ? "border-green-deep text-white"
           : "border-gray-100 bg-gray-50 text-gray-700"
@@ -293,7 +370,7 @@ function CompareCard({
     >
       <p
         className={`text-xs font-bold uppercase tracking-widest mb-4 ${
-          isUs ? "text-green-200" : "text-gray-400"
+          isUs ? "text-white/70" : "text-gray-400"
         }`}
       >
         {title}
@@ -302,7 +379,7 @@ function CompareCard({
         {points.map((point) => (
           <li key={point} className="flex items-start gap-3 text-sm">
             {isUs ? (
-              <span className="mt-0.5 text-green-200 flex-shrink-0">✓</span>
+              <span className="mt-0.5 text-white/70 flex-shrink-0">✓</span>
             ) : (
               <span className="mt-0.5 text-gray-300 flex-shrink-0">✗</span>
             )}
@@ -319,41 +396,29 @@ function CompareCard({
 /* ─── How It Works ────────────────────────────────────────────── */
 
 function HowItWorks() {
-  const steps = [
-    {
-      n: "01",
-      title: "Free consultation",
-      body: "Discuss your health history, goals, and whether medication-assisted treatment is appropriate for you. No commitment, no charge.",
-    },
-    {
-      n: "02",
-      title: "Personalized plan",
-      body: "Dr. Roohani outlines a program — including target dose, lifestyle protocols, and a projected timeline — from your very first visit.",
-    },
-    {
-      n: "03",
-      title: "Supervised transition",
-      body: "When you're ready, we guide you through a medically supervised plan to help you maintain your results as medication is reduced.",
-    },
-  ];
+  const { t } = useLanguage();
+  const steps = t.howItWorks.steps;
 
   return (
     <section
       id="how-it-works"
-      className="py-20 sm:py-28"
+      className="scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28"
       style={{ backgroundColor: "var(--green-light)" }}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="max-w-xl mb-12">
-          <SectionLabel>How It Works</SectionLabel>
+        <FadeIn className="max-w-xl mb-12">
+          <SectionLabel>{t.howItWorks.eyebrow}</SectionLabel>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
-            Your exit strategy starts at visit one.
+            {t.howItWorks.heading}
           </h2>
-        </div>
+        </FadeIn>
 
-        <div className="grid sm:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {steps.map((step) => (
-            <div key={step.n} className="bg-white rounded-2xl p-7 border border-gray-100">
+            <div
+              key={step.n}
+              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.3333%-1.3333rem)] bg-white rounded-2xl p-7 border border-gray-100 transition-transform duration-300 hover:scale-[1.03]"
+            >
               <span
                 className="text-4xl font-bold tabular-nums"
                 style={{ color: "var(--green-border)" }}
@@ -370,10 +435,12 @@ function HowItWorks() {
           ))}
         </div>
 
-        <div className="mt-10">
-          <BookButton href="https://appointment.yooshmd.com" size="lg">
-            Book Your Free Consultation
-          </BookButton>
+        <div className="mt-10 space-y-2 max-w-3xl">
+          {t.howItWorks.footnotes.map((note) => (
+            <p key={note} className="text-xs text-gray-400 leading-relaxed">
+              {note}
+            </p>
+          ))}
         </div>
       </div>
     </section>
@@ -383,16 +450,14 @@ function HowItWorks() {
 /* ─── Reviews ─────────────────────────────────────────────────── */
 
 function Reviews() {
+  const { t } = useLanguage();
+  // Review quotes are direct attributed patient testimonials from ZocDoc and
+  // are intentionally left in English in both language modes.
   const reviews = [
     {
       initials: "GY",
       quote:
         "He reviewed my medications and identified some that could be causing weight gain. No one had ever discussed this with me before. He was very thoughtful and helped me with weight loss. I highly recommend his services.",
-    },
-    {
-      initials: "AD",
-      quote:
-        "Dr. Roohani has excellent bedside manners and is very professional. He truly listens and ensures his treatment plans are aligned with your goals. He also generated a superbill for me to submit to my insurance which was helpful. Would highly recommend!!",
     },
     {
       initials: "SS",
@@ -437,74 +502,230 @@ function Reviews() {
   ];
 
   return (
-    <section id="reviews" className="bg-white py-20 sm:py-28">
+    <section id="reviews" className="bg-white scroll-mt-[102px] pt-12 sm:pt-16 pb-10 sm:pb-14">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
 
-          {/* Reviews column */}
+          {/* Header + marquee column */}
           <div className="flex-1 min-w-0">
-            <div className="mb-10">
-              <SectionLabel>Patient Experience</SectionLabel>
+            <FadeIn className="mb-10">
+              <SectionLabel>{t.reviews.eyebrow}</SectionLabel>
               <div className="flex items-center gap-2 mt-4">
                 <StarRow />
                 <span className="font-bold text-gray-900 text-xl">5.0 / 5</span>
               </div>
               <p className="text-sm text-gray-500 mt-1">
-                Verified reviews from{" "}
+                {t.reviews.verifiedFrom}{" "}
                 <a
                   href="https://www.zocdoc.com/doctor/darius-roohani-md-720799"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-gray-700 transition-colors"
                 >
-                  ZocDoc
+                  {t.reviews.zocdoc}
                 </a>
               </p>
-            </div>
+            </FadeIn>
 
-            {/* Doctor photo — mobile only, shown below ZocDoc heading */}
-            <div className="block lg:hidden mb-8">
-              <Image
-                src="/dr-roohani.jpg"
-                alt="Dr. Darius Roohani, MD"
-                width={400}
-                height={500}
-                className="w-full h-auto rounded-3xl object-cover"
-              />
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-5">
-              {reviews.map((r, i) => (
-                <blockquote
-                  key={i}
-                  className="rounded-2xl p-6 border border-gray-100 bg-gray-50 text-gray-700 text-sm leading-relaxed"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
-                      style={{ backgroundColor: "var(--green-deep)" }}
-                    >
-                      {r.initials}
+            {/* Reviews marquee — clipped to this column's width */}
+            <div className="overflow-hidden mb-8 lg:mb-0">
+              <div className="flex w-max gap-5 animate-marquee">
+                {[...reviews, ...reviews].map((r, i) => (
+                  <blockquote
+                    key={i}
+                    className="w-[320px] flex-shrink-0 rounded-2xl p-6 border border-gray-100 bg-gray-50 text-gray-700 text-sm leading-relaxed"
+                  >
+                    <div className="flex items-center gap-3 mb-3">
+                      <div
+                        className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+                        style={{ backgroundColor: "var(--green-deep)" }}
+                      >
+                        {r.initials}
+                      </div>
+                      <StarRow small />
                     </div>
-                    <StarRow small />
-                  </div>
-                  <p>{r.quote}</p>
-                </blockquote>
-              ))}
+                    <p className="line-clamp-6">{r.quote}</p>
+                  </blockquote>
+                ))}
+              </div>
+            </div>
+
+            {/* Doctor photo — mobile only, shown below the marquee */}
+            <div className="block lg:hidden">
+              <div className="w-48 mx-auto">
+                <Image
+                  src="/dr-roohani.jpeg"
+                  alt="Dr. Darius Roohani, MD"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto rounded-3xl object-cover object-top"
+                />
+              </div>
+              <div className="mt-4 text-center">
+                <p className="font-semibold text-gray-900">{t.reviews.doctorName}</p>
+                <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+                  {t.reviews.bio}
+                </p>
+              </div>
+            </div>
+
+            {/* Certification logos */}
+            <div className="flex items-center justify-center gap-10 mt-8 lg:mt-20 mb-8">
+              <a href="https://www.abim.org" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/ABIM-logo.avif"
+                  alt="American Board of Internal Medicine"
+                  width={157}
+                  height={157}
+                  className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                />
+              </a>
+              <a href="https://www.abom.org" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/ABOM-logo.avif"
+                  alt="American Board of Obesity Medicine"
+                  width={161}
+                  height={161}
+                  className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                />
+              </a>
             </div>
           </div>
 
           {/* Doctor photo — desktop only */}
-          <div className="hidden lg:block mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[340px] xl:w-[400px]">
+          <div className="hidden lg:block flex-shrink-0 w-full lg:w-[340px] xl:w-[400px]">
             <Image
-              src="/dr-roohani.jpg"
+              src="/dr-roohani.jpeg"
               alt="Dr. Darius Roohani, MD"
               width={400}
-              height={500}
-              className="w-full h-auto rounded-3xl object-cover"
+              height={400}
+              className="w-full h-auto rounded-3xl object-cover object-top"
             />
+            <div className="mt-4 -mx-8 text-center">
+              <p className="font-semibold text-gray-900">{t.reviews.doctorName}</p>
+              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+                {t.reviews.bio}
+              </p>
+            </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── FAQ ─────────────────────────────────────────────────────── */
+
+function FAQSection() {
+  const { t } = useLanguage();
+  const faqs = t.faq.items;
+
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <section
+      id="faq"
+      className="scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28"
+      style={{ backgroundColor: "var(--green-light)" }}
+    >
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <FadeIn className="max-w-2xl mb-12">
+          <SectionLabel>{t.faq.eyebrow}</SectionLabel>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
+            {t.faq.heading}
+          </h2>
+        </FadeIn>
+
+        <div className="grid sm:grid-cols-2 gap-3 items-start">
+          {faqs.map((faq, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div
+                key={faq.question}
+                className="rounded-2xl border border-gray-100 bg-white overflow-hidden"
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  aria-expanded={isOpen}
+                  className="w-full flex items-center justify-between gap-4 text-left px-6 py-5"
+                >
+                  <span className="font-semibold text-gray-900">
+                    {faq.question}
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={`w-5 h-5 flex-shrink-0 text-gray-500 transition-transform ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+                {isOpen && (
+                  <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                    {withLinks(faq.answer, faqAnswerLinks)}
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── Instagram ───────────────────────────────────────────────── */
+
+function InstagramSection() {
+  const posts = [
+    "https://www.instagram.com/p/DZmBy1mhDpN/",
+    "https://www.instagram.com/p/DXzs_cvhe7z/",
+    "https://www.instagram.com/p/DZX9XMxBbYq/",
+  ];
+
+  return (
+    <section id="instagram" className="bg-white scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <FadeIn className="max-w-2xl mb-12">
+          <SectionLabel>
+            <a
+              href="https://www.instagram.com/yooshmd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80 transition-opacity"
+            >
+              @yooshmd
+            </a>
+          </SectionLabel>
+        </FadeIn>
+
+        <div className="grid sm:grid-cols-3 gap-6">
+          {posts.map((url) => (
+            <div
+              key={url}
+              className="overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 mx-auto w-full max-w-[350px] transition-transform duration-300 hover:scale-[1.03]"
+            >
+              <iframe
+                src={`${url}embed`}
+                title="Instagram post"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                scrolling="no"
+                loading="lazy"
+                className="block w-full"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -514,67 +735,39 @@ function Reviews() {
 /* ─── Pricing ─────────────────────────────────────────────────── */
 
 function Pricing() {
-  const plans = [
-    {
-      name: "5–10% Body Weight Loss",
-      duration: "3 months",
-      goal: "5–10% body weight loss",
-      highlight: false,
-    },
-    {
-      name: "10–15% Body Weight Loss",
-      duration: "6 months",
-      goal: "10–15% body weight loss",
-      highlight: true,
-    },
-    {
-      name: "15%+ Body Weight Loss",
-      duration: "12 months",
-      goal: "15%+ body weight loss",
-      highlight: false,
-    },
-  ];
+  const { t } = useLanguage();
 
-  const included = [
-    "Monthly 1:1 physician visits",
-    "Unlimited direct messaging with Dr. Roohani",
-    "Lab review",
-    "Lifestyle plan",
-    "Medication cost guidance",
-    "Medication prescription with taper plan",
-    "Cancel anytime",
+  const planMeta = [
+    { price: "$149", highlight: false, icon: "/white-coat-2.png" },
+    { price: "$349", highlight: true, icon: "/green-coat-vial.png" },
   ];
+  const plans = t.pricing.plans.map((plan, i) => ({ ...plan, ...planMeta[i] }));
+
+  const included = t.pricing.included;
 
   return (
-    <section
-      id="pricing"
-      className="py-20 sm:py-28"
-      style={{ backgroundColor: "var(--green-light)" }}
-    >
+    <section id="pricing" className="bg-white scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         {/* Header */}
-        <div className="max-w-2xl mb-12">
-          <SectionLabel>Simple, Transparent Pricing</SectionLabel>
+        <FadeIn className="max-w-2xl mb-12">
+          <SectionLabel>{t.pricing.eyebrow}</SectionLabel>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
-            One flat monthly rate. No surprises.{" "}
-            <span style={{ color: "#7C2D3E" }}>$149/month.</span>
+            {t.pricing.heading}
           </h2>
           <p className="text-lg text-gray-600 mt-4 leading-relaxed">
-            Regardless of program length. At your free consultation, Dr.
-            Roohani reviews your history and goals and recommends which program
-            is appropriate.
+            {t.pricing.subhead}
           </p>
-        </div>
+        </FadeIn>
 
         {/* Plan cards */}
-        <div className="grid sm:grid-cols-3 gap-5 mb-10">
+        <div className="grid sm:grid-cols-2 gap-5 mb-10">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-2xl p-7 border ${
+              className={`rounded-2xl p-7 border transition-transform duration-300 hover:scale-[1.03] ${
                 plan.highlight
                   ? "border-2 text-white"
-                  : "bg-white border-gray-100"
+                  : "bg-gray-50 border-gray-100"
               }`}
               style={
                 plan.highlight
@@ -585,42 +778,44 @@ function Pricing() {
                   : undefined
               }
             >
-              {plan.highlight && (
-                <span
-                  className="inline-block text-xs font-bold uppercase tracking-widest mb-3 px-3 py-1 rounded-full"
-                  style={{ backgroundColor: "rgba(255,255,255,0.15)", color: "#fff" }}
+              <div className="flex items-start justify-between gap-3">
+                <p
+                  className={`text-lg font-bold leading-snug ${
+                    plan.highlight ? "text-white" : "text-gray-900"
+                  }`}
                 >
-                  Most popular
-                </span>
-              )}
+                  {plan.name}
+                </p>
+                <Image
+                  src={plan.icon}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 object-contain flex-shrink-0"
+                />
+              </div>
               <p
-                className={`text-lg font-bold mb-1 leading-snug ${
+                className={`text-3xl font-bold mt-2 ${
                   plan.highlight ? "text-white" : "text-gray-900"
                 }`}
               >
-                {plan.name}*
+                {plan.price}
+                <span className="text-base font-medium">/month</span>
               </p>
               <p
-                className={`text-sm font-medium mb-5 ${
-                  plan.highlight ? "text-green-200" : "text-gray-500"
+                className={`text-sm font-medium mt-3 ${
+                  plan.highlight ? "text-white/70" : "text-gray-500"
                 }`}
               >
-                {plan.duration}
-              </p>
-              <p
-                className={`text-sm font-medium ${
-                  plan.highlight ? "text-green-200" : "text-gray-500"
-                }`}
-              >
-                ✓ Exit plan included &nbsp;·&nbsp; Medication costs separate
+                {withDagger(plan.tagline)}
               </p>
             </div>
           ))}
         </div>
 
         {/* What's included */}
-        <div className="bg-white rounded-2xl border border-gray-100 p-7 mb-6">
-          <p className="font-semibold text-gray-900 mb-5">All plans include:</p>
+        <div className="bg-gray-50 rounded-2xl border border-gray-100 p-7 mb-6">
+          <p className="font-semibold text-gray-900 mb-5">{t.pricing.includeHeading}</p>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
             {included.map((item) => (
               <li key={item} className="flex items-center gap-3 text-sm text-gray-700">
@@ -629,11 +824,10 @@ function Pricing() {
               </li>
             ))}
           </ul>
+          <p className="text-xs text-gray-400 mt-5">
+            {t.pricing.footnote1}
+          </p>
         </div>
-
-        <p className="text-sm text-gray-500 mb-6 px-1">
-          Individual visits without a plan are $249.
-        </p>
 
         {/* Initial consult callout */}
         <div
@@ -646,56 +840,117 @@ function Pricing() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <p className="font-semibold text-gray-900 text-lg">
-                Initial consultation with Dr. Roohani —{" "}
-                <span style={{ color: "var(--green-deep)" }}>FREE</span>
+                {t.pricing.initialConsultTitle}
+                <span style={{ color: "var(--green-deep)" }}>{t.pricing.free}</span>
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                30-minute video visit · Comprehensive medical review · Goal
-                exploration · Medication overview
+                {t.pricing.initialConsultDetails}
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                No ongoing charges until you decide to continue.
+                {t.pricing.initialConsultNote}
               </p>
             </div>
             <div className="flex-shrink-0">
-              <BookButton href="https://appointment.yooshmd.com" size="lg">
-                Book Free Visit
+              <BookButton href="https://intakeq.com/new/tfe8ap" size="lg">
+                {t.pricing.initialConsultCta}
               </BookButton>
             </div>
           </div>
         </div>
 
-        {/* Medication cost note */}
-        <div className="bg-white rounded-2xl border border-gray-100 p-7 mb-6">
-          <p className="font-semibold text-gray-900 mb-3">
-            We help make medication as affordable as possible
+        <p className="text-xs text-gray-400">
+          {withDagger(t.pricing.footnote2)}
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ─── Medication Options ──────────────────────────────────────── */
+
+function MedicationOptions() {
+  const { t } = useLanguage();
+
+  const optionMeta: Array<{ bg?: string; borderColor?: string; bgImage: string }> = [
+    { bg: "#F7E9EC", borderColor: "#F0D6DC", bgImage: "/pinkvial.png" },
+    { bg: "var(--green-border)", borderColor: "#B3D2D4", bgImage: "/greenvial.png" },
+    { bgImage: "/pens.png" },
+  ];
+  const options: Array<{
+    title: string;
+    descriptor: string;
+    body?: string;
+    bg?: string;
+    borderColor?: string;
+    bgImage: string;
+  }> = t.medications.options.map((option, i) => ({
+    ...option,
+    ...optionMeta[i],
+  }));
+
+  return (
+    <section
+      id="medications"
+      className="scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28"
+      style={{ backgroundColor: "var(--green-light)" }}
+    >
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+        <FadeIn className="max-w-3xl mb-12">
+          <SectionLabel>{t.medications.eyebrow}</SectionLabel>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 leading-tight">
+            {t.medications.heading}
+          </h2>
+          <p className="text-lg text-gray-600 mt-4 leading-relaxed">
+            {withDagger(t.medications.subhead)}
           </p>
-          <p className="text-sm text-gray-600 leading-relaxed mb-3">
-            Medication costs are separate from the plan fee — but we don&apos;t
-            leave you to figure them out alone. At your first visit, Dr.
-            Roohani reviews every available option to reduce what you pay out of
-            pocket, including manufacturer savings programs, pharmacy discount
-            cards, and dose optimization strategies.
-          </p>
-          <p className="text-sm text-gray-600 leading-relaxed mb-3">
-            If you have insurance, Dr. Roohani personally oversees the prior
-            authorization process — including letters of medical necessity,
-            clinical documentation, and appeal support. While approval is never
-            guaranteed, his direct involvement gives you the strongest possible
-            case for coverage.
-          </p>
-          <p className="text-sm text-gray-600 leading-relaxed">
-            We also provide a Superbill after every visit — an itemized receipt
-            with the diagnosis and procedure codes your insurer needs to process
-            a reimbursement claim. Many patients recover a meaningful portion of
-            their physician fees this way, depending on their out-of-network
-            benefits.
-          </p>
+        </FadeIn>
+
+        <div className="grid sm:grid-cols-3 gap-6">
+          {options.map((option) => (
+            <div
+              key={option.title}
+              className={`relative overflow-hidden rounded-2xl p-7 border transition-transform duration-300 hover:scale-[1.03] ${
+                option.bg ? "" : "bg-white border-gray-100"
+              }`}
+              style={
+                option.bg
+                  ? { backgroundColor: option.bg, borderColor: option.borderColor }
+                  : undefined
+              }
+            >
+              {option.bgImage && (
+                <Image
+                  src={option.bgImage}
+                  alt=""
+                  fill
+                  className="pointer-events-none object-cover opacity-[14%]"
+                />
+              )}
+              <div className="relative">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {option.title}
+                </h3>
+                {option.descriptor && (
+                  <p
+                    className={`text-gray-800 text-sm leading-relaxed ${
+                      option.body ? "mb-3" : ""
+                    }`}
+                  >
+                    {withDagger(option.descriptor)}
+                  </p>
+                )}
+                {option.body && (
+                  <p className="text-gray-600 text-xs leading-relaxed">
+                    {option.body}
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
 
-        <p className="text-xs text-gray-400">
-          *Individual results vary. Percentage estimates are derived from
-          clinical trial data and may not reflect outcomes in practice.
+        <p className="text-xs text-gray-400 mt-6">
+          {withDagger(t.medications.footnote)}
         </p>
       </div>
     </section>
@@ -705,16 +960,12 @@ function Pricing() {
 /* ─── Table of Contents ───────────────────────────────────────── */
 
 function TableOfContents() {
-  const links = [
-    { href: "#why", label: "Why YooshMD" },
-    { href: "#how-it-works", label: "How It Works" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#reviews", label: "Patient Reviews" },
-  ];
+  const { t } = useLanguage();
+  const links = t.toc;
 
   return (
     <nav className="bg-white border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-3 flex flex-wrap gap-x-1 gap-y-1">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-3 flex flex-wrap justify-center sm:justify-start gap-x-1 gap-y-1">
         {links.map(({ href, label }) => (
           <a
             key={href}
@@ -731,84 +982,46 @@ function TableOfContents() {
 
 /* ─── Footer ──────────────────────────────────────────────────── */
 
-function Footer() {
-  return (
-    <footer className="bg-gray-950 text-gray-400 py-12">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="flex flex-col sm:flex-row justify-between gap-8 mb-8">
-          <div>
-            <p
-              className="text-lg font-bold text-white mb-2"
-            >
-              YooshMD
-            </p>
-            <p className="text-sm max-w-xs leading-relaxed">
-              Physician-guided medical weight loss. 100% online. Serving
-              California and Nevada.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-            <a
-              href="https://www.yooshmd.com/privacy-policy"
-              className="hover:text-white transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="https://www.yooshmd.com/terms-of-service"
-              className="hover:text-white transition-colors"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="https://www.yooshmd.com/telehealth-notice"
-              className="hover:text-white transition-colors"
-            >
-              Telehealth Notice
-            </a>
-            <a
-              href="https://www.yooshmd.com/notice-of-privacy-practices"
-              className="hover:text-white transition-colors"
-            >
-              Notice of Privacy Practices
-            </a>
-            <a
-              href="https://www.yooshmd.com/accessibility-statement"
-              className="hover:text-white transition-colors"
-            >
-              Accessibility
-            </a>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 pt-8 space-y-3 text-xs text-gray-500 leading-relaxed">
-          <p>
-            This site does not constitute medical advice. Results vary.
-            Individual outcomes depend on factors including health history,
-            adherence to the program, and physician recommendations. This
-            service is not intended for medical emergencies — if you are
-            experiencing a medical emergency, call 911.
-          </p>
-          <p>
-            Percentage estimates referenced on this site are derived from
-            published clinical trial data and may not reflect outcomes in
-            practice.{" "}
-            <a
-              href="https://www.yooshmd.com/disclaimers"
-              className="underline hover:text-gray-300 transition-colors"
-            >
-              Full disclosures →
-            </a>
-          </p>
-          <p>© 2026 YooshMD. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
 
 /* ─── Shared UI primitives ────────────────────────────────────── */
+
+function FadeIn({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.15 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 ease-out ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      } ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
 
 function BookButton({
   href,
@@ -832,12 +1045,52 @@ function BookButton({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center rounded-full font-semibold text-white transition-opacity hover:opacity-90 ${heights[size]}`}
+      className={`inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold text-white transition-opacity hover:opacity-90 ${heights[size]}`}
       style={{ backgroundColor: bg }}
     >
       {children}
     </a>
   );
+}
+
+const faqAnswerLinks = [
+  { text: "Boudreaux's New Drug Store", href: "https://boudreauxsnewdrug.com/" },
+];
+
+function withLinks(
+  text: string,
+  links: { text: string; href: string }[]
+): React.ReactNode {
+  for (const link of links) {
+    const idx = text.indexOf(link.text);
+    if (idx === -1) continue;
+    return (
+      <>
+        {text.slice(0, idx)}
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:opacity-80"
+        >
+          {link.text}
+        </a>
+        {text.slice(idx + link.text.length)}
+      </>
+    );
+  }
+  return text;
+}
+
+function withDagger(text: string): React.ReactNode {
+  const parts = text.split("✝");
+  if (parts.length === 1) return text;
+  return parts.map((part, i) => (
+    <span key={i}>
+      {part}
+      {i < parts.length - 1 && <sup>✝</sup>}
+    </span>
+  ));
 }
 
 function SectionLabel({
