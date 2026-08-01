@@ -2,10 +2,60 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "./lib/LanguageContext";
 
+const medicalBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: "YooshMD",
+  url: "https://www.yooshmd.com",
+  telephone: "+1-909-293-8095",
+  email: "admin@yooshmd.com",
+  priceRange: "$149-$349",
+  medicalSpecialty: "Obesity Medicine",
+  areaServed: [
+    { "@type": "State", name: "California" },
+    { "@type": "State", name: "Nevada" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/yooshmd",
+    "https://www.zocdoc.com/doctor/darius-roohani-md-720799",
+  ],
+  employee: {
+    "@type": "Physician",
+    name: "Darius Roohani, M.D.",
+    medicalSpecialty: ["Internal Medicine", "Obesity Medicine"],
+    alumniOf: [
+      {
+        "@type": "CollegeOrUniversity",
+        name: "University of Nevada, Reno School of Medicine",
+      },
+      { "@type": "CollegeOrUniversity", name: "Cedars-Sinai" },
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Board Certification",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "American Board of Internal Medicine",
+        },
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Board Certification",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "American Board of Obesity Medicine",
+        },
+      },
+    ],
+  },
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yooshmd.com"),
   title: "YooshMD — Medical Weight Loss | Physician-Guided Program",
   description:
-    "A physician-guided weight loss program built around a clear exit strategy — not indefinite medication. 100% online. CA & NV. Book your free consultation today.",
+    "Physician-guided weight loss with a real exit strategy — not indefinite medication. 100% online in CA & NV. Book a free consultation.",
   keywords: [
     "medical weight loss",
     "physician weight loss",
@@ -13,6 +63,9 @@ export const metadata: Metadata = {
     "weight loss program California",
     "board certified obesity medicine",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "YooshMD — Medical Weight Loss",
     description:
@@ -30,6 +83,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessJsonLd) }}
+        />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

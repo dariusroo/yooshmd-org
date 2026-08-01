@@ -113,7 +113,7 @@ export const translations = {
             "You start with a free video consultation with Dr. Roohani. If it's a good fit, you sign up for a monthly plan and complete baseline bloodwork. Medication is shipped to your door, and Dr. Roohani manages your care from there — reachable by phone for urgent questions and through the patient portal for everything else.",
         },
         {
-          question: "Is medication guaranteed?",
+          question: "Who qualifies for treatment?",
           answer:
             "Most adults age 18 and older who are struggling with overweight or obesity qualify. Final eligibility is determined during your medical evaluation to ensure treatment is safe and appropriate for you.",
         },
@@ -411,7 +411,7 @@ export const translations = {
             "Comienza con una consulta gratuita por video con el Dr. Roohani. Si es una buena opción para usted, se inscribe en un plan mensual y completa análisis de sangre iniciales. El medicamento se envía a su domicilio, y el Dr. Roohani gestiona su atención a partir de ahí — disponible por teléfono para preguntas urgentes y a través del portal del paciente para todo lo demás.",
         },
         {
-          question: "¿El medicamento está garantizado?",
+          question: "¿Quién califica para el tratamiento?",
           answer:
             "La mayoría de los adultos de 18 años o más que luchan contra el sobrepeso u obesidad califican. La elegibilidad final se determina durante su evaluación médica para asegurar que el tratamiento sea seguro y apropiado para usted.",
         },

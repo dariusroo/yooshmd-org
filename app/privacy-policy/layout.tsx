@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy | YooshMD",
   description:
     "How YooshMD collects, uses, discloses, and protects information collected through our website and related services.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyLayout({

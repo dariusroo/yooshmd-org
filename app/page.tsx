@@ -167,7 +167,7 @@ function Hero() {
               <div className="block lg:hidden mb-4">
                 <Image
                   src="/hero-art.avif"
-                  alt=""
+                  alt="Illustration representing physician-guided weight loss care"
                   width={520}
                   height={620}
                   className="w-full h-auto rounded-3xl object-cover"
@@ -249,7 +249,7 @@ function Hero() {
           <div className="hidden lg:block mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[460px] xl:w-[520px]">
             <Image
               src="/hero-art.avif"
-              alt=""
+              alt="Illustration representing physician-guided weight loss care"
               width={520}
               height={620}
               className="w-full h-auto rounded-3xl object-cover"
@@ -333,7 +333,7 @@ function WhySection() {
           <div className="hidden lg:block mt-10 lg:mt-0 flex-shrink-0 w-full lg:w-[460px] xl:w-[520px]">
             <Image
               src="/subhero-image.png"
-              alt=""
+              alt="YooshMD telehealth weight loss consultation"
               width={1254}
               height={1254}
               className="w-full h-auto rounded-3xl object-cover"
@@ -623,12 +623,29 @@ function FAQSection() {
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section
       id="faq"
       className="scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28"
       style={{ backgroundColor: "var(--green-light)" }}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <FadeIn className="max-w-2xl mb-12">
           <SectionLabel>{t.faq.eyebrow}</SectionLabel>
@@ -669,11 +686,19 @@ function FAQSection() {
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </button>
-                {isOpen && (
-                  <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
-                    {withLinks(faq.answer, faqAnswerLinks)}
-                  </p>
-                )}
+                {/* Answer stays in the DOM at all times — grid-rows animates
+                    0fr -> 1fr instead of conditional mounting, so crawlers
+                    that don't execute click events still see the full text. */}
+                <div
+                  className="grid transition-all duration-300 ease-out"
+                  style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+                >
+                  <div className="overflow-hidden">
+                    <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                      {withLinks(faq.answer, faqAnswerLinks)}
+                    </p>
+                  </div>
+                </div>
               </div>
             );
           })}
@@ -738,8 +763,18 @@ function Pricing() {
   const { t } = useLanguage();
 
   const planMeta = [
-    { price: "$149", highlight: false, icon: "/white-coat-2.png" },
-    { price: "$349", highlight: true, icon: "/green-coat-vial.png" },
+    {
+      price: "$149",
+      highlight: false,
+      icon: "/white-coat-2.png",
+      iconAlt: "Physician white coat icon representing physician oversight plan",
+    },
+    {
+      price: "$349",
+      highlight: true,
+      icon: "/green-coat-vial.png",
+      iconAlt: "Medication vial icon representing the Comprehensive Program",
+    },
   ];
   const plans = t.pricing.plans.map((plan, i) => ({ ...plan, ...planMeta[i] }));
 
@@ -788,7 +823,7 @@ function Pricing() {
                 </p>
                 <Image
                   src={plan.icon}
-                  alt=""
+                  alt={plan.iconAlt}
                   width={40}
                   height={40}
                   className="w-10 h-10 object-contain flex-shrink-0"
