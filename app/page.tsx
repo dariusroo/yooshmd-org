@@ -1083,12 +1083,12 @@ function withLinks(
 }
 
 function withDagger(text: string): React.ReactNode {
-  const parts = text.split("✝");
+  const parts = text.split("†");
   if (parts.length === 1) return text;
   return parts.map((part, i) => (
     <span key={i}>
       {part}
-      {i < parts.length - 1 && <sup>✝</sup>}
+      {i < parts.length - 1 && <sup>†</sup>}
     </span>
   ));
 }

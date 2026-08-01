@@ -34,14 +34,14 @@ export const translations = {
     trustBar: [
       {
         value: "GLP-1 Available",
-        label: "Semaglutide and Tirzepatide✝",
+        label: "Semaglutide and Tirzepatide†",
         sub: "Oral options available",
       },
       { value: "100% Virtual", label: "Available in CA & NV", sub: "Telehealth" },
       { value: "Transparent", label: "Flat-rate pricing", sub: "No hidden fees" },
     ],
     trustBarDisclaimer:
-      "✝Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
+      "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
     why: {
       eyebrow: "What Makes Us Different",
       heading:
@@ -161,7 +161,7 @@ export const translations = {
         },
         {
           name: "Comprehensive Program",
-          tagline: "Semaglutide or tirzepatide✝ included, every dose.",
+          tagline: "Semaglutide or tirzepatide† included, every dose.",
         },
       ],
       includeHeading: "Both plans include:",
@@ -181,24 +181,24 @@ export const translations = {
       initialConsultNote: "No ongoing charges until you decide to continue.",
       initialConsultCta: "Book Free Visit",
       footnote2:
-        "✝Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
+        "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
     },
     medications: {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide and tirzepatide✝ are included with the Comprehensive Program. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
+        "Semaglutide and tirzepatide† are included with the Comprehensive Program. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
       options: [
         {
           title: "Semaglutide",
           descriptor:
-            "GLP-1 receptor agonist that enhances satiety, delays gastric emptying, and improves glycemic control through glucose-dependent insulin secretion.✝",
+            "GLP-1 receptor agonist that enhances satiety, delays gastric emptying, and improves glycemic control through glucose-dependent insulin secretion.†",
           body: "All doses, prepared by an accredited 503A pharmacy. Included with the Comprehensive Program.",
         },
         {
           title: "Tirzepatide",
           descriptor:
-            "Dual GIP and GLP-1 receptor agonist, enhances satiety, delays gastric emptying, and improves insulin sensitivity.✝",
+            "Dual GIP and GLP-1 receptor agonist, enhances satiety, delays gastric emptying, and improves insulin sensitivity.†",
           body: "All doses, prepared by an accredited 503A pharmacy. Included with the Comprehensive Program.",
         },
         {
@@ -208,7 +208,7 @@ export const translations = {
         },
       ],
       footnote:
-        "✝Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
+        "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
     },
     toc: [
       { href: "#why", label: "Why YooshMD" },
@@ -332,14 +332,14 @@ export const translations = {
     trustBar: [
       {
         value: "GLP-1 Disponible",
-        label: "Semaglutida y Tirzepatida✝",
+        label: "Semaglutida y Tirzepatida†",
         sub: "Opciones orales disponibles",
       },
       { value: "100% Virtual", label: "Disponible en CA y NV", sub: "Telesalud" },
       { value: "Transparente", label: "Precio fijo", sub: "Sin cargos ocultos" },
     ],
     trustBarDisclaimer:
-      "✝Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
+      "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
     why: {
       eyebrow: "Qué Nos Hace Diferentes",
       heading:
@@ -459,7 +459,7 @@ export const translations = {
         },
         {
           name: "Programa Integral",
-          tagline: "Semaglutida o tirzepatida✝ incluida, cada dosis.",
+          tagline: "Semaglutida o tirzepatida† incluida, cada dosis.",
         },
       ],
       includeHeading: "Ambos planes incluyen:",
@@ -480,24 +480,24 @@ export const translations = {
       initialConsultNote: "Sin cargos continuos hasta que decida continuar.",
       initialConsultCta: "Reserve su Visita Gratis",
       footnote2:
-        "✝Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
+        "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
     },
     medications: {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "La semaglutida y la tirzepatida✝ están incluidas con el Programa Integral. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
+        "La semaglutida y la tirzepatida† están incluidas con el Programa Integral. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
       options: [
         {
           title: "Semaglutida",
           descriptor:
-            "Agonista del receptor GLP-1 que aumenta la saciedad, retrasa el vaciado gástrico y mejora el control glucémico mediante la secreción de insulina dependiente de glucosa.✝",
+            "Agonista del receptor GLP-1 que aumenta la saciedad, retrasa el vaciado gástrico y mejora el control glucémico mediante la secreción de insulina dependiente de glucosa.†",
           body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa Integral.",
         },
         {
           title: "Tirzepatida",
           descriptor:
-            "Agonista dual del receptor GIP y GLP-1, aumenta la saciedad, retrasa el vaciado gástrico y mejora la sensibilidad a la insulina.✝",
+            "Agonista dual del receptor GIP y GLP-1, aumenta la saciedad, retrasa el vaciado gástrico y mejora la sensibilidad a la insulina.†",
           body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa Integral.",
         },
         {
@@ -507,7 +507,7 @@ export const translations = {
         },
       ],
       footnote:
-        "✝Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
+        "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
     },
     toc: [
       { href: "#why", label: "Por Qué YooshMD" },
