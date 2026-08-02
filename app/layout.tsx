@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { LanguageProvider } from "./lib/LanguageContext";
 
@@ -89,6 +90,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessJsonLd) }}
         />
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-8LGK2LG2JF" />
     </html>
