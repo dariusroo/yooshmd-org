@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { LanguageProvider } from "./lib/LanguageContext";
 
@@ -89,6 +90,7 @@ export default function RootLayout({
         />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
+      <GoogleAnalytics gaId="G-8LGK2LG2JF" />
     </html>
   );
 }
