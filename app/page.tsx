@@ -21,7 +21,6 @@ export default function Home() {
         <MedicationOptions />
         <Reviews />
         <FAQSection />
-        <InstagramSection />
       </main>
       <Footer />
     </div>
@@ -703,55 +702,6 @@ function FAQSection() {
               </div>
             );
           })}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ─── Instagram ───────────────────────────────────────────────── */
-
-function InstagramSection() {
-  const posts = [
-    "https://www.instagram.com/p/DZmBy1mhDpN/",
-    "https://www.instagram.com/p/DXzs_cvhe7z/",
-    "https://www.instagram.com/p/DZX9XMxBbYq/",
-  ];
-
-  return (
-    <section id="instagram" className="bg-white scroll-mt-[102px] pt-12 sm:pt-16 pb-20 sm:pb-28">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <FadeIn className="max-w-2xl mb-12">
-          <SectionLabel>
-            <a
-              href="https://www.instagram.com/yooshmd"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-80 transition-opacity"
-            >
-              @yooshmd
-            </a>
-          </SectionLabel>
-        </FadeIn>
-
-        <div className="grid sm:grid-cols-3 gap-6">
-          {posts.map((url) => (
-            <div
-              key={url}
-              className="overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 mx-auto w-full max-w-[350px] transition-transform duration-300 hover:scale-[1.03]"
-            >
-              <iframe
-                src={`${url}embed`}
-                title="Instagram post"
-                width="100%"
-                height="600"
-                frameBorder="0"
-                scrolling="no"
-                loading="lazy"
-                className="block w-full"
-              />
-            </div>
-          ))}
         </div>
       </div>
     </section>

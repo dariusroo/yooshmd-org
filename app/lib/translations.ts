@@ -217,7 +217,6 @@ export const translations = {
       { href: "#medications", label: "Medications" },
       { href: "#reviews", label: "About" },
       { href: "#faq", label: "FAQ" },
-      { href: "#instagram", label: "Videos" },
     ],
     footer: {
       tagline: "Choose a doctor, not a faceless brand.",
@@ -516,7 +515,6 @@ export const translations = {
       { href: "#medications", label: "Medicamentos" },
       { href: "#reviews", label: "Acerca de" },
       { href: "#faq", label: "Preguntas Frecuentes" },
-      { href: "#instagram", label: "Videos" },
     ],
     footer: {
       tagline: "Elige un doctor, no una marca sin rostro.",
