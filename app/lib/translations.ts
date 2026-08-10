@@ -173,7 +173,7 @@ export const translations = {
         {
           name: "Physician Oversight",
           tagline:
-            "Wegovy, Zepbound, or Ozempic, oral GLP-1 options (Foundayo, Wegovy), or non-GLP-1 treatment available. Medication cost not included.",
+            "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options (Foundayo®, Wegovy®), or non-GLP-1 treatment available. Medication cost not included.",
         },
       ],
       includeHeading: "All plans include:",
@@ -484,7 +484,7 @@ export const translations = {
         {
           name: "Supervisión Médica",
           tagline:
-            "Wegovy, Zepbound, u Ozempic, opciones orales de GLP-1 (Foundayo, Wegovy), o tratamiento no GLP-1 disponible. Costo de medicamento no incluido.",
+            "Wegovy®, Zepbound®, u Ozempic®, opciones orales de GLP-1 (Foundayo®, Wegovy®), o tratamiento no GLP-1 disponible. Costo de medicamento no incluido.",
         },
       ],
       includeHeading: "Todos los planes incluyen:",
