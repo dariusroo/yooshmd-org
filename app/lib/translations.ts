@@ -25,7 +25,7 @@ export const translations = {
       ctaBook: "Book Free Consultation",
       ctaCall: "Call (909) 293-8095",
       checklist: [
-        "No ongoing charges until you decide",
+        "No charges until you decide",
         "Telehealth services available in California, Nevada, and Florida",
       ],
       doctorName: "Darius Roohani, MD",
@@ -328,7 +328,7 @@ export const translations = {
       ctaBook: "Reserve su Consulta Gratis",
       ctaCall: "Llame al (909) 293-8095",
       checklist: [
-        "Sin cargos continuos hasta que usted decida",
+        "Sin cargos hasta que usted decida",
         "Servicios de telesalud disponibles en California, Nevada y Florida",
       ],
       doctorName: "Darius Roohani, MD",
