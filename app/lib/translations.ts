@@ -151,7 +151,7 @@ export const translations = {
       ],
     },
     pricing: {
-      eyebrow: "Simple, Transparent Pricing",
+      eyebrow: "Transparent Pricing",
       heading: "Three plans. Transparent pricing. No surprises.",
       subhead:
         "Every plan includes direct access to Dr. Roohani. Choose the GLP-1 program that's right for you, or physician oversight alone — at your free consultation, he'll help you decide which fits.",
@@ -454,7 +454,7 @@ export const translations = {
       ],
     },
     pricing: {
-      eyebrow: "Precios Simples y Transparentes",
+      eyebrow: "Precios Transparentes",
       heading: "Tres planes. Precios transparentes. Sin sorpresas.",
       subhead:
         "Cada plan incluye acceso directo al Dr. Roohani. Elija el programa GLP-1 adecuado para usted, o solo supervisión médica — en su consulta gratuita, él le ayudará a decidir cuál es el más adecuado.",
