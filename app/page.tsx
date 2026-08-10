@@ -184,7 +184,9 @@ function Hero() {
               </h1>
 
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
-                {t.hero.subhead}
+                {t.hero.subheadPre}
+                <span className="underline">{t.hero.subheadEmph}</span>
+                {t.hero.subheadPost}
               </p>
             </FadeIn>
 
