@@ -768,7 +768,6 @@ function Pricing() {
       id: "oversight" as const,
       price: "$199",
       priceSuffix: "/visit",
-      priceNote: "Billed quarterly",
       cardStyle: undefined as { backgroundColor: string; borderColor: string } | undefined,
       titleClass: "text-gray-900",
       priceClass: "text-gray-900",
@@ -828,9 +827,6 @@ function Pricing() {
                   {displayPrice}
                   <span className="text-base font-medium">{plan.priceSuffix}</span>
                 </p>
-                {plan.priceNote && (
-                  <p className={`text-xs font-medium mt-1 ${plan.subClass}`}>{plan.priceNote}</p>
-                )}
                 {doses && (
                   <div className="flex flex-wrap gap-1.5 mt-3">
                     {doses.map((dose, i) => {
