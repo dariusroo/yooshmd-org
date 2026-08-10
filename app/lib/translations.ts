@@ -132,7 +132,7 @@ export const translations = {
         {
           question: "Do you accept insurance?",
           answer:
-            "We are currently self-pay, but we can generate a superbill that you can submit to your insurance company for reimbursement.",
+            "We are currently self-pay only. This allows us to give you uninterrupted and personalized care.",
         },
         {
           question: "Are there any recurring charges?",
@@ -441,7 +441,7 @@ export const translations = {
         {
           question: "¿Aceptan seguro médico?",
           answer:
-            "Actualmente somos de pago directo (self-pay), pero podemos generar un superbill que puede enviar a su compañía de seguros para reembolso.",
+            "Actualmente somos de pago directo (self-pay) únicamente. Esto nos permite brindarle una atención personalizada y sin interrupciones.",
         },
         {
           question: "¿Hay cargos recurrentes?",
