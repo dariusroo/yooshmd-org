@@ -172,7 +172,7 @@ export const translations = {
       ],
       includeHeading: "All plans include:",
       included: [
-        "Physician check-ins",
+        "Physician supervision with check-ins and video visits",
         "Unlimited direct messaging with the doctor",
         "Comprehensive lab orders and review",
         "On-call doctor for urgent matters",
@@ -475,7 +475,7 @@ export const translations = {
       ],
       includeHeading: "Todos los planes incluyen:",
       included: [
-        "Consultas médicas",
+        "Supervisión médica con consultas de seguimiento y visitas por video",
         "Mensajería directa ilimitada con el doctor",
         "Órdenes y revisión de laboratorio integral",
         "Doctor de guardia para asuntos urgentes",
