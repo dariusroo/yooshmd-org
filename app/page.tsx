@@ -710,33 +710,60 @@ function FAQSection() {
 
 /* ─── Pricing ─────────────────────────────────────────────────── */
 
+const DOSE_TABLE = {
+  semaglutide: [
+    { label: "0.5 mg", price: 220 },
+    { label: "1.0 mg", price: 240 },
+    { label: "1.5 mg", price: 260 },
+    { label: "2 mg", price: 280 },
+    { label: "2.5 mg", price: 290 },
+  ],
+  tirzepatide: [
+    { label: "2.5 mg", price: 260 },
+    { label: "5 mg", price: 300 },
+    { label: "7.5 mg", price: 330 },
+    { label: "10 mg", price: 360 },
+    { label: "12.5 mg", price: 380 },
+    { label: "15 mg", price: 400 },
+  ],
+} as const;
+
+type DosedPlanId = keyof typeof DOSE_TABLE;
+
 function Pricing() {
   const { t } = useLanguage();
+  const [doseIndex, setDoseIndex] = useState<Record<DosedPlanId, number>>({
+    semaglutide: 0,
+    tirzepatide: 0,
+  });
 
   const planMeta = [
     {
-      price: "$220",
-      pricePrefix: "From ",
+      id: "semaglutide" as const,
       priceSuffix: "/month",
       cardStyle: { backgroundColor: "#F7E9EC", borderColor: "#F0D6DC" },
       titleClass: "text-gray-900",
       priceClass: "text-gray-900",
       subClass: "text-gray-600",
+      doseActive: "bg-gray-900 text-white border-gray-900",
+      doseInactive: "bg-white text-gray-700 border-[#F0D6DC] hover:border-gray-400",
       icon: "/pinkvial.png",
       iconAlt: "Medication vial icon representing the Semaglutide Program",
     },
     {
-      price: "$250",
-      pricePrefix: "From ",
+      id: "tirzepatide" as const,
       priceSuffix: "/month",
       cardStyle: { backgroundColor: "var(--green-deep)", borderColor: "var(--green-deep)" },
       titleClass: "text-white",
       priceClass: "text-white",
       subClass: "text-white/70",
+      doseActive: "bg-white text-gray-900 border-white",
+      doseInactive: "bg-transparent text-white/80 border-white/30 hover:border-white/60",
       icon: "/greenvial.png",
       iconAlt: "Medication vial icon representing the Tirzepatide Program",
     },
     {
+      id: "oversight" as const,
       price: "$199",
       priceSuffix: "/visit",
       priceNote: "Billed quarterly",
@@ -744,6 +771,8 @@ function Pricing() {
       titleClass: "text-gray-900",
       priceClass: "text-gray-900",
       subClass: "text-gray-500",
+      doseActive: "",
+      doseInactive: "",
       icon: "/white-coat-2.png",
       iconAlt: "Physician white coat icon representing physician oversight plan",
     },
@@ -768,39 +797,66 @@ function Pricing() {
 
         {/* Plan cards */}
         <div className="grid md:grid-cols-3 gap-5 mb-10">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`rounded-2xl p-7 border transition-transform duration-300 hover:scale-[1.03] ${
-                plan.cardStyle ? "border-2" : "bg-gray-50 border-gray-100"
-              }`}
-              style={plan.cardStyle}
-            >
-              <div className="flex items-start justify-between gap-3">
-                <p className={`text-lg font-bold leading-snug ${plan.titleClass}`}>
-                  {plan.name}
+          {plans.map((plan) => {
+            const doses = plan.id === "oversight" ? null : DOSE_TABLE[plan.id];
+            const selectedDose = doses ? doses[doseIndex[plan.id as DosedPlanId]] : null;
+            const displayPrice = selectedDose ? `$${selectedDose.price}` : plan.price;
+
+            return (
+              <div
+                key={plan.name}
+                className={`rounded-2xl p-7 border transition-transform duration-300 hover:scale-[1.03] ${
+                  plan.cardStyle ? "border-2" : "bg-gray-50 border-gray-100"
+                }`}
+                style={plan.cardStyle}
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <p className={`text-lg font-bold leading-snug ${plan.titleClass}`}>
+                    {plan.name}
+                  </p>
+                  <Image
+                    src={plan.icon}
+                    alt={plan.iconAlt}
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain flex-shrink-0"
+                  />
+                </div>
+                <p className={`text-3xl font-bold mt-2 ${plan.priceClass}`}>
+                  {displayPrice}
+                  <span className="text-base font-medium">{plan.priceSuffix}</span>
                 </p>
-                <Image
-                  src={plan.icon}
-                  alt={plan.iconAlt}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10 object-contain flex-shrink-0"
-                />
+                {plan.priceNote && (
+                  <p className={`text-xs font-medium mt-1 ${plan.subClass}`}>{plan.priceNote}</p>
+                )}
+                {doses && (
+                  <div className="flex flex-wrap gap-1.5 mt-3">
+                    {doses.map((dose, i) => {
+                      const active = i === doseIndex[plan.id as DosedPlanId];
+                      return (
+                        <button
+                          key={dose.label}
+                          type="button"
+                          onClick={() =>
+                            setDoseIndex((prev) => ({ ...prev, [plan.id as DosedPlanId]: i }))
+                          }
+                          aria-pressed={active}
+                          className={`px-2.5 py-1 rounded-full text-xs font-semibold border transition-colors ${
+                            active ? plan.doseActive : plan.doseInactive
+                          }`}
+                        >
+                          {dose.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+                <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
+                  {withDagger(plan.tagline)}
+                </p>
               </div>
-              <p className={`text-3xl font-bold mt-2 ${plan.priceClass}`}>
-                {plan.pricePrefix}
-                {plan.price}
-                <span className="text-base font-medium">{plan.priceSuffix}</span>
-              </p>
-              {plan.priceNote && (
-                <p className={`text-xs font-medium mt-1 ${plan.subClass}`}>{plan.priceNote}</p>
-              )}
-              <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
-                {withDagger(plan.tagline)}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* What's included */}
