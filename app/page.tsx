@@ -996,6 +996,9 @@ function MedicationOptions() {
         <p className="text-xs text-gray-400 mt-6">
           {withDagger(t.medications.footnote)}
         </p>
+        <p className="text-xs text-gray-400 mt-1">
+          {t.medications.trademarkFootnote}
+        </p>
       </div>
     </section>
   );

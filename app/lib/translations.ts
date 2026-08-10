@@ -221,6 +221,8 @@ export const translations = {
       ],
       footnote:
         "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
+      trademarkFootnote:
+        "Wegovy® and Ozempic® are registered trademarks of Novo Nordisk. Zepbound® is a registered trademark of Eli Lilly and Company. YooshMD is not affiliated with or endorsed by these companies.",
     },
     toc: [
       { href: "#why", label: "Why YooshMD" },
@@ -531,6 +533,8 @@ export const translations = {
       ],
       footnote:
         "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
+      trademarkFootnote:
+        "Wegovy® y Ozempic® son marcas registradas de Novo Nordisk. Zepbound® es una marca registrada de Eli Lilly and Company. YooshMD no está afiliado ni respaldado por estas empresas.",
     },
     toc: [
       { href: "#why", label: "Por Qué YooshMD" },
