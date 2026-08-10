@@ -16,6 +16,7 @@ const medicalBusinessJsonLd = {
   areaServed: [
     { "@type": "State", name: "California" },
     { "@type": "State", name: "Nevada" },
+    { "@type": "State", name: "Florida" },
   ],
   sameAs: [
     "https://www.instagram.com/yooshmd",
@@ -57,12 +58,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.yooshmd.com"),
   title: "YooshMD — Medical Weight Loss | Physician-Guided Program",
   description:
-    "Physician-guided weight loss with a real exit strategy — not indefinite medication. 100% online in CA & NV. Book a free consultation.",
+    "Physician-guided weight loss with a real exit strategy — not indefinite medication. 100% online in CA, NV & FL. Book a free consultation.",
   keywords: [
     "medical weight loss",
     "physician weight loss",
     "telehealth weight loss",
     "weight loss program California",
+    "weight loss program Florida",
     "board certified obesity medicine",
   ],
   alternates: {

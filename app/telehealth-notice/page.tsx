@@ -78,7 +78,7 @@ const sections: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "Your health information is protected in accordance with applicable federal and California and Nevada privacy laws, including the Health Insurance Portability and Accountability Act (HIPAA).",
+        text: "Your health information is protected in accordance with applicable federal and California, Nevada, and Florida privacy laws, including the Health Insurance Portability and Accountability Act (HIPAA).",
       },
       {
         type: "p",
@@ -109,15 +109,19 @@ const sections: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "Telehealth services are provided by healthcare professionals licensed in the State of California and/or Nevada, as applicable.",
+        text: "Telehealth services are provided by healthcare professionals licensed in the State of California and/or Nevada, or registered as an out-of-state telehealth provider in the State of Florida, as applicable.",
       },
       {
         type: "p",
-        text: "By receiving telehealth services, you represent that you are physically located in California or Nevada at the time of the telehealth encounter.",
+        text: "By receiving telehealth services, you represent that you are physically located in California, Nevada, or Florida at the time of the telehealth encounter.",
       },
       {
         type: "p",
         text: "Healthcare services will be provided in accordance with the laws and regulations of the state in which you are located at the time of care.",
+      },
+      {
+        type: "p",
+        text: "Patients located in Florida are treated under Florida's out-of-state telehealth provider registration (Fla. Stat. § 456.47). Under this registration, controlled substances may not be prescribed to patients located in Florida via telehealth.",
       },
     ],
   },

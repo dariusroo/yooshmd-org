@@ -45,7 +45,7 @@ const sections: Section[] = [
       },
       {
         type: "p",
-        text: "YooshMD provides medical services only to individuals who are physically located in the State of California or Nevada at the time of the telehealth encounter. By using the Services, you represent that you are located in California or Nevada, as applicable, during your consultation.",
+        text: "YooshMD provides medical services only to individuals who are physically located in the State of California, Nevada, or Florida at the time of the telehealth encounter. By using the Services, you represent that you are located in California, Nevada, or Florida, as applicable, during your consultation.",
       },
     ],
   },
@@ -69,7 +69,7 @@ const sections: Section[] = [
       },
       {
         type: "p",
-        text: "Your informed consent for telehealth services will be obtained and documented prior to your first clinical encounter, as required by applicable state law, including California and Nevada regulations.",
+        text: "Your informed consent for telehealth services will be obtained and documented prior to your first clinical encounter, as required by applicable state law, including California, Nevada, and Florida regulations.",
       },
     ],
   },
@@ -199,7 +199,7 @@ const sections: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "These Terms are governed by and construed in accordance with the laws of the State of California, except to the extent that the laws of Nevada apply to services provided to patients located in Nevada.",
+        text: "These Terms are governed by and construed in accordance with the laws of the State of California, except to the extent that the laws of Nevada apply to services provided to patients located in Nevada, or the laws of Florida apply to services provided to patients located in Florida.",
       },
     ],
   },
@@ -217,6 +217,14 @@ const sections: Section[] = [
       {
         type: "p",
         text: "For Nevada: Nevada State Board of Medical Examiners, www.medboard.nv.gov, (775) 688-2559.",
+      },
+      {
+        type: "p",
+        text: "Dr. Roohani is registered as an out-of-state telehealth provider with the Florida Board of Medicine under Florida Statute § 456.47. This registration does not constitute a Florida medical license and does not authorize the prescribing of controlled substances to patients located in Florida.",
+      },
+      {
+        type: "p",
+        text: "For Florida: Florida Board of Medicine, flboardofmedicine.gov, (850) 245-4131.",
       },
     ],
   },

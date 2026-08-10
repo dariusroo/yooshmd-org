@@ -24,7 +24,7 @@ export const translations = {
       ctaCall: "Call (909) 293-8095",
       checklist: [
         "No ongoing charges until you decide",
-        "Telehealth services available in California and Nevada",
+        "Telehealth services available in California, Nevada, and Florida",
       ],
       doctorName: "Darius Roohani, MD",
       doctorCred:
@@ -37,7 +37,7 @@ export const translations = {
         label: "Semaglutide and Tirzepatide†",
         sub: "Oral options available",
       },
-      { value: "100% Virtual", label: "Available in CA & NV", sub: "Telehealth" },
+      { value: "100% Virtual", label: "Available in CA, NV & FL", sub: "Telehealth" },
       { value: "Transparent", label: "Flat-rate pricing", sub: "No hidden fees" },
     ],
     trustBarDisclaimer:
@@ -221,7 +221,7 @@ export const translations = {
     footer: {
       tagline: "Choose a doctor, not a faceless brand.",
       description:
-        "Physician-guided medical weight loss. 100% online. Serving California and Nevada.",
+        "Physician-guided medical weight loss. 100% online. Serving California, Nevada, and Florida.",
       links: {
         privacy: "Privacy Policy",
         disclaimers: "Disclosures & Disclaimers",
@@ -277,7 +277,7 @@ export const translations = {
         },
         {
           heading: "Telehealth Services",
-          body: "YooshMD provides telehealth services to patients located in California and Nevada at the time of their visit. Patients are responsible for ensuring they are physically located in a state where YooshMD is licensed to practice at the time of each appointment.",
+          body: "YooshMD provides telehealth services to patients located in California, Nevada, and Florida at the time of their visit. Patients are responsible for ensuring they are physically located in a state where YooshMD is licensed or registered to provide telehealth services at the time of each appointment.",
         },
         {
           heading: "Emergency Disclaimer",
@@ -321,7 +321,7 @@ export const translations = {
       ctaCall: "Llame al (909) 293-8095",
       checklist: [
         "Sin cargos continuos hasta que usted decida",
-        "Servicios de telesalud disponibles en California y Nevada",
+        "Servicios de telesalud disponibles en California, Nevada y Florida",
       ],
       doctorName: "Darius Roohani, MD",
       doctorCred:
@@ -334,7 +334,7 @@ export const translations = {
         label: "Semaglutida y Tirzepatida†",
         sub: "Opciones orales disponibles",
       },
-      { value: "100% Virtual", label: "Disponible en CA y NV", sub: "Telesalud" },
+      { value: "100% Virtual", label: "Disponible en CA, NV y FL", sub: "Telesalud" },
       { value: "Transparente", label: "Precio fijo", sub: "Sin cargos ocultos" },
     ],
     trustBarDisclaimer:
@@ -519,7 +519,7 @@ export const translations = {
     footer: {
       tagline: "Elige un doctor, no una marca sin rostro.",
       description:
-        "Pérdida de peso médica dirigida por un doctor. 100% en línea. Sirviendo California y Nevada.",
+        "Pérdida de peso médica dirigida por un doctor. 100% en línea. Sirviendo California, Nevada y Florida.",
       links: {
         privacy: "Política de Privacidad",
         disclaimers: "Divulgaciones y Descargos de Responsabilidad",
@@ -575,7 +575,7 @@ export const translations = {
         },
         {
           heading: "Servicios de Telesalud",
-          body: "YooshMD proporciona servicios de telesalud a pacientes ubicados en California y Nevada al momento de su visita. Los pacientes son responsables de asegurarse de que se encuentran físicamente en un estado donde YooshMD tiene licencia para ejercer al momento de cada cita.",
+          body: "YooshMD proporciona servicios de telesalud a pacientes ubicados en California, Nevada y Florida al momento de su visita. Los pacientes son responsables de asegurarse de que se encuentran físicamente en un estado donde YooshMD tiene licencia o registro para proporcionar servicios de telesalud al momento de cada cita.",
         },
         {
           heading: "Aviso de Emergencia",
