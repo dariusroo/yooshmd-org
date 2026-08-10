@@ -199,7 +199,7 @@ export const translations = {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide or tirzepatide programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy, Zepbound, Ozempic), or non-GLP-1 options too.",
+        "Semaglutide or tirzepatide programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy®, Zepbound®, Ozempic®), or non-GLP-1 options too.",
       options: [
         {
           title: "Semaglutide",
@@ -509,7 +509,7 @@ export const translations = {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "Programas de semaglutida o tirzepatida disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy, Zepbound, Ozempic), o no GLP-1 también.",
+        "Programas de semaglutida o tirzepatida disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy®, Zepbound®, Ozempic®), o no GLP-1 también.",
       options: [
         {
           title: "Semaglutida",
