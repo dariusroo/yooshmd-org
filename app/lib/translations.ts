@@ -107,7 +107,7 @@ export const translations = {
         {
           question: "What is YooshMD?",
           answer:
-            "YooshMD was built on a simple premise: one physician, personally managing your care. We prioritize direct access, medical expertise, and transparent pricing. No call center, no rotating providers, no hidden fees. Just physician-led care.",
+            "YooshMD was built on a simple premise: one physician, personally managing your care. We prioritize direct access, specialist expertise, and transparent pricing. No call center, no rotating providers, no hidden fees. Just physician-led care.",
         },
         {
           question: "How do I get started with YooshMD?",
@@ -410,7 +410,7 @@ export const translations = {
         {
           question: "¿Qué es YooshMD?",
           answer:
-            "YooshMD se creó sobre una premisa simple: un solo médico, administrando personalmente su atención. Priorizamos el acceso directo, la experiencia médica y precios transparentes. Sin centro de llamadas, sin proveedores rotativos, sin cargos ocultos. Solo atención dirigida por un médico.",
+            "YooshMD se creó sobre una premisa simple: un solo médico, administrando personalmente su atención. Priorizamos el acceso directo, la experiencia especializada y precios transparentes. Sin centro de llamadas, sin proveedores rotativos, sin cargos ocultos. Solo atención dirigida por un médico.",
         },
         {
           question: "¿Cómo empiezo con YooshMD?",
