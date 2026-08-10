@@ -135,9 +135,9 @@ export const translations = {
             "We are currently self-pay, but we can generate a superbill that you can submit to your insurance company for reimbursement.",
         },
         {
-          question: "What is your cancellation policy?",
+          question: "Are there any recurring charges?",
           answer:
-            "You can cancel your membership at any time with 30 days' notice. We require this so we can complete any outstanding care coordination and ensure a clean handoff. There are no long-term contracts or cancellation fees. To cancel, contact us directly at admin@yooshmd.com or (909) 293-8095. Payments made are non-refundable.",
+            "No. You will receive a line-item invoice before treatment is rendered. Once the invoice is paid, your medication will be sent or prescribed and your labs will be ordered. If not, your slot will be released.",
         },
         {
           question: "Where is your medication sourced from?",
@@ -439,9 +439,9 @@ export const translations = {
             "Actualmente somos de pago directo (self-pay), pero podemos generar un superbill que puede enviar a su compañía de seguros para reembolso.",
         },
         {
-          question: "¿Cuál es su política de cancelación?",
+          question: "¿Hay cargos recurrentes?",
           answer:
-            "Puede cancelar su membresía en cualquier momento con 30 días de aviso previo. Requerimos esto para poder completar cualquier coordinación de atención pendiente y asegurar una transición ordenada. No hay contratos a largo plazo ni cargos por cancelación. Para cancelar, contáctenos directamente a admin@yooshmd.com o al (909) 293-8095. Los pagos realizados no son reembolsables.",
+            "No. Recibirá una factura detallada antes de que se administre el tratamiento. Una vez pagada la factura, su medicamento será enviado o recetado y se ordenarán sus análisis de laboratorio. Si no se paga, su cupo será liberado.",
         },
         {
           question: "¿De dónde proviene su medicamento?",
