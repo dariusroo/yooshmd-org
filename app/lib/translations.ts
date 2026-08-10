@@ -69,7 +69,7 @@ export const translations = {
         },
         {
           n: "02",
-          title: "Sign up for a plan",
+          title: "Choose a program",
           body: "Transparent pricing — monthly or per-visit. No hidden charges, no calculations, no waiting for approval.**",
         },
         {
@@ -372,7 +372,7 @@ export const translations = {
         },
         {
           n: "02",
-          title: "Inscríbase en un plan",
+          title: "Elija un programa",
           body: "Precios transparentes — mensual o por visita. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
         },
         {
