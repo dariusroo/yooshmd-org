@@ -193,7 +193,7 @@ export const translations = {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide† is included with the Semaglutide Program; tirzepatide† is included with the Tirzepatide Program. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
+        "Semaglutide or tirzepatide† programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
       options: [
         {
           title: "Semaglutide",
@@ -497,7 +497,7 @@ export const translations = {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "La semaglutida† está incluida con el Programa de Semaglutida; la tirzepatida† está incluida con el Programa de Tirzepatida. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
+        "Programas de semaglutida o tirzepatida† disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
       options: [
         {
           title: "Semaglutida",
