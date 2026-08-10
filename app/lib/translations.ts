@@ -154,7 +154,7 @@ export const translations = {
       eyebrow: "Transparent Pricing",
       heading: "Transparent pricing. Pay monthly or per visit. No surprises.",
       subhead:
-        "Every plan includes direct access to Dr. Roohani. Choose the GLP-1 program that's right for you, or physician oversight alone — at your free consultation, he'll help you decide which fits.",
+        "Every plan gives you direct access to Dr. Roohani. Choose a GLP-1 program or physician oversight alone — he'll help you decide what's right for you at your free consultation.",
       plans: [
         {
           name: "Semaglutide Program",
@@ -457,7 +457,7 @@ export const translations = {
       eyebrow: "Precios Transparentes",
       heading: "Precios transparentes. Pague mensual o por visita. Sin sorpresas.",
       subhead:
-        "Cada plan incluye acceso directo al Dr. Roohani. Elija el programa GLP-1 adecuado para usted, o solo supervisión médica — en su consulta gratuita, él le ayudará a decidir cuál es el más adecuado.",
+        "Cada plan le da acceso directo al Dr. Roohani. Elija entre un programa GLP-1 o solo supervisión médica — él le ayudará a decidir qué es lo más adecuado para usted en su consulta gratuita.",
       plans: [
         {
           name: "Programa de Semaglutida",
