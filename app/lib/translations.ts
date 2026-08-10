@@ -140,6 +140,11 @@ export const translations = {
             "No. You will receive a line-item invoice before treatment is rendered. Once the invoice is paid, your medication will be sent or prescribed and your labs will be ordered. If not, your slot will be released.",
         },
         {
+          question: "What is your refund policy?",
+          answer:
+            "Shipped medications are non-refundable. Visit fees are refundable if cancelled within 24 hours of appointment time.",
+        },
+        {
           question: "Where is your medication sourced from?",
           answer:
             "Compounded medications are sourced from Boudreaux's New Drug Store, a licensed 503A U.S. pharmacy based in Lake Charles, Louisiana, operating since 1923. Boudreaux's is inspected by the National Association of Boards of Pharmacy (NABP). Other medications are fulfilled either via Cost Plus Drugs, which delivers, or prescriptions are sent to a local pharmacy of your choice.",
@@ -442,6 +447,11 @@ export const translations = {
           question: "¿Hay cargos recurrentes?",
           answer:
             "No. Recibirá una factura detallada antes de que se administre el tratamiento. Una vez pagada la factura, su medicamento será enviado o recetado y se ordenarán sus análisis de laboratorio. Si no se paga, su cupo será liberado.",
+        },
+        {
+          question: "¿Cuál es su política de reembolso?",
+          answer:
+            "Los medicamentos enviados no son reembolsables. Las tarifas de visita son reembolsables si se cancela con 24 horas de anticipación a la hora de la cita.",
         },
         {
           question: "¿De dónde proviene su medicamento?",
