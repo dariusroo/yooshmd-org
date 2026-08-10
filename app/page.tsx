@@ -718,7 +718,10 @@ function Pricing() {
       price: "$220",
       pricePrefix: "From ",
       priceSuffix: "/month",
-      highlight: true,
+      cardStyle: { backgroundColor: "#F7E9EC", borderColor: "#F0D6DC" },
+      titleClass: "text-gray-900",
+      priceClass: "text-gray-900",
+      subClass: "text-gray-600",
       icon: "/pinkvial.png",
       iconAlt: "Medication vial icon representing the Semaglutide Program",
     },
@@ -726,7 +729,10 @@ function Pricing() {
       price: "$250",
       pricePrefix: "From ",
       priceSuffix: "/month",
-      highlight: true,
+      cardStyle: { backgroundColor: "var(--green-deep)", borderColor: "var(--green-deep)" },
+      titleClass: "text-white",
+      priceClass: "text-white",
+      subClass: "text-white/70",
       icon: "/greenvial.png",
       iconAlt: "Medication vial icon representing the Tirzepatide Program",
     },
@@ -734,7 +740,10 @@ function Pricing() {
       price: "$199",
       priceSuffix: "/visit",
       priceNote: "Billed quarterly",
-      highlight: false,
+      cardStyle: undefined as { backgroundColor: string; borderColor: string } | undefined,
+      titleClass: "text-gray-900",
+      priceClass: "text-gray-900",
+      subClass: "text-gray-500",
       icon: "/white-coat-2.png",
       iconAlt: "Physician white coat icon representing physician oversight plan",
     },
@@ -763,25 +772,12 @@ function Pricing() {
             <div
               key={plan.name}
               className={`rounded-2xl p-7 border transition-transform duration-300 hover:scale-[1.03] ${
-                plan.highlight
-                  ? "border-2 text-white"
-                  : "bg-gray-50 border-gray-100"
+                plan.cardStyle ? "border-2" : "bg-gray-50 border-gray-100"
               }`}
-              style={
-                plan.highlight
-                  ? {
-                      backgroundColor: "var(--green-deep)",
-                      borderColor: "var(--green-deep)",
-                    }
-                  : undefined
-              }
+              style={plan.cardStyle}
             >
               <div className="flex items-start justify-between gap-3">
-                <p
-                  className={`text-lg font-bold leading-snug ${
-                    plan.highlight ? "text-white" : "text-gray-900"
-                  }`}
-                >
+                <p className={`text-lg font-bold leading-snug ${plan.titleClass}`}>
                   {plan.name}
                 </p>
                 <Image
@@ -792,29 +788,15 @@ function Pricing() {
                   className="w-10 h-10 object-contain flex-shrink-0"
                 />
               </div>
-              <p
-                className={`text-3xl font-bold mt-2 ${
-                  plan.highlight ? "text-white" : "text-gray-900"
-                }`}
-              >
+              <p className={`text-3xl font-bold mt-2 ${plan.priceClass}`}>
                 {plan.pricePrefix}
                 {plan.price}
                 <span className="text-base font-medium">{plan.priceSuffix}</span>
               </p>
               {plan.priceNote && (
-                <p
-                  className={`text-xs font-medium mt-1 ${
-                    plan.highlight ? "text-white/70" : "text-gray-500"
-                  }`}
-                >
-                  {plan.priceNote}
-                </p>
+                <p className={`text-xs font-medium mt-1 ${plan.subClass}`}>{plan.priceNote}</p>
               )}
-              <p
-                className={`text-sm font-medium mt-3 ${
-                  plan.highlight ? "text-white/70" : "text-gray-500"
-                }`}
-              >
+              <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
                 {withDagger(plan.tagline)}
               </p>
             </div>
