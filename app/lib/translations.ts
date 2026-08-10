@@ -126,7 +126,8 @@ export const translations = {
         },
         {
           question: "When will I get charged?",
-          answer: "You will only get charged when you sign up for a plan.",
+          answer:
+            "For the monthly programs, you will receive an invoice which will cover treatment and medication for the month. For the Physician Oversight plan, you will only be charged for the visit itself. There are no recurring charges.",
         },
         {
           question: "Do you accept insurance?",
@@ -429,7 +430,8 @@ export const translations = {
         },
         {
           question: "¿Cuándo se me cobrará?",
-          answer: "Solo se le cobrará cuando se inscriba en un plan.",
+          answer:
+            "Para los programas mensuales, recibirá una factura que cubrirá el tratamiento y el medicamento del mes. Para el plan de Supervisión Médica, solo se le cobrará por la visita en sí. No hay cargos recurrentes.",
         },
         {
           question: "¿Aceptan seguro médico?",
