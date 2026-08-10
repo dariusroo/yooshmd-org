@@ -715,16 +715,28 @@ function Pricing() {
 
   const planMeta = [
     {
-      price: "$149",
+      price: "$220",
+      pricePrefix: "From ",
+      priceSuffix: "/month",
+      highlight: true,
+      icon: "/pinkvial.png",
+      iconAlt: "Medication vial icon representing the Semaglutide Program",
+    },
+    {
+      price: "$250",
+      pricePrefix: "From ",
+      priceSuffix: "/month",
+      highlight: true,
+      icon: "/greenvial.png",
+      iconAlt: "Medication vial icon representing the Tirzepatide Program",
+    },
+    {
+      price: "$199",
+      priceSuffix: "/visit",
+      priceNote: "Billed quarterly",
       highlight: false,
       icon: "/white-coat-2.png",
       iconAlt: "Physician white coat icon representing physician oversight plan",
-    },
-    {
-      price: "$349",
-      highlight: true,
-      icon: "/green-coat-vial.png",
-      iconAlt: "Medication vial icon representing the Comprehensive Program",
     },
   ];
   const plans = t.pricing.plans.map((plan, i) => ({ ...plan, ...planMeta[i] }));
@@ -746,7 +758,7 @@ function Pricing() {
         </FadeIn>
 
         {/* Plan cards */}
-        <div className="grid sm:grid-cols-2 gap-5 mb-10">
+        <div className="grid md:grid-cols-3 gap-5 mb-10">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -785,9 +797,19 @@ function Pricing() {
                   plan.highlight ? "text-white" : "text-gray-900"
                 }`}
               >
+                {plan.pricePrefix}
                 {plan.price}
-                <span className="text-base font-medium">/month</span>
+                <span className="text-base font-medium">{plan.priceSuffix}</span>
               </p>
+              {plan.priceNote && (
+                <p
+                  className={`text-xs font-medium mt-1 ${
+                    plan.highlight ? "text-white/70" : "text-gray-500"
+                  }`}
+                >
+                  {plan.priceNote}
+                </p>
+              )}
               <p
                 className={`text-sm font-medium mt-3 ${
                   plan.highlight ? "text-white/70" : "text-gray-500"

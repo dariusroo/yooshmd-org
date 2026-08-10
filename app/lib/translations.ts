@@ -38,7 +38,7 @@ export const translations = {
         sub: "Oral options available",
       },
       { value: "100% Virtual", label: "Available in CA, NV & FL", sub: "Telehealth" },
-      { value: "Transparent", label: "Flat-rate pricing", sub: "No hidden fees" },
+      { value: "Transparent", label: "Clear, upfront pricing", sub: "No hidden fees" },
     ],
     trustBarDisclaimer:
       "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
@@ -51,7 +51,7 @@ export const translations = {
       points: [
         "Direct access to your doctor — call or message — no barriers",
         "Medication decision during first visit — no waiting for approval",
-        "Flat, transparent pricing for medications and comprehensive care",
+        "Clear, transparent pricing for medications and comprehensive care",
         "Side effects managed proactively — before they become a reason to stop",
         "Medically supervised plan, including tapering off medication if desired",
       ],
@@ -68,12 +68,12 @@ export const translations = {
         {
           n: "02",
           title: "Sign up for a plan",
-          body: "Monthly flat fee. No hidden charges, no calculations, no waiting for approval.**",
+          body: "Transparent pricing — monthly or per-visit. No hidden charges, no calculations, no waiting for approval.**",
         },
         {
           n: "03",
           title: "Baseline bloodwork",
-          body: "Lab work is completed as part of your plan. Included in your monthly cost.",
+          body: "Lab work is completed as part of your plan, included in your plan cost.",
         },
         {
           n: "04",
@@ -110,7 +110,7 @@ export const translations = {
         {
           question: "How do I get started with YooshMD?",
           answer:
-            "You start with a free video consultation with Dr. Roohani. If it's a good fit, you sign up for a monthly plan and complete baseline bloodwork. Medication is shipped to your door, and Dr. Roohani manages your care from there — reachable by phone for urgent questions and through the patient portal for everything else.",
+            "You start with a free video consultation with Dr. Roohani. If it's a good fit, you sign up for a plan and complete baseline bloodwork. Medication is shipped to your door, and Dr. Roohani manages your care from there — reachable by phone for urgent questions and through the patient portal for everything else.",
         },
         {
           question: "Who qualifies for treatment?",
@@ -150,23 +150,27 @@ export const translations = {
     },
     pricing: {
       eyebrow: "Simple, Transparent Pricing",
-      heading: "Two plans. One flat fee. No surprises.",
+      heading: "Three plans. Transparent pricing. No surprises.",
       subhead:
-        "Every plan includes direct access to Dr. Roohani. Choose whether your medication is included or sourced separately — at your free consultation, he'll help you decide which fits.",
+        "Every plan includes direct access to Dr. Roohani. Choose the GLP-1 program that's right for you, or physician oversight alone — at your free consultation, he'll help you decide which fits.",
       plans: [
+        {
+          name: "Semaglutide Program",
+          tagline: "Semaglutide† included, every dose. Price scales with your prescribed dose.",
+        },
+        {
+          name: "Tirzepatide Program",
+          tagline: "Tirzepatide† included, every dose. Price scales with your prescribed dose.",
+        },
         {
           name: "Physician Oversight",
           tagline:
             "Brand-name tirzepatide and semaglutide, oral GLP-1 options, or non-GLP-1 medications. Medication cost not included.",
         },
-        {
-          name: "Comprehensive Program",
-          tagline: "Semaglutide or tirzepatide† included, every dose.",
-        },
       ],
-      includeHeading: "Both plans include:",
+      includeHeading: "All plans include:",
       included: [
-        "Monthly physician check-ins",
+        "Physician check-ins",
         "Unlimited direct messaging with the doctor",
         "Comprehensive lab orders and review",
         "On-call doctor for urgent matters",
@@ -187,19 +191,19 @@ export const translations = {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide and tirzepatide† are included with the Comprehensive Program. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
+        "Semaglutide† is included with the Semaglutide Program; tirzepatide† is included with the Tirzepatide Program. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
       options: [
         {
           title: "Semaglutide",
           descriptor:
             "GLP-1 receptor agonist that enhances satiety, delays gastric emptying, and improves glycemic control through glucose-dependent insulin secretion.†",
-          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Comprehensive Program.",
+          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Semaglutide Program.",
         },
         {
           title: "Tirzepatide",
           descriptor:
             "Dual GIP and GLP-1 receptor agonist, enhances satiety, delays gastric emptying, and improves insulin sensitivity.†",
-          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Comprehensive Program.",
+          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Tirzepatide Program.",
         },
         {
           title: "Oral, Branded & Non-GLP-1 Options",
@@ -269,7 +273,7 @@ export const translations = {
         },
         {
           heading: "Medication Costs",
-          body: "The Comprehensive Program ($349/month) includes one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee. The Physician Oversight plan ($149/month) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
+          body: "The Semaglutide Program (from $220/month) and Tirzepatide Program (from $250/month) each include one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee; price varies based on prescribed dose. The Physician Oversight plan ($199 per visit, billed quarterly) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
         },
         {
           heading: "Compounded Medications",
@@ -335,7 +339,7 @@ export const translations = {
         sub: "Opciones orales disponibles",
       },
       { value: "100% Virtual", label: "Disponible en CA, NV y FL", sub: "Telesalud" },
-      { value: "Transparente", label: "Precio fijo", sub: "Sin cargos ocultos" },
+      { value: "Transparente", label: "Precios claros y directos", sub: "Sin cargos ocultos" },
     ],
     trustBarDisclaimer:
       "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
@@ -348,7 +352,7 @@ export const translations = {
       points: [
         "Acceso directo a su doctor — llame o envíe un mensaje — sin barreras",
         "Decisión sobre medicamentos durante la primera visita — sin esperar aprobación",
-        "Precios fijos y transparentes para medicamentos y cuidado integral",
+        "Precios claros y transparentes para medicamentos y cuidado integral",
         "Efectos secundarios manejados de forma proactiva — antes de que se conviertan en un motivo para detenerse",
         "Plan supervisado médicamente, incluyendo la reducción gradual del medicamento si así lo desea",
       ],
@@ -365,12 +369,12 @@ export const translations = {
         {
           n: "02",
           title: "Inscríbase en un plan",
-          body: "Tarifa mensual fija. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
+          body: "Precios transparentes — mensual o por visita. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
         },
         {
           n: "03",
           title: "Análisis de laboratorio inicial",
-          body: "El trabajo de laboratorio se incluye como parte de su plan. Incluido en su costo mensual.",
+          body: "El trabajo de laboratorio se incluye como parte de su plan, dentro del costo de su plan.",
         },
         {
           n: "04",
@@ -407,7 +411,7 @@ export const translations = {
         {
           question: "¿Cómo empiezo con YooshMD?",
           answer:
-            "Comienza con una consulta gratuita por video con el Dr. Roohani. Si es una buena opción para usted, se inscribe en un plan mensual y completa análisis de sangre iniciales. El medicamento se envía a su domicilio, y el Dr. Roohani gestiona su atención a partir de ahí — disponible por teléfono para preguntas urgentes y a través del portal del paciente para todo lo demás.",
+            "Comienza con una consulta gratuita por video con el Dr. Roohani. Si es una buena opción para usted, se inscribe en un plan y completa análisis de sangre iniciales. El medicamento se envía a su domicilio, y el Dr. Roohani gestiona su atención a partir de ahí — disponible por teléfono para preguntas urgentes y a través del portal del paciente para todo lo demás.",
         },
         {
           question: "¿Quién califica para el tratamiento?",
@@ -447,23 +451,27 @@ export const translations = {
     },
     pricing: {
       eyebrow: "Precios Simples y Transparentes",
-      heading: "Dos planes. Una tarifa fija. Sin sorpresas.",
+      heading: "Tres planes. Precios transparentes. Sin sorpresas.",
       subhead:
-        "Cada plan incluye acceso directo al Dr. Roohani. Elija si su medicamento está incluido o se obtiene por separado — en su consulta gratuita, él le ayudará a decidir cuál es el más adecuado.",
+        "Cada plan incluye acceso directo al Dr. Roohani. Elija el programa GLP-1 adecuado para usted, o solo supervisión médica — en su consulta gratuita, él le ayudará a decidir cuál es el más adecuado.",
       plans: [
+        {
+          name: "Programa de Semaglutida",
+          tagline: "Semaglutida† incluida, cada dosis. El precio varía según la dosis recetada.",
+        },
+        {
+          name: "Programa de Tirzepatida",
+          tagline: "Tirzepatida† incluida, cada dosis. El precio varía según la dosis recetada.",
+        },
         {
           name: "Supervisión Médica",
           tagline:
             "Tirzepatida y semaglutida de marca, opciones orales de GLP-1, o medicamentos no GLP-1. Costo de medicamento no incluido.",
         },
-        {
-          name: "Programa Integral",
-          tagline: "Semaglutida o tirzepatida† incluida, cada dosis.",
-        },
       ],
-      includeHeading: "Ambos planes incluyen:",
+      includeHeading: "Todos los planes incluyen:",
       included: [
-        "Consultas médicas mensuales",
+        "Consultas médicas",
         "Mensajería directa ilimitada con el doctor",
         "Órdenes y revisión de laboratorio integral",
         "Doctor de guardia para asuntos urgentes",
@@ -485,19 +493,19 @@ export const translations = {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "La semaglutida y la tirzepatida† están incluidas con el Programa Integral. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
+        "La semaglutida† está incluida con el Programa de Semaglutida; la tirzepatida† está incluida con el Programa de Tirzepatida. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
       options: [
         {
           title: "Semaglutida",
           descriptor:
             "Agonista del receptor GLP-1 que aumenta la saciedad, retrasa el vaciado gástrico y mejora el control glucémico mediante la secreción de insulina dependiente de glucosa.†",
-          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa Integral.",
+          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa de Semaglutida.",
         },
         {
           title: "Tirzepatida",
           descriptor:
             "Agonista dual del receptor GIP y GLP-1, aumenta la saciedad, retrasa el vaciado gástrico y mejora la sensibilidad a la insulina.†",
-          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa Integral.",
+          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa de Tirzepatida.",
         },
         {
           title: "Opciones Orales, de Marca y No GLP-1",
@@ -567,7 +575,7 @@ export const translations = {
         },
         {
           heading: "Costos de Medicamentos",
-          body: "El Programa Integral ($349/mes) incluye un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa. El plan de Supervisión Médica ($149/mes) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
+          body: "El Programa de Semaglutida (desde $220/mes) y el Programa de Tirzepatida (desde $250/mes) incluyen cada uno un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa; el precio varía según la dosis recetada. El plan de Supervisión Médica ($199 por visita, facturado trimestralmente) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
         },
         {
           heading: "Medicamentos Compuestos",

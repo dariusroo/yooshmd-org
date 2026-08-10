@@ -11,7 +11,7 @@ const medicalBusinessJsonLd = {
   url: "https://www.yooshmd.com",
   telephone: "+1-909-293-8095",
   email: "admin@yooshmd.com",
-  priceRange: "$149-$349",
+  priceRange: "$199-$250+",
   medicalSpecialty: "Obesity Medicine",
   areaServed: [
     { "@type": "State", name: "California" },
