@@ -164,16 +164,16 @@ export const translations = {
       plans: [
         {
           name: "Semaglutide Program",
-          tagline: "Semaglutide† included, every dose. Price scales with your prescribed dose.",
+          tagline: "Semaglutide† included, every dose.",
         },
         {
           name: "Tirzepatide Program",
-          tagline: "Tirzepatide† included, every dose. Price scales with your prescribed dose.",
+          tagline: "Tirzepatide† included, every dose.",
         },
         {
           name: "Physician Oversight",
           tagline:
-            "Brand-name tirzepatide and semaglutide, oral GLP-1 options, or non-GLP-1 medications. Medication cost not included.",
+            "Wegovy, Zepbound, or Ozempic, oral GLP-1 options (Foundayo, Wegovy), or non-GLP-1 treatment available. Medication cost not included.",
         },
       ],
       includeHeading: "All plans include:",
@@ -475,16 +475,16 @@ export const translations = {
       plans: [
         {
           name: "Programa de Semaglutida",
-          tagline: "Semaglutida† incluida, cada dosis. El precio varía según la dosis recetada.",
+          tagline: "Semaglutida† incluida, cada dosis.",
         },
         {
           name: "Programa de Tirzepatida",
-          tagline: "Tirzepatida† incluida, cada dosis. El precio varía según la dosis recetada.",
+          tagline: "Tirzepatida† incluida, cada dosis.",
         },
         {
           name: "Supervisión Médica",
           tagline:
-            "Tirzepatida y semaglutida de marca, opciones orales de GLP-1, o medicamentos no GLP-1. Costo de medicamento no incluido.",
+            "Wegovy, Zepbound, u Ozempic, opciones orales de GLP-1 (Foundayo, Wegovy), o tratamiento no GLP-1 disponible. Costo de medicamento no incluido.",
         },
       ],
       includeHeading: "Todos los planes incluyen:",
