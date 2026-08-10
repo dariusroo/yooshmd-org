@@ -216,7 +216,7 @@ export const translations = {
         {
           title: "Oral, Branded & Non-GLP-1 Options",
           descriptor:
-            "We can also prescribe oral GLP-1s (Wegovy®, Foundayo®), Zepbound®, Wegovy®, or Ozempic®, or non-GLP-1 options based on your goals and history.",
+            "We can also prescribe oral GLP-1s (Wegovy®, Foundayo®), brand-name injectables (Zepbound®, Wegovy®, or Ozempic®), or non-GLP-1 options based on your goals and history.",
         },
       ],
       footnote:
@@ -528,7 +528,7 @@ export const translations = {
         {
           title: "Opciones Orales, de Marca y No GLP-1",
           descriptor:
-            "También podemos recetar GLP-1 orales (Wegovy®, Foundayo®), Zepbound®, Wegovy®, u Ozempic®, o opciones no GLP-1 según sus objetivos e historial.",
+            "También podemos recetar GLP-1 orales (Wegovy®, Foundayo®), inyectables de marca (Zepbound®, Wegovy®, u Ozempic®), o opciones no GLP-1 según sus objetivos e historial.",
         },
       ],
       footnote:
