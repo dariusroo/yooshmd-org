@@ -21,6 +21,59 @@ const medicalBusinessJsonLd = {
   sameAs: [
     "https://www.instagram.com/yooshmd",
     "https://www.zocdoc.com/doctor/darius-roohani-md-720799",
+    "https://www.doximity.com/profiles/ed9bf0b0-3242-417e-b827-40daba081947",
+    "https://www.linkedin.com/in/darius-roohani-md-5a114435a/",
+    "https://www.facebook.com/profile.php?id=61578411332212",
+    "https://www.tiktok.com/@yooshmd",
+    "https://www.helloklarity.com/provider/darius-roohani-1",
+    "https://www.cdrewu.edu/directory/roohani-darius/",
+  ],
+  makesOffer: [
+    {
+      "@type": "Offer",
+      name: "Semaglutide Program",
+      description:
+        "Physician-guided weight loss program with compounded semaglutide included; price varies by prescribed dose.",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        priceCurrency: "USD",
+        minPrice: "220",
+        maxPrice: "290",
+        unitText: "MONTH",
+      },
+      url: "https://www.yooshmd.com/#pricing",
+    },
+    {
+      "@type": "Offer",
+      name: "Tirzepatide Program",
+      description:
+        "Physician-guided weight loss program with compounded tirzepatide included; price varies by prescribed dose.",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        priceCurrency: "USD",
+        minPrice: "260",
+        maxPrice: "400",
+        unitText: "MONTH",
+      },
+      url: "https://www.yooshmd.com/#pricing",
+    },
+    {
+      "@type": "Offer",
+      name: "Physician Oversight",
+      description:
+        "Physician-supervised weight loss care billed per visit; medication cost not included.",
+      price: "199",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "199",
+        priceCurrency: "USD",
+        unitText: "visit",
+      },
+      url: "https://www.yooshmd.com/#pricing",
+    },
   ],
   employee: {
     "@type": "Physician",
