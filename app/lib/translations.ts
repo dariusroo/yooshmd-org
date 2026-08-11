@@ -18,12 +18,14 @@ export const translations = {
       titlePre: "Choose a ",
       titleEmph: "doctor",
       titlePost: ", not a faceless brand.",
-      subhead:
-        "Personally accountable for your weight loss care, from your first visit onward. Board-certified in obesity medicine. Science-backed expertise.",
+      subheadPre:
+        "Personally accountable for your weight loss care, from your first visit onward. Board-certified obesity medicine ",
+      subheadEmph: "specialist",
+      subheadPost: ". Science-backed expertise.",
       ctaBook: "Book Free Consultation",
       ctaCall: "Call (909) 293-8095",
       checklist: [
-        "No ongoing charges until you decide",
+        "No charges until you decide",
         "Telehealth services available in California, Nevada, and Florida",
       ],
       doctorName: "Darius Roohani, MD",
@@ -38,7 +40,7 @@ export const translations = {
         sub: "Oral options available",
       },
       { value: "100% Virtual", label: "Available in CA, NV & FL", sub: "Telehealth" },
-      { value: "Transparent", label: "Flat-rate pricing", sub: "No hidden fees" },
+      { value: "Transparent", label: "Clear, upfront pricing", sub: "No hidden fees" },
     ],
     trustBarDisclaimer:
       "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
@@ -51,7 +53,7 @@ export const translations = {
       points: [
         "Direct access to your doctor — call or message — no barriers",
         "Medication decision during first visit — no waiting for approval",
-        "Flat, transparent pricing for medications and comprehensive care",
+        "Clear, transparent pricing for medications and comprehensive care",
         "Side effects managed proactively — before they become a reason to stop",
         "Medically supervised plan, including tapering off medication if desired",
       ],
@@ -67,13 +69,13 @@ export const translations = {
         },
         {
           n: "02",
-          title: "Sign up for a plan",
-          body: "Monthly flat fee. No hidden charges, no calculations, no waiting for approval.**",
+          title: "Choose a program",
+          body: "Transparent pricing — monthly or per-visit. No hidden charges, no calculations, no waiting for approval.**",
         },
         {
           n: "03",
           title: "Baseline bloodwork",
-          body: "Lab work is completed as part of your plan. Included in your monthly cost.",
+          body: "Lab work is completed as part of your plan, included in your plan cost.",
         },
         {
           n: "04",
@@ -105,12 +107,12 @@ export const translations = {
         {
           question: "What is YooshMD?",
           answer:
-            "YooshMD was built on a simple premise: one physician, personally managing your care. We prioritize direct access, medical expertise, and transparent pricing. No call center, no rotating providers, no hidden fees. Just physician-led care.",
+            "YooshMD was built on a simple premise: one physician, personally managing your care. We prioritize direct access, specialist expertise, and transparent pricing. No call center, no rotating providers, no hidden fees. Just physician-led care.",
         },
         {
           question: "How do I get started with YooshMD?",
           answer:
-            "You start with a free video consultation with Dr. Roohani. If it's a good fit, you sign up for a monthly plan and complete baseline bloodwork. Medication is shipped to your door, and Dr. Roohani manages your care from there — reachable by phone for urgent questions and through the patient portal for everything else.",
+            "You start with a free video consultation with Dr. Roohani. If it's a good fit, you sign up for a plan and complete baseline bloodwork. Medication is shipped to your door, and Dr. Roohani manages your care from there — reachable by phone for urgent questions and through the patient portal for everything else.",
         },
         {
           question: "Who qualifies for treatment?",
@@ -124,17 +126,23 @@ export const translations = {
         },
         {
           question: "When will I get charged?",
-          answer: "You will only get charged when you sign up for a plan.",
+          answer:
+            "For the monthly programs, you will receive an invoice which will cover treatment and medication for the month. For the Physician Oversight plan, you will only be charged for the visit itself. There are no recurring charges.",
         },
         {
           question: "Do you accept insurance?",
           answer:
-            "We are currently self-pay, but we can generate a superbill that you can submit to your insurance company for reimbursement.",
+            "We are currently self-pay only. This allows us to give you uninterrupted and personalized care.",
         },
         {
-          question: "What is your cancellation policy?",
+          question: "Are there any recurring charges?",
           answer:
-            "You can cancel your membership at any time with 30 days' notice. We require this so we can complete any outstanding care coordination and ensure a clean handoff. There are no long-term contracts or cancellation fees. To cancel, contact us directly at admin@yooshmd.com or (909) 293-8095. Payments made are non-refundable.",
+            "No. You will receive a line-item invoice before treatment is rendered. Once the invoice is paid, your medication will be sent or prescribed and your labs will be ordered. If not, your slot will be released.",
+        },
+        {
+          question: "What is your refund policy?",
+          answer:
+            "Shipped medications are non-refundable. Visit fees are refundable if cancelled within 24 hours of appointment time.",
         },
         {
           question: "Where is your medication sourced from?",
@@ -149,24 +157,28 @@ export const translations = {
       ],
     },
     pricing: {
-      eyebrow: "Simple, Transparent Pricing",
-      heading: "Two plans. One flat fee. No surprises.",
+      eyebrow: "Transparent Pricing",
+      heading: "Transparent pricing. Pay monthly or per visit. No surprises.",
       subhead:
-        "Every plan includes direct access to Dr. Roohani. Choose whether your medication is included or sourced separately — at your free consultation, he'll help you decide which fits.",
+        "Every plan gives you direct access to Dr. Roohani. Choose a GLP-1 program or physician oversight alone — he'll help you decide what's right for you at your first consultation.",
       plans: [
+        {
+          name: "Semaglutide Program†",
+          tagline: "",
+        },
+        {
+          name: "Tirzepatide Program†",
+          tagline: "",
+        },
         {
           name: "Physician Oversight",
           tagline:
-            "Brand-name tirzepatide and semaglutide, oral GLP-1 options, or non-GLP-1 medications. Medication cost not included.",
-        },
-        {
-          name: "Comprehensive Program",
-          tagline: "Semaglutide or tirzepatide† included, every dose.",
+            "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment available. Medication cost not included.",
         },
       ],
-      includeHeading: "Both plans include:",
+      includeHeading: "All plans include:",
       included: [
-        "Monthly physician check-ins",
+        "Physician supervision with check-ins and video visits",
         "Unlimited direct messaging with the doctor",
         "Comprehensive lab orders and review",
         "On-call doctor for urgent matters",
@@ -187,28 +199,30 @@ export const translations = {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide and tirzepatide† are included with the Comprehensive Program. Prefer something else? Dr. Roohani can prescribe oral, brand-name, or non-GLP-1 options too.",
+        "Semaglutide or tirzepatide programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy®, Zepbound®, Ozempic®), or non-GLP-1 options too.",
       options: [
         {
           title: "Semaglutide",
           descriptor:
             "GLP-1 receptor agonist that enhances satiety, delays gastric emptying, and improves glycemic control through glucose-dependent insulin secretion.†",
-          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Comprehensive Program.",
+          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Semaglutide Program.",
         },
         {
           title: "Tirzepatide",
           descriptor:
             "Dual GIP and GLP-1 receptor agonist, enhances satiety, delays gastric emptying, and improves insulin sensitivity.†",
-          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Comprehensive Program.",
+          body: "All doses, prepared by an accredited 503A pharmacy. Included with the Tirzepatide Program.",
         },
         {
           title: "Oral, Branded & Non-GLP-1 Options",
           descriptor:
-            "We can also prescribe oral GLP-1s, brand-name injectables, or non-GLP-1 options based on your goals and history.",
+            "We can also prescribe oral GLP-1s (Wegovy®, Foundayo®), brand-name injectables (Zepbound®, Wegovy®, or Ozempic®), or non-GLP-1 options based on your goals and history.",
         },
       ],
       footnote:
         "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
+      trademarkFootnote:
+        "Wegovy® and Ozempic® are registered trademarks of Novo Nordisk. Zepbound® and Foundayo® are registered trademarks of Eli Lilly and Company. YooshMD is not affiliated with or endorsed by these companies.",
     },
     toc: [
       { href: "#why", label: "Why YooshMD" },
@@ -269,7 +283,7 @@ export const translations = {
         },
         {
           heading: "Medication Costs",
-          body: "The Comprehensive Program ($349/month) includes one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee. The Physician Oversight plan ($149/month) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
+          body: "The Semaglutide Program (from $220/month) and Tirzepatide Program (from $260/month) each include one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee; price varies based on prescribed dose. The Physician Oversight plan ($199 per visit, billed quarterly) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
         },
         {
           heading: "Compounded Medications",
@@ -315,12 +329,14 @@ export const translations = {
       titlePre: "Elige un ",
       titleEmph: "doctor",
       titlePost: ", no una marca sin rostro.",
-      subhead:
-        "Responsable personalmente de su cuidado para la pérdida de peso, desde su primera visita en adelante. Certificado en medicina de la obesidad. Experiencia respaldada por la ciencia.",
+      subheadPre:
+        "Responsable personalmente de su cuidado para la pérdida de peso, desde su primera visita en adelante. ",
+      subheadEmph: "Especialista",
+      subheadPost: " certificado en medicina de la obesidad. Experiencia respaldada por la ciencia.",
       ctaBook: "Reserve su Consulta Gratis",
       ctaCall: "Llame al (909) 293-8095",
       checklist: [
-        "Sin cargos continuos hasta que usted decida",
+        "Sin cargos hasta que usted decida",
         "Servicios de telesalud disponibles en California, Nevada y Florida",
       ],
       doctorName: "Darius Roohani, MD",
@@ -335,7 +351,7 @@ export const translations = {
         sub: "Opciones orales disponibles",
       },
       { value: "100% Virtual", label: "Disponible en CA, NV y FL", sub: "Telesalud" },
-      { value: "Transparente", label: "Precio fijo", sub: "Sin cargos ocultos" },
+      { value: "Transparente", label: "Precios claros y directos", sub: "Sin cargos ocultos" },
     ],
     trustBarDisclaimer:
       "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
@@ -348,7 +364,7 @@ export const translations = {
       points: [
         "Acceso directo a su doctor — llame o envíe un mensaje — sin barreras",
         "Decisión sobre medicamentos durante la primera visita — sin esperar aprobación",
-        "Precios fijos y transparentes para medicamentos y cuidado integral",
+        "Precios claros y transparentes para medicamentos y cuidado integral",
         "Efectos secundarios manejados de forma proactiva — antes de que se conviertan en un motivo para detenerse",
         "Plan supervisado médicamente, incluyendo la reducción gradual del medicamento si así lo desea",
       ],
@@ -364,13 +380,13 @@ export const translations = {
         },
         {
           n: "02",
-          title: "Inscríbase en un plan",
-          body: "Tarifa mensual fija. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
+          title: "Elija un programa",
+          body: "Precios transparentes — mensual o por visita. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
         },
         {
           n: "03",
           title: "Análisis de laboratorio inicial",
-          body: "El trabajo de laboratorio se incluye como parte de su plan. Incluido en su costo mensual.",
+          body: "El trabajo de laboratorio se incluye como parte de su plan, dentro del costo de su plan.",
         },
         {
           n: "04",
@@ -402,12 +418,12 @@ export const translations = {
         {
           question: "¿Qué es YooshMD?",
           answer:
-            "YooshMD se creó sobre una premisa simple: un solo médico, administrando personalmente su atención. Priorizamos el acceso directo, la experiencia médica y precios transparentes. Sin centro de llamadas, sin proveedores rotativos, sin cargos ocultos. Solo atención dirigida por un médico.",
+            "YooshMD se creó sobre una premisa simple: un solo médico, administrando personalmente su atención. Priorizamos el acceso directo, la experiencia especializada y precios transparentes. Sin centro de llamadas, sin proveedores rotativos, sin cargos ocultos. Solo atención dirigida por un médico.",
         },
         {
           question: "¿Cómo empiezo con YooshMD?",
           answer:
-            "Comienza con una consulta gratuita por video con el Dr. Roohani. Si es una buena opción para usted, se inscribe en un plan mensual y completa análisis de sangre iniciales. El medicamento se envía a su domicilio, y el Dr. Roohani gestiona su atención a partir de ahí — disponible por teléfono para preguntas urgentes y a través del portal del paciente para todo lo demás.",
+            "Comienza con una consulta gratuita por video con el Dr. Roohani. Si es una buena opción para usted, se inscribe en un plan y completa análisis de sangre iniciales. El medicamento se envía a su domicilio, y el Dr. Roohani gestiona su atención a partir de ahí — disponible por teléfono para preguntas urgentes y a través del portal del paciente para todo lo demás.",
         },
         {
           question: "¿Quién califica para el tratamiento?",
@@ -421,17 +437,23 @@ export const translations = {
         },
         {
           question: "¿Cuándo se me cobrará?",
-          answer: "Solo se le cobrará cuando se inscriba en un plan.",
+          answer:
+            "Para los programas mensuales, recibirá una factura que cubrirá el tratamiento y el medicamento del mes. Para el plan de Supervisión Médica, solo se le cobrará por la visita en sí. No hay cargos recurrentes.",
         },
         {
           question: "¿Aceptan seguro médico?",
           answer:
-            "Actualmente somos de pago directo (self-pay), pero podemos generar un superbill que puede enviar a su compañía de seguros para reembolso.",
+            "Actualmente somos de pago directo (self-pay) únicamente. Esto nos permite brindarle una atención personalizada y sin interrupciones.",
         },
         {
-          question: "¿Cuál es su política de cancelación?",
+          question: "¿Hay cargos recurrentes?",
           answer:
-            "Puede cancelar su membresía en cualquier momento con 30 días de aviso previo. Requerimos esto para poder completar cualquier coordinación de atención pendiente y asegurar una transición ordenada. No hay contratos a largo plazo ni cargos por cancelación. Para cancelar, contáctenos directamente a admin@yooshmd.com o al (909) 293-8095. Los pagos realizados no son reembolsables.",
+            "No. Recibirá una factura detallada antes de que se administre el tratamiento. Una vez pagada la factura, su medicamento será enviado o recetado y se ordenarán sus análisis de laboratorio. Si no se paga, su cupo será liberado.",
+        },
+        {
+          question: "¿Cuál es su política de reembolso?",
+          answer:
+            "Los medicamentos enviados no son reembolsables. Las tarifas de visita son reembolsables si se cancela con 24 horas de anticipación a la hora de la cita.",
         },
         {
           question: "¿De dónde proviene su medicamento?",
@@ -446,24 +468,28 @@ export const translations = {
       ],
     },
     pricing: {
-      eyebrow: "Precios Simples y Transparentes",
-      heading: "Dos planes. Una tarifa fija. Sin sorpresas.",
+      eyebrow: "Precios Transparentes",
+      heading: "Precios transparentes. Pague mensual o por visita. Sin sorpresas.",
       subhead:
-        "Cada plan incluye acceso directo al Dr. Roohani. Elija si su medicamento está incluido o se obtiene por separado — en su consulta gratuita, él le ayudará a decidir cuál es el más adecuado.",
+        "Cada plan le da acceso directo al Dr. Roohani. Elija entre un programa GLP-1 o solo supervisión médica — él le ayudará a decidir qué es lo más adecuado para usted en su primera consulta.",
       plans: [
+        {
+          name: "Programa de Semaglutida†",
+          tagline: "",
+        },
+        {
+          name: "Programa de Tirzepatida†",
+          tagline: "",
+        },
         {
           name: "Supervisión Médica",
           tagline:
-            "Tirzepatida y semaglutida de marca, opciones orales de GLP-1, o medicamentos no GLP-1. Costo de medicamento no incluido.",
-        },
-        {
-          name: "Programa Integral",
-          tagline: "Semaglutida o tirzepatida† incluida, cada dosis.",
+            "Wegovy®, Zepbound®, u Ozempic®, opciones orales de GLP-1, o tratamiento no GLP-1 disponible. Costo de medicamento no incluido.",
         },
       ],
-      includeHeading: "Ambos planes incluyen:",
+      includeHeading: "Todos los planes incluyen:",
       included: [
-        "Consultas médicas mensuales",
+        "Supervisión médica con consultas de seguimiento y visitas por video",
         "Mensajería directa ilimitada con el doctor",
         "Órdenes y revisión de laboratorio integral",
         "Doctor de guardia para asuntos urgentes",
@@ -485,28 +511,30 @@ export const translations = {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "La semaglutida y la tirzepatida† están incluidas con el Programa Integral. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca, o no GLP-1 también.",
+        "Programas de semaglutida o tirzepatida disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy®, Zepbound®, Ozempic®), o no GLP-1 también.",
       options: [
         {
           title: "Semaglutida",
           descriptor:
             "Agonista del receptor GLP-1 que aumenta la saciedad, retrasa el vaciado gástrico y mejora el control glucémico mediante la secreción de insulina dependiente de glucosa.†",
-          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa Integral.",
+          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa de Semaglutida.",
         },
         {
           title: "Tirzepatida",
           descriptor:
             "Agonista dual del receptor GIP y GLP-1, aumenta la saciedad, retrasa el vaciado gástrico y mejora la sensibilidad a la insulina.†",
-          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa Integral.",
+          body: "Todas las dosis, preparadas por una farmacia acreditada 503A. Incluido con el Programa de Tirzepatida.",
         },
         {
           title: "Opciones Orales, de Marca y No GLP-1",
           descriptor:
-            "También podemos recetar GLP-1 orales, inyectables de marca, u opciones no GLP-1 según sus objetivos e historial.",
+            "También podemos recetar GLP-1 orales (Wegovy®, Foundayo®), inyectables de marca (Zepbound®, Wegovy®, u Ozempic®), o opciones no GLP-1 según sus objetivos e historial.",
         },
       ],
       footnote:
         "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
+      trademarkFootnote:
+        "Wegovy® y Ozempic® son marcas registradas de Novo Nordisk. Zepbound® y Foundayo® son marcas registradas de Eli Lilly and Company. YooshMD no está afiliado ni respaldado por estas empresas.",
     },
     toc: [
       { href: "#why", label: "Por Qué YooshMD" },
@@ -567,7 +595,7 @@ export const translations = {
         },
         {
           heading: "Costos de Medicamentos",
-          body: "El Programa Integral ($349/mes) incluye un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa. El plan de Supervisión Médica ($149/mes) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
+          body: "El Programa de Semaglutida (desde $220/mes) y el Programa de Tirzepatida (desde $260/mes) incluyen cada uno un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa; el precio varía según la dosis recetada. El plan de Supervisión Médica ($199 por visita, facturado trimestralmente) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
         },
         {
           heading: "Medicamentos Compuestos",
