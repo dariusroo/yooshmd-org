@@ -164,11 +164,11 @@ export const translations = {
       plans: [
         {
           name: "Semaglutide Program†",
-          tagline: "Semaglutide included, every dose.",
+          tagline: "",
         },
         {
           name: "Tirzepatide Program†",
-          tagline: "Tirzepatide included, every dose.",
+          tagline: "",
         },
         {
           name: "Physician Oversight",
@@ -475,11 +475,11 @@ export const translations = {
       plans: [
         {
           name: "Programa de Semaglutida†",
-          tagline: "Semaglutida incluida, cada dosis.",
+          tagline: "",
         },
         {
           name: "Programa de Tirzepatida†",
-          tagline: "Tirzepatida incluida, cada dosis.",
+          tagline: "",
         },
         {
           name: "Supervisión Médica",

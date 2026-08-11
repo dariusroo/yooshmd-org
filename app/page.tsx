@@ -849,9 +849,11 @@ function Pricing() {
                     })}
                   </div>
                 )}
-                <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
-                  {withDagger(plan.tagline)}
-                </p>
+                {plan.tagline && (
+                  <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
+                    {withDagger(plan.tagline)}
+                  </p>
+                )}
               </div>
             );
           })}
