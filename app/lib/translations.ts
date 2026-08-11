@@ -194,8 +194,8 @@ export const translations = {
       initialConsultCta: "Book Free Visit",
       footnote2:
         "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
-      doseDisclaimer:
-        "No specific dose is guaranteed. Your prescribed dose is determined solely by the doctor based on independent clinical judgment following a medical evaluation.",
+      doseDisclaimer: "No dose is guaranteed, ",
+      doseDisclaimerLink: "see disclosures",
     },
     medications: {
       eyebrow: "Medications",
@@ -508,8 +508,8 @@ export const translations = {
       initialConsultCta: "Reserve su Visita Gratis",
       footnote2:
         "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
-      doseDisclaimer:
-        "Ninguna dosis específica está garantizada. Su dosis recetada será determinada únicamente por el doctor según su criterio clínico independiente, tras una evaluación médica.",
+      doseDisclaimer: "Ninguna dosis está garantizada, ",
+      doseDisclaimerLink: "ver divulgaciones",
     },
     medications: {
       eyebrow: "Medicamentos",

@@ -850,7 +850,12 @@ function Pricing() {
                   </div>
                 )}
                 {doses && (
-                  <p className={`text-xs mt-2 ${plan.subClass}`}>{t.pricing.doseDisclaimer}</p>
+                  <p className={`text-xs mt-2 ${plan.subClass}`}>
+                    {t.pricing.doseDisclaimer}
+                    <a href="/disclaimers" className="underline">
+                      {t.pricing.doseDisclaimerLink}
+                    </a>
+                  </p>
                 )}
                 {plan.tagline && (
                   <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
