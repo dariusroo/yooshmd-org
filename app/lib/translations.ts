@@ -163,12 +163,12 @@ export const translations = {
         "Every plan gives you direct access to Dr. Roohani. Choose a GLP-1 program or physician oversight alone — he'll help you decide what's right for you at your first consultation.",
       plans: [
         {
-          name: "Semaglutide Program",
-          tagline: "Semaglutide† included, every dose.",
+          name: "Semaglutide Program†",
+          tagline: "Semaglutide included, every dose.",
         },
         {
-          name: "Tirzepatide Program",
-          tagline: "Tirzepatide† included, every dose.",
+          name: "Tirzepatide Program†",
+          tagline: "Tirzepatide included, every dose.",
         },
         {
           name: "Physician Oversight",
@@ -474,12 +474,12 @@ export const translations = {
         "Cada plan le da acceso directo al Dr. Roohani. Elija entre un programa GLP-1 o solo supervisión médica — él le ayudará a decidir qué es lo más adecuado para usted en su primera consulta.",
       plans: [
         {
-          name: "Programa de Semaglutida",
-          tagline: "Semaglutida† incluida, cada dosis.",
+          name: "Programa de Semaglutida†",
+          tagline: "Semaglutida incluida, cada dosis.",
         },
         {
-          name: "Programa de Tirzepatida",
-          tagline: "Tirzepatida† incluida, cada dosis.",
+          name: "Programa de Tirzepatida†",
+          tagline: "Tirzepatida incluida, cada dosis.",
         },
         {
           name: "Supervisión Médica",

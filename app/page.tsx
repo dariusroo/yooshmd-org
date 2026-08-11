@@ -813,7 +813,7 @@ function Pricing() {
               >
                 <div className="flex items-start justify-between gap-3">
                   <p className={`text-lg font-bold leading-snug ${plan.titleClass}`}>
-                    {plan.name}
+                    {withDagger(plan.name)}
                   </p>
                   <Image
                     src={plan.icon}
