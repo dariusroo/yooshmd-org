@@ -18,13 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/terms-of-service`,
-      lastModified: new Date("2026-02-04"),
+      lastModified: new Date("2026-08-11"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${BASE_URL}/telehealth-notice`,
-      lastModified: new Date("2026-01-21"),
+      lastModified: new Date("2026-08-11"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/disclaimers`,
-      lastModified: new Date("2026-07-17"),
+      lastModified: new Date("2026-08-11"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
