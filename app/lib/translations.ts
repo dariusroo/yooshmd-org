@@ -147,7 +147,7 @@ export const translations = {
         {
           question: "Where is your medication sourced from?",
           answer:
-            "Compounded medications are sourced from Boudreaux's New Drug Store, a licensed 503A U.S. pharmacy based in Lake Charles, Louisiana, operating since 1923. Boudreaux's is inspected by the National Association of Boards of Pharmacy (NABP). Other medications are fulfilled either via Cost Plus Drugs, which delivers, or prescriptions are sent to a local pharmacy of your choice.",
+            "Compounded medications are sourced from Boudreaux's New Drug Store, a licensed 503A U.S. pharmacy based in Lake Charles, Louisiana, operating since 1923. Boudreaux's is inspected by the National Association of Boards of Pharmacy (NABP). Brand-name GLP-1 medications are fulfilled through LillyDirect Pharmacy Solutions and NovoCare Pharmacy. Other medications are fulfilled either via Cost Plus Drugs, which delivers, or prescriptions are sent to a local pharmacy of your choice.",
         },
         {
           question: "My medication came in a vial. How do I take it?",
@@ -460,7 +460,7 @@ export const translations = {
         {
           question: "¿De dónde proviene su medicamento?",
           answer:
-            "Los medicamentos compuestos provienen de Boudreaux's New Drug Store, una farmacia 503A con licencia en EE. UU., ubicada en Lake Charles, Luisiana, en operación desde 1923. Boudreaux's es inspeccionada por la Asociación Nacional de Juntas de Farmacia (NABP). Otros medicamentos se entregan a través de Cost Plus Drugs, que ofrece envío a domicilio, o las recetas se envían a la farmacia local de su elección.",
+            "Los medicamentos compuestos provienen de Boudreaux's New Drug Store, una farmacia 503A con licencia en EE. UU., ubicada en Lake Charles, Luisiana, en operación desde 1923. Boudreaux's es inspeccionada por la Asociación Nacional de Juntas de Farmacia (NABP). Los medicamentos GLP-1 de marca se entregan a través de LillyDirect Pharmacy Solutions y NovoCare Pharmacy. Otros medicamentos se entregan a través de Cost Plus Drugs, que ofrece envío a domicilio, o las recetas se envían a la farmacia local de su elección.",
         },
         {
           question: "Mi medicamento llegó en un vial. ¿Cómo lo tomo?",
