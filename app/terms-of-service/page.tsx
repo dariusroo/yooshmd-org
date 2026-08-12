@@ -15,7 +15,7 @@ const sections: Section[] = [
     blocks: [
       {
         type: "p",
-        text: 'By accessing or using this website or any services provided by YooshMD ("Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the website or Services.',
+        text: 'By accessing or using this website or any services provided by Darius Roohani Medical PC dba YooshMD ("YooshMD") (collectively, the "Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the website or Services.',
       },
     ],
   },
