@@ -132,7 +132,7 @@ export const translations = {
         {
           question: "Do you accept insurance?",
           answer:
-            "We are currently self-pay only, and we do not accept Medicare or treat patients enrolled in Medicare. This allows us to give you uninterrupted and personalized care.",
+            "We are currently self-pay only. This allows us to give you uninterrupted and personalized care.",
         },
         {
           question: "Are there any recurring charges?",
@@ -445,7 +445,7 @@ export const translations = {
         {
           question: "¿Aceptan seguro médico?",
           answer:
-            "Actualmente somos de pago directo (self-pay) únicamente, y no aceptamos Medicare ni atendemos a pacientes inscritos en Medicare. Esto nos permite brindarle una atención personalizada y sin interrupciones.",
+            "Actualmente somos de pago directo (self-pay) únicamente. Esto nos permite brindarle una atención personalizada y sin interrupciones.",
         },
         {
           question: "¿Hay cargos recurrentes?",
