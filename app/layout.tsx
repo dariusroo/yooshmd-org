@@ -111,7 +111,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.yooshmd.com"),
   title: "YooshMD — Medical Weight Loss | Physician-Guided Program",
   description:
-    "Physician-guided weight loss with a real exit strategy — not indefinite medication. 100% online in CA, NV & FL. Book a free consultation.",
+    "Physician-guided weight loss (semaglutide and tirzepatide) by an expert obesity medicine specialist. 100% online in CA, NV & FL. Book a free consultation.",
   keywords: [
     "medical weight loss",
     "physician weight loss",
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "YooshMD — Medical Weight Loss",
     description:
-      "Start with medication. Finish without it. A physician-guided program with a real exit strategy.",
+      "One doctor, personally managing your care from your first visit onward. Semaglutide and tirzepatide, 100% online in CA, NV & FL.",
     siteName: "YooshMD",
     type: "website",
   },

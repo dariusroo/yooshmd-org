@@ -176,14 +176,14 @@ export const translations = {
             "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment available. Medication cost not included.",
         },
       ],
-      includeHeading: "All plans include:",
+      includeHeading: "All treatment plans include:",
       included: [
         "Physician supervision with check-ins and video visits",
         "Unlimited direct messaging with the doctor",
         "Comprehensive lab orders and review",
         "On-call doctor for urgent matters",
         "Medications shipped to your door**",
-        "Taper off or cancel anytime",
+        "Taper off or stop anytime",
       ],
       footnote1: "**Some prescriptions may be sent to a local pharmacy for more timely access.",
       initialConsultTitle: "Initial consultation with Dr. Roohani — ",
@@ -285,7 +285,7 @@ export const translations = {
         },
         {
           heading: "Medication Costs",
-          body: "The Semaglutide Program (from $220/month) and Tirzepatide Program (from $260/month) each include one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee; price varies based on prescribed dose. The Physician Oversight plan ($199 per visit, billed quarterly) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
+          body: "The Semaglutide Program (from $220/month) and Tirzepatide Program (from $260/month) each include one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee; price varies based on prescribed dose. The Physician Oversight plan ($199 per visit) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
         },
         {
           heading: "Compounded Medications",
@@ -489,14 +489,14 @@ export const translations = {
             "Wegovy®, Zepbound®, u Ozempic®, opciones orales de GLP-1, o tratamiento no GLP-1 disponible. Costo de medicamento no incluido.",
         },
       ],
-      includeHeading: "Todos los planes incluyen:",
+      includeHeading: "Todos los planes de tratamiento incluyen:",
       included: [
         "Supervisión médica con consultas de seguimiento y visitas por video",
         "Mensajería directa ilimitada con el doctor",
         "Órdenes y revisión de laboratorio integral",
         "Doctor de guardia para asuntos urgentes",
         "Medicamentos enviados a su puerta**",
-        "Reducción gradual o cancelación en cualquier momento",
+        "Reducción gradual o suspensión en cualquier momento",
       ],
       footnote1:
         "**Algunas recetas pueden enviarse a una farmacia local para un acceso más oportuno.",
@@ -599,7 +599,7 @@ export const translations = {
         },
         {
           heading: "Costos de Medicamentos",
-          body: "El Programa de Semaglutida (desde $220/mes) y el Programa de Tirzepatida (desde $260/mes) incluyen cada uno un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa; el precio varía según la dosis recetada. El plan de Supervisión Médica ($199 por visita, facturado trimestralmente) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
+          body: "El Programa de Semaglutida (desde $220/mes) y el Programa de Tirzepatida (desde $260/mes) incluyen cada uno un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa; el precio varía según la dosis recetada. El plan de Supervisión Médica ($199 por visita) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
         },
         {
           heading: "Medicamentos Compuestos",

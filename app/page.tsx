@@ -871,10 +871,10 @@ function Pricing() {
         <div className="bg-gray-50 rounded-2xl border border-gray-100 p-7 mb-6">
           <p className="font-semibold text-gray-900 mb-5">{t.pricing.includeHeading}</p>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-            {included.map((item) => (
+            {included.map((item, i) => (
               <li key={item} className="flex items-center gap-3 text-sm text-gray-700">
                 <CheckIcon />
-                {item}
+                {i === 3 ? <strong className="font-semibold">{item}</strong> : item}
               </li>
             ))}
           </ul>
