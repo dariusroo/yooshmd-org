@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -146,6 +147,11 @@ export default function RootLayout({
         />
         <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
+        <Script
+          data-goatcounter="https://yooshmd.goatcounter.com/count"
+          src="//gc.zgo.at/count.js"
+          strategy="afterInteractive"
+        />
       </body>
       <GoogleAnalytics gaId="G-8LGK2LG2JF" />
     </html>
