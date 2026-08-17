@@ -25,13 +25,9 @@ export default function BookPage() {
 
       <main className="flex-1 bg-white">
         <div className="max-w-3xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight tracking-tight mb-2">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight tracking-tight mb-10">
             Book Your Free Consultation
           </h1>
-          <p className="text-sm text-gray-600 leading-relaxed mb-10">
-            Choose a time that works for you. No charges until you decide to
-            continue.
-          </p>
 
           <div id="intakeq" style={{ maxWidth: 720, width: "100%" }} />
           <Script id="intakeq-widget" strategy="afterInteractive">
