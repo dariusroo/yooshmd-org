@@ -766,8 +766,8 @@ function Pricing() {
     },
     {
       id: "oversight" as const,
-      price: "$199",
-      priceSuffix: "/visit",
+      price: "$149",
+      priceSuffix: "/month",
       cardStyle: undefined as { backgroundColor: string; borderColor: string } | undefined,
       titleClass: "text-gray-900",
       priceClass: "text-gray-900",

@@ -158,7 +158,7 @@ export const translations = {
     },
     pricing: {
       eyebrow: "Transparent Pricing",
-      heading: "Transparent pricing. Pay monthly or per visit. No surprises.",
+      heading: "Transparent pricing. No recurrent charges or surprises.",
       subhead:
         "All patients receive direct, personalized care from Dr. Roohani. Choose a GLP-1 program or physician oversight alone — he'll help you decide what's right for you at your first consultation.",
       plans: [
@@ -285,7 +285,7 @@ export const translations = {
         },
         {
           heading: "Medication Costs",
-          body: "The Semaglutide Program (from $220/month) and Tirzepatide Program (from $260/month) each include one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee; price varies based on prescribed dose. The Physician Oversight plan ($199 per visit) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
+          body: "The Semaglutide Program (from $220/month) and Tirzepatide Program (from $260/month) each include one (1) GLP-1 medication (compounded), one month's supply per month, bundled into the program fee; price varies based on prescribed dose. The Physician Oversight plan ($149/month) does not include medication cost; medication is paid for separately if prescribed. Prices are subject to change without notice. YooshMD does not guarantee the availability or pricing of any specific medication.",
         },
         {
           heading: "Compounded Medications",
@@ -471,7 +471,7 @@ export const translations = {
     },
     pricing: {
       eyebrow: "Precios Transparentes",
-      heading: "Precios transparentes. Pague mensual o por visita. Sin sorpresas.",
+      heading: "Precios transparentes. Sin cargos recurrentes ni sorpresas.",
       subhead:
         "Todos los pacientes reciben atención directa y personalizada del Dr. Roohani. Elija entre un programa GLP-1 o solo supervisión médica — él le ayudará a decidir qué es lo más adecuado para usted en su primera consulta.",
       plans: [
@@ -599,7 +599,7 @@ export const translations = {
         },
         {
           heading: "Costos de Medicamentos",
-          body: "El Programa de Semaglutida (desde $220/mes) y el Programa de Tirzepatida (desde $260/mes) incluyen cada uno un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa; el precio varía según la dosis recetada. El plan de Supervisión Médica ($199 por visita) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
+          body: "El Programa de Semaglutida (desde $220/mes) y el Programa de Tirzepatida (desde $260/mes) incluyen cada uno un (1) medicamento GLP-1 (compuesto), un suministro de un mes por mes, incluido en la tarifa del programa; el precio varía según la dosis recetada. El plan de Supervisión Médica ($149/mes) no incluye el costo del medicamento; el medicamento se paga por separado si se receta. Los precios están sujetos a cambios sin previo aviso. YooshMD no garantiza la disponibilidad ni el precio de ningún medicamento específico.",
         },
         {
           heading: "Medicamentos Compuestos",

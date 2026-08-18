@@ -12,7 +12,7 @@ const medicalBusinessJsonLd = {
   url: "https://www.yooshmd.com",
   telephone: "+1-909-293-8095",
   email: "admin@yooshmd.com",
-  priceRange: "$199-$400",
+  priceRange: "$149-$400",
   medicalSpecialty: "Obesity Medicine",
   areaServed: [
     { "@type": "State", name: "California" },
@@ -64,14 +64,14 @@ const medicalBusinessJsonLd = {
       "@type": "Offer",
       name: "Physician Oversight",
       description:
-        "Physician-supervised weight loss care billed per visit; medication cost not included.",
-      price: "199",
+        "Physician-supervised weight loss care billed monthly; medication cost not included.",
+      price: "149",
       priceCurrency: "USD",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "199",
+        price: "149",
         priceCurrency: "USD",
-        unitText: "visit",
+        unitText: "MONTH",
       },
       url: "https://www.yooshmd.com/#pricing",
     },
