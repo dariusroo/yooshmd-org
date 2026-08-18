@@ -70,7 +70,7 @@ export const translations = {
         {
           n: "02",
           title: "Determine your treatment plan",
-          body: "Transparent pricing — monthly or per-visit. No hidden charges, no calculations, no waiting for approval.**",
+          body: "Transparent pricing, invoiced monthly. No hidden charges, no calculations, no waiting for approval.**",
         },
         {
           n: "03",
@@ -127,7 +127,7 @@ export const translations = {
         {
           question: "When will I get charged?",
           answer:
-            "For the monthly programs, you will receive an invoice which will cover treatment and medication for the month. For the Physician Oversight plan, you will only be charged for the visit itself. There are no recurring charges.",
+            "Each month, you will receive an invoice covering that month's treatment (and medication, if included in your plan). There are no automatic recurring charges — you're billed and pay invoice by invoice.",
         },
         {
           question: "Do you accept insurance?",
@@ -142,7 +142,7 @@ export const translations = {
         {
           question: "What is your refund policy?",
           answer:
-            "Shipped medications are non-refundable. Visit fees are refundable if cancelled within 24 hours of appointment time.",
+            "Once medications have been ordered, they are non-refundable.",
         },
         {
           question: "Where is your medication sourced from?",
@@ -383,7 +383,7 @@ export const translations = {
         {
           n: "02",
           title: "Determine su plan de tratamiento",
-          body: "Precios transparentes — mensual o por visita. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
+          body: "Precios transparentes, facturados mensualmente. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
         },
         {
           n: "03",
@@ -440,7 +440,7 @@ export const translations = {
         {
           question: "¿Cuándo se me cobrará?",
           answer:
-            "Para los programas mensuales, recibirá una factura que cubrirá el tratamiento y el medicamento del mes. Para el plan de Supervisión Médica, solo se le cobrará por la visita en sí. No hay cargos recurrentes.",
+            "Cada mes recibirá una factura que cubre el tratamiento (y el medicamento, si está incluido en su plan) de ese mes. No hay cargos automáticos recurrentes — se le factura y paga factura por factura.",
         },
         {
           question: "¿Aceptan seguro médico?",
@@ -455,7 +455,7 @@ export const translations = {
         {
           question: "¿Cuál es su política de reembolso?",
           answer:
-            "Los medicamentos enviados no son reembolsables. Las tarifas de visita son reembolsables si se cancela con 24 horas de anticipación a la hora de la cita.",
+            "Una vez que los medicamentos han sido pedidos, no son reembolsables.",
         },
         {
           question: "¿De dónde proviene su medicamento?",
