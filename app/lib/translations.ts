@@ -142,7 +142,7 @@ export const translations = {
         {
           question: "What is your refund policy?",
           answer:
-            "Once medications have been ordered, they are non-refundable.",
+            "Once medications have been ordered, they are non-refundable. Invoices that are paid are also non-refundable.",
         },
         {
           question: "Where is your medication sourced from?",
@@ -455,7 +455,7 @@ export const translations = {
         {
           question: "¿Cuál es su política de reembolso?",
           answer:
-            "Una vez que los medicamentos han sido pedidos, no son reembolsables.",
+            "Una vez que los medicamentos han sido pedidos, no son reembolsables. Las facturas ya pagadas tampoco son reembolsables.",
         },
         {
           question: "¿De dónde proviene su medicamento?",
