@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: "*", allow: "/" },
+      { userAgent: "*", allow: "/", disallow: "/refer" },
 
       // AI search / citation bots — allowed. These fetch pages live to
       // answer user questions and cite back with a link.
