@@ -111,6 +111,13 @@ function Nav() {
             >
               {t.nav.blog}
             </a>
+            <a
+              href="/refer"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.referPatient}
+            </a>
           </div>
         </div>
       )}

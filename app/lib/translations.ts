@@ -11,6 +11,7 @@ export const translations = {
       about: "About",
       faq: "FAQ",
       blog: "Blog",
+      referPatient: "Refer a Patient",
       phone: "(909) 293-8095",
     },
     hero: {
@@ -324,6 +325,7 @@ export const translations = {
       about: "Acerca de",
       faq: "Preguntas Frecuentes",
       blog: "Blog",
+      referPatient: "Referir a un Paciente",
       phone: "(909) 293-8095",
     },
     hero: {
