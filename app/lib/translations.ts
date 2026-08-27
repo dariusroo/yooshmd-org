@@ -97,7 +97,7 @@ export const translations = {
     reviews: {
       eyebrow: "About the Doctor",
       verifiedFrom: "Verified reviews from",
-      zocdoc: "ZocDoc",
+      google: "Google",
       doctorName: "Darius Roohani, MD",
       bio: "Dr. Darius Roohani is double board-certified in Internal Medicine and Obesity Medicine, trained at the University of Nevada, Reno School of Medicine and Cedars-Sinai. In five years treating patients for weight loss, he's focused on what it changes beyond the number on the scale — health, confidence, and the ability to do more.",
     },
@@ -310,7 +310,7 @@ export const translations = {
         },
         {
           heading: "Patient Reviews",
-          body: "Patient reviews displayed on this website were collected through ZocDoc. Reviews are presented using patient initials only. YooshMD does not edit or fabricate patient reviews.",
+          body: "Patient reviews displayed on this website were collected through Google. Reviews are presented using reviewer initials only. YooshMD does not edit or fabricate patient reviews.",
         },
       ],
     },
@@ -411,7 +411,7 @@ export const translations = {
     reviews: {
       eyebrow: "Acerca del Doctor",
       verifiedFrom: "Reseñas verificadas de",
-      zocdoc: "ZocDoc",
+      google: "Google",
       doctorName: "Darius Roohani, MD",
       bio: "El Dr. Darius Roohani está certificado por dos juntas médicas en Medicina Interna y Medicina de la Obesidad, capacitado en la Facultad de Medicina de la Universidad de Nevada, Reno y en Cedars-Sinai. En cinco años tratando pacientes para la pérdida de peso, se ha enfocado en lo que cambia más allá del número en la báscula — salud, confianza y la capacidad de hacer más.",
     },
@@ -625,7 +625,7 @@ export const translations = {
         },
         {
           heading: "Reseñas de Pacientes",
-          body: "Las reseñas de pacientes que se muestran en este sitio web fueron recopiladas a través de ZocDoc. Las reseñas se presentan usando solo las iniciales del paciente. YooshMD no edita ni fabrica reseñas de pacientes.",
+          body: "Las reseñas de pacientes que se muestran en este sitio web fueron recopiladas a través de Google. Las reseñas se presentan usando solo las iniciales del autor. YooshMD no edita ni fabrica reseñas de pacientes.",
         },
       ],
     },

@@ -460,53 +460,57 @@ function HowItWorks() {
 
 function Reviews() {
   const { t } = useLanguage();
-  // Review quotes are direct attributed patient testimonials from ZocDoc and
+  // Review quotes are direct attributed patient testimonials from Google and
   // are intentionally left in English in both language modes.
   const reviews = [
     {
-      initials: "GY",
+      initials: "PP",
       quote:
-        "He reviewed my medications and identified some that could be causing weight gain. No one had ever discussed this with me before. He was very thoughtful and helped me with weight loss. I highly recommend his services.",
+        "Excellent experience! Dr. Roohani is caring, professional and very knowledgeable. He takes the time to create a personalized plan and provide ongoing support every step of the way. I highly recommend him to anyone looking to improve their health and achieve their weight loss goals!",
     },
     {
-      initials: "SS",
+      initials: "MA",
       quote:
-        "Dr. Roohani is the kindest and most diligent doctor I've ever worked with. I was anxious about both starting a new medication and my weight loss journey, but he made me feel comfortable from the very first visit. He took the time to answer all of my questions and laid out a clear plan tailored to my goals. He's been with me every step of the way, checking in and adjusting things as needed.",
+        "I had a very positive experience. Doctor Roohani was attentive, listened carefully to my concerns, and took the time to thoroughly discuss my goals and challenges. I never felt rushed and appreciated the thoughtful, personalized approach. I would highly recommend him to anyone looking for a knowledgeable and caring physician.",
     },
     {
-      initials: "AS",
+      initials: "FS",
       quote:
-        "My insurance wouldn't cover weight loss meds so I found this doctor and gave it a shot. I was absolutely impressed with the experience and results. He talked to me for longer than any doctor I've ever had, helped explain how to get cost effective meds, and has been with me every step of the way. He's very practical and honest, with nonstop recommendations on diet, calorie count, exercise, and medication.",
+        "I really appreciate this doctor. He did a lot for me when other doctors brushed it off. I definitely recommend him!",
+    },
+    {
+      initials: "GS",
+      quote:
+        "An exceptional physician who is knowledgeable, professional, and dedicated to high-quality care. He takes the time to explain things thoroughly and approach his work with genuine compassion and attention to detail. Highly recommended for anyone seeking a thoughtful and reliable doctor.",
+    },
+    {
+      initials: "BS",
+      quote:
+        "Great doctor! Helped me with hormone regulation and weight loss.",
+    },
+    {
+      initials: "GA",
+      quote:
+        "He took the time to review my medications and found out that some can cause weight gain. Nobody has ever brought this up before. He is thoughtful and very helpful. He helped me a lot with weight loss. I highly recommend this doctor.",
+    },
+    {
+      initials: "AC",
+      quote:
+        "Great bedside manner and very respectful. Was very attentive and warm.",
     },
     {
       initials: "AA",
       quote:
-        "Working with Dr. Roohani felt very different from my past experiences. He was patient, attentive, and made sure the plan actually fit into my routine.",
+        "Dr. Darius Roohani made weight loss feel realistic and sustainable. He took the time to create a personalized plan, explained everything clearly, and focused on long-term results instead of quick fixes. Highly recommend for anyone looking for supportive, medically guided weight loss care.",
     },
     {
-      initials: "CI",
+      initials: "RA",
       quote:
-        "Dr. Roohani was very easy to talk to and didn't make me feel judged at all. He explained my options clearly and helped me come up with a plan that actually feels doable. I appreciated that he focuses on long-term results, not just quick fixes.",
+        "Amazing results! Doctor is very professional. Highly recommend.",
     },
     {
-      initials: "SE",
-      quote:
-        "Dr. Roohani has been a huge help in my weight loss journey. He really took my PCOS into account and made sure my plan actually made sense for me. I appreciate that he doesn't just focus on medication. With his help, I now have a realistic nutrition plan that I can stick to. You can tell he genuinely cares and listens.",
-    },
-    {
-      initials: "SE",
-      quote:
-        "Dr. Roohani really understands how challenging obesity can be. He takes a practical, no-judgment approach and focuses on what actually works long term. I've felt supported the whole way and have finally been able to make steady progress.",
-    },
-    {
-      initials: "ME",
-      quote:
-        "I was honestly embarrassed to even bring it up, but Dr. Roohani made the whole experience completely judgment-free. He was straightforward, respectful, and focused on what would actually work for me.",
-    },
-    {
-      initials: "MS",
-      quote:
-        "At 54, I didn't think weight loss would be realistic for me anymore, but Dr. Roohani proved me wrong. He created a plan that actually fits my lifestyle and pace, and nothing feels extreme or overwhelming. I've been able to make steady progress and feel better than I have in years.",
+      initials: "SS",
+      quote: "He was really kind and was very patient.",
     },
   ];
 
@@ -526,12 +530,12 @@ function Reviews() {
               <p className="text-sm text-gray-500 mt-1">
                 {t.reviews.verifiedFrom}{" "}
                 <a
-                  href="https://www.zocdoc.com/doctor/darius-roohani-md-720799"
+                  href="https://www.google.com/maps?cid=437901009696243593"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-gray-700 transition-colors"
                 >
-                  {t.reviews.zocdoc}
+                  {t.reviews.google}
                 </a>
               </p>
             </FadeIn>

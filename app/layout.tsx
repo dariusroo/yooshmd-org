@@ -21,7 +21,7 @@ const medicalBusinessJsonLd = {
   ],
   sameAs: [
     "https://www.instagram.com/yooshmd",
-    "https://www.zocdoc.com/doctor/darius-roohani-md-720799",
+    "https://www.google.com/maps?cid=437901009696243593",
     "https://www.doximity.com/profiles/ed9bf0b0-3242-417e-b827-40daba081947",
     "https://www.linkedin.com/in/darius-roohani-md-5a114435a/",
     "https://www.facebook.com/profile.php?id=61578411332212",
