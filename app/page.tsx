@@ -464,29 +464,14 @@ function Reviews() {
   // are intentionally left in English in both language modes.
   const reviews = [
     {
+      initials: "SA",
+      quote:
+        "I had an amazing experience with Dr. Roohani. He truly helped me on my weight loss journey and made me feel supported every step of the way. He is knowledgeable, caring and really takes the time to listen to his patients. Not only have I seen a great results, but I also feel healthier and more confident. He is wonderful and the entire experience has been positive from start to finish. I highly recommend Dr. Roohani to anyone looking for a doctor who genuinely cares and deliver excellent results.",
+    },
+    {
       initials: "PP",
       quote:
         "Excellent experience! Dr. Roohani is caring, professional and very knowledgeable. He takes the time to create a personalized plan and provide ongoing support every step of the way. I highly recommend him to anyone looking to improve their health and achieve their weight loss goals!",
-    },
-    {
-      initials: "MA",
-      quote:
-        "I had a very positive experience. Doctor Roohani was attentive, listened carefully to my concerns, and took the time to thoroughly discuss my goals and challenges. I never felt rushed and appreciated the thoughtful, personalized approach. I would highly recommend him to anyone looking for a knowledgeable and caring physician.",
-    },
-    {
-      initials: "FS",
-      quote:
-        "I really appreciate this doctor. He did a lot for me when other doctors brushed it off. I definitely recommend him!",
-    },
-    {
-      initials: "GS",
-      quote:
-        "An exceptional physician who is knowledgeable, professional, and dedicated to high-quality care. He takes the time to explain things thoroughly and approach his work with genuine compassion and attention to detail. Highly recommended for anyone seeking a thoughtful and reliable doctor.",
-    },
-    {
-      initials: "BS",
-      quote:
-        "Great doctor! Helped me with hormone regulation and weight loss.",
     },
     {
       initials: "GA",
@@ -494,23 +479,39 @@ function Reviews() {
         "He took the time to review my medications and found out that some can cause weight gain. Nobody has ever brought this up before. He is thoughtful and very helpful. He helped me a lot with weight loss. I highly recommend this doctor.",
     },
     {
-      initials: "AC",
+      initials: "AS",
       quote:
-        "Great bedside manner and very respectful. Was very attentive and warm.",
+        "Great experience with this M.D. Took the time to run through all the options, realistic costs, and came up with a long term plan for weight loss including exercise and diet. Not just dispensing meds like some of the big corporate companies that want to keep you on the hook forever with their ongoing fees. He even took the time to speak to the pharmacy for me and find a way to get me meds for cheaper than I expected. 10/10 would recommend.",
     },
     {
-      initials: "AA",
+      initials: "MA",
       quote:
-        "Dr. Darius Roohani made weight loss feel realistic and sustainable. He took the time to create a personalized plan, explained everything clearly, and focused on long-term results instead of quick fixes. Highly recommend for anyone looking for supportive, medically guided weight loss care.",
+        "I had a very positive experience. Doctor Roohani was attentive, listened carefully to my concerns, and took the time to thoroughly discuss my goals and challenges. I never felt rushed and appreciated the thoughtful, personalized approach. I would highly recommend him to anyone looking for a knowledgeable and caring physician.",
     },
     {
-      initials: "RA",
+      initials: "EA",
       quote:
-        "Amazing results! Doctor is very professional. Highly recommend.",
+        "I was recommended to see Dr Roohani by a close friend. He was everything as advertised - kind, patient, and above all else a good listener. All the qualities you want in a good doctor. He came up with a plan for me and I've been amazed at the results! I would recommend this doctor to anyone seeking a compassionate advocate for their health.",
     },
     {
-      initials: "SS",
-      quote: "He was really kind and was very patient.",
+      initials: "KA",
+      quote:
+        "Dr. Roohani is a highly educated and insightful physician when it comes to weight loss. He has helped some members of my family and they are very happy with his work and they have seen the results. His method is honest and makes perfect sense when he breaks it down. I wish more doctors took this approach. If you or anyone you know is struggling with weight loss, you cannot go wrong with Dr. Roohani!",
+    },
+    {
+      initials: "ME",
+      quote:
+        "I had been trying different clinics to lose weight, but nothing seemed to work for me. That all changed when I met Dr. Yoosh. He truly made a difference in my life. Not only did he help me lose weight, but he also helped me feel healthier and more confident overall. Dr. Yoosh took the time to understand my needs and guided me with care and professionalism. His approach really works, and you can tell he genuinely cares about his patients' well-being. I'm so grateful for his help—he is truly wonderful, and I highly recommend him to anyone looking to improve their health.",
+    },
+    {
+      initials: "AM",
+      quote:
+        "Dr. Roohani is a highly knowledgeable primary care physician specializing in weight loss, known for creating personalized, evidence-based plans focused on long-term results. He stands out for his excellent people skills—he listens carefully, treats patients with respect, and fosters a supportive, non-judgmental environment that makes open communication easy. Overall, he combines strong medical expertise with genuine compassion, making him a trusted doctor in weight management care.",
+    },
+    {
+      initials: "PR",
+      quote:
+        "What truly sets YooshMD apart is their holistic perspective on health, they don't just prescribe medication; they incorporate lifestyle changes that are realistic and sustainable, making it easier for patients to maintain their goal weight over the long term. The medically supervised tapering process reflects their dedication to safe and responsible treatment, ensuring that patients feel supported every step of the way.",
     },
   ];
 
