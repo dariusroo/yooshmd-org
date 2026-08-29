@@ -19,7 +19,7 @@ export default function ChatsIndexPage() {
             className="mx-auto mb-4"
           />
           <p className="text-lg font-medium text-gray-200">
-            {chats.length > 0 ? "Select a chat" : "No chats yet"}
+            {chats.length > 0 ? "Doctor versus ChatGPT" : "No chats yet"}
           </p>
           <p className="mt-2 text-sm text-gray-500 max-w-sm">
             {chats.length > 0
