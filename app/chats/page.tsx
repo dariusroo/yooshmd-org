@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getAllChats } from "./lib/transcripts";
 
 export default function ChatsIndexPage() {
@@ -7,6 +8,14 @@ export default function ChatsIndexPage() {
     <div className="flex-1 flex flex-col min-w-0">
       <div className="flex-1 flex items-center justify-center px-6 text-center">
         <div>
+          <Image
+            src="/chats/mascot.png"
+            alt=""
+            width={220}
+            height={220}
+            priority
+            className="mx-auto mb-4"
+          />
           <p className="text-lg font-medium text-gray-200">
             {chats.length > 0 ? "Select a chat" : "No chats yet"}
           </p>
