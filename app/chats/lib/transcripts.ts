@@ -47,10 +47,22 @@ function listSlugs(): string[] {
 }
 
 export function getAllChats(): ChatSummary[] {
-  return listSlugs().map((slug) => {
-    const { title, date } = readChatFile(slug);
-    return { slug, title: title || titleFromSlug(slug), date };
-  });
+  return listSlugs()
+    .map((slug) => {
+      const { title, date } = readChatFile(slug);
+      return { slug, title: title || titleFromSlug(slug), date };
+    })
+    .sort((a, b) => parseDisplayDate(b.date) - parseDisplayDate(a.date));
+}
+
+// Parses a "Date:" value like "8/28/26" or "8/28/2026" for sorting newest-first.
+// Chats without a parseable date sort to the end.
+function parseDisplayDate(date: string | undefined): number {
+  const match = date?.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
+  if (!match) return -Infinity;
+  const [, m, d, y] = match;
+  const year = y.length === 2 ? 2000 + Number(y) : Number(y);
+  return new Date(year, Number(m) - 1, Number(d)).getTime();
 }
 
 export function getChat(slug: string): Chat | null {
