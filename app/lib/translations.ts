@@ -20,9 +20,9 @@ export const translations = {
       titleEmph: "doctor",
       titlePost: ", not a faceless brand.",
       subheadPre:
-        "Personally accountable for your weight loss care, from your first visit onward. Board-certified obesity medicine ",
-      subheadEmph: "specialist",
-      subheadPost: ". Science-backed expertise.",
+        "Personally accountable for your weight loss care, from your first visit onward. ",
+      subheadEmph: "Board-certified obesity medicine specialist.",
+      subheadPost: " Science-backed expertise.",
       ctaBook: "Book Free Consultation",
       ctaCall: "Call (909) 293-8095",
       checklist: [
@@ -335,8 +335,8 @@ export const translations = {
       titlePost: ", no una marca sin rostro.",
       subheadPre:
         "Responsable personalmente de su cuidado para la pérdida de peso, desde su primera visita en adelante. ",
-      subheadEmph: "Especialista",
-      subheadPost: " certificado en medicina de la obesidad. Experiencia respaldada por la ciencia.",
+      subheadEmph: "Especialista certificado en medicina de la obesidad.",
+      subheadPost: " Experiencia respaldada por la ciencia.",
       ctaBook: "Reserve su Consulta Gratis",
       ctaCall: "Llame al (909) 293-8095",
       checklist: [

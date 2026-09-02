@@ -192,7 +192,9 @@ function Hero() {
 
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
                 {t.hero.subheadPre}
-                {t.hero.subheadEmph}
+                <strong className="font-semibold text-gray-900">
+                  {t.hero.subheadEmph}
+                </strong>
                 {t.hero.subheadPost}
               </p>
             </FadeIn>
