@@ -103,15 +103,6 @@ function Nav() {
               {t.nav.faq}
             </a>
             <a
-              href="https://blog.yooshmd.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.blog}
-            </a>
-            <a
               href="/refer"
               onClick={() => setMenuOpen(false)}
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
