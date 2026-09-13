@@ -141,6 +141,11 @@ export const translations = {
             "No. You will receive a line-item invoice before treatment is rendered. Once the invoice is paid, your medication will be sent or prescribed and your labs will be ordered. If not, your slot will be released.",
         },
         {
+          question: "Do I have to enroll in a monthly program?",
+          answer:
+            "No, you can choose to pay per visit after the initial consultation. Labs and medication costs are not included. The fee includes clinical monitoring, direct access, and a 3-month prescription with a follow up visit. Medication or dose adjustments will require a visit.",
+        },
+        {
           question: "What is your refund policy?",
           answer:
             "Once medications have been ordered, they are non-refundable. Invoices that are paid are also non-refundable.",
@@ -154,11 +159,6 @@ export const translations = {
           question: "My medication came in a vial. How do I take it?",
           answer:
             "Your medication ships with detailed instructions for drawing up and injecting your prescribed dose. If you have any questions, the doctor is available to walk you through it.",
-        },
-        {
-          question: "Do I have to enroll in a monthly program?",
-          answer:
-            "No, you can choose to pay per visit after the initial consultation. Labs and medication costs are not included. The fee includes clinical monitoring, direct access, and a 3-month prescription with a follow up visit. Medication or dose adjustments will require a visit.",
         },
         {
           question: "Can I choose which pharmacy I can get my medications from?",
@@ -465,6 +465,11 @@ export const translations = {
             "No. Recibirá una factura detallada antes de que se administre el tratamiento. Una vez pagada la factura, su medicamento será enviado o recetado y se ordenarán sus análisis de laboratorio. Si no se paga, su cupo será liberado.",
         },
         {
+          question: "¿Tengo que inscribirme en un programa mensual?",
+          answer:
+            "No, puede optar por pagar por visita después de la consulta inicial. Los análisis de laboratorio y el costo del medicamento no están incluidos. La tarifa incluye monitoreo clínico, acceso directo y una receta para 3 meses con una visita de seguimiento. Los ajustes de medicamento o dosis requerirán una visita.",
+        },
+        {
           question: "¿Cuál es su política de reembolso?",
           answer:
             "Una vez que los medicamentos han sido pedidos, no son reembolsables. Las facturas ya pagadas tampoco son reembolsables.",
@@ -478,11 +483,6 @@ export const translations = {
           question: "Mi medicamento llegó en un vial. ¿Cómo lo tomo?",
           answer:
             "Su medicamento se envía con instrucciones detalladas para extraer e inyectar su dosis recetada. Si tiene alguna pregunta, el doctor está disponible para guiarlo.",
-        },
-        {
-          question: "¿Tengo que inscribirme en un programa mensual?",
-          answer:
-            "No, puede optar por pagar por visita después de la consulta inicial. Los análisis de laboratorio y el costo del medicamento no están incluidos. La tarifa incluye monitoreo clínico, acceso directo y una receta para 3 meses con una visita de seguimiento. Los ajustes de medicamento o dosis requerirán una visita.",
         },
         {
           question: "¿Puedo elegir de qué farmacia obtener mis medicamentos?",
