@@ -155,6 +155,16 @@ export const translations = {
           answer:
             "Your medication ships with detailed instructions for drawing up and injecting your prescribed dose. If you have any questions, the doctor is available to walk you through it.",
         },
+        {
+          question: "Do I have to enroll in a monthly program?",
+          answer:
+            "No, you can choose to pay per visit after the initial consultation. Labs and medication costs are not included. The fee includes clinical monitoring, direct access, and a 3-month prescription with a follow up visit. Medication or dose adjustments will require a visit.",
+        },
+        {
+          question: "Can I choose which pharmacy I can get my medications from?",
+          answer:
+            "While we do partner with pharmacies to offer affordable prices, you can choose to source your medication from any pharmacy; however we cannot guarantee a price.",
+        },
       ],
     },
     pricing: {
@@ -468,6 +478,16 @@ export const translations = {
           question: "Mi medicamento llegó en un vial. ¿Cómo lo tomo?",
           answer:
             "Su medicamento se envía con instrucciones detalladas para extraer e inyectar su dosis recetada. Si tiene alguna pregunta, el doctor está disponible para guiarlo.",
+        },
+        {
+          question: "¿Tengo que inscribirme en un programa mensual?",
+          answer:
+            "No, puede optar por pagar por visita después de la consulta inicial. Los análisis de laboratorio y el costo del medicamento no están incluidos. La tarifa incluye monitoreo clínico, acceso directo y una receta para 3 meses con una visita de seguimiento. Los ajustes de medicamento o dosis requerirán una visita.",
+        },
+        {
+          question: "¿Puedo elegir de qué farmacia obtener mis medicamentos?",
+          answer:
+            "Aunque trabajamos con farmacias asociadas para ofrecer precios accesibles, puede optar por obtener su medicamento de cualquier farmacia; sin embargo, no podemos garantizar un precio.",
         },
       ],
     },
