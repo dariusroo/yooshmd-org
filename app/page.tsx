@@ -48,7 +48,7 @@ function Nav() {
 
         {/* Actions — grouped together on the right */}
         <div className="flex items-center gap-2 sm:gap-4">
-          <BookButton href="https://intakeq.com/new/tfe8ap" location="nav" size="sm" color="green">
+          <BookButton href={t.bookingUrl} location="nav" size="sm" color="green">
             <span className="sm:hidden">{t.nav.bookShort}</span>
             <span className="hidden sm:inline">{t.nav.bookFull}</span>
           </BookButton>
@@ -191,7 +191,7 @@ function Hero() {
             </FadeIn>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
-              <BookButton href="https://intakeq.com/new/tfe8ap" location="hero" size="lg">
+              <BookButton href={t.bookingUrl} location="hero" size="lg">
                 {t.hero.ctaBook}
               </BookButton>
               <a
@@ -910,7 +910,7 @@ function Pricing() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <BookButton href="https://intakeq.com/new/tfe8ap" location="pricing" size="lg">
+              <BookButton href={t.bookingUrl} location="pricing" size="lg">
                 {t.pricing.initialConsultCta}
               </BookButton>
             </div>

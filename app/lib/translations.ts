@@ -2,6 +2,7 @@ export type Lang = "en" | "es";
 
 export const translations = {
   en: {
+    bookingUrl: "https://intakeq.com/new/tfe8ap",
     nav: {
       bookShort: "Start Here",
       bookFull: "Book Free Consultation",
@@ -326,6 +327,7 @@ export const translations = {
     },
   },
   es: {
+    bookingUrl: "https://intakeq.com/new/wsoc7d",
     nav: {
       bookShort: "Empezar",
       bookFull: "Reserve su Consulta Gratis",
