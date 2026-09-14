@@ -123,7 +123,7 @@ export const translations = {
         {
           question: "Do I have to be on medication forever?",
           answer:
-            "No. Many patients use medication temporarily to help establish momentum while building sustainable habits. We actively support tapering or discontinuing medications once your goal weight is achieved and lifestyle changes are established. The one exception: if GLP-1 medications are being used to manage a condition beyond obesity — such as type 2 diabetes or liver disease — continuing long-term may be medically appropriate, and we'll discuss that with you directly.",
+            "No. Many patients use medication temporarily to help establish momentum while building sustainable habits. We actively support tapering or discontinuing medications once your goal weight is achieved and lifestyle changes are established. If GLP-1 medications are being used to manage a condition beyond obesity — such as type 2 diabetes or liver disease — continuing long-term may be medically appropriate, and we'll discuss that with you directly.",
         },
         {
           question: "When will I get charged?",
@@ -447,7 +447,7 @@ export const translations = {
         {
           question: "¿Tengo que tomar el medicamento para siempre?",
           answer:
-            "No. Muchos pacientes usan el medicamento temporalmente para ayudar a generar impulso mientras desarrollan hábitos sostenibles. Apoyamos activamente la reducción gradual o suspensión de los medicamentos una vez que se alcanza el peso objetivo y se establecen los cambios de estilo de vida. La única excepción: si los medicamentos GLP-1 se usan para manejar una condición más allá de la obesidad — como diabetes tipo 2 o enfermedad hepática — continuar a largo plazo puede ser médicamente apropiado, y lo hablaremos directamente con usted.",
+            "No. Muchos pacientes usan el medicamento temporalmente para ayudar a generar impulso mientras desarrollan hábitos sostenibles. Apoyamos activamente la reducción gradual o suspensión de los medicamentos una vez que se alcanza el peso objetivo y se establecen los cambios de estilo de vida. Si los medicamentos GLP-1 se usan para manejar una condición más allá de la obesidad — como diabetes tipo 2 o enfermedad hepática — continuar a largo plazo puede ser médicamente apropiado, y lo hablaremos directamente con usted.",
         },
         {
           question: "¿Cuándo se me cobrará?",
