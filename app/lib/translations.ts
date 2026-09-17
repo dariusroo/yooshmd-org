@@ -38,11 +38,11 @@ export const translations = {
     trustBar: [
       {
         value: "GLP-1 Available",
-        label: "Semaglutide and Tirzepatide†",
+        label: "Semaglutide and Tirzepatide",
         sub: "Oral options available",
       },
       { value: "100% Virtual", label: "Available in CA, NV & FL", sub: "Telehealth" },
-      { value: "Transparent", label: "Clear, upfront pricing", sub: "No hidden fees" },
+      { value: "Transparent", label: "Clear, upfront pricing", sub: "No surprise charges" },
     ],
     trustBarDisclaimer:
       "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
@@ -185,7 +185,7 @@ export const translations = {
         {
           name: "Physician Oversight",
           tagline:
-            "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment available. Medication cost not included.",
+            "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment available. Medication cost and lab order cost not included*.",
         },
       ],
       includeHeading: "All treatment plans include:",
@@ -194,10 +194,11 @@ export const translations = {
         "Unlimited direct messaging with the doctor",
         "Comprehensive lab orders and review",
         "On-call doctor for urgent matters",
-        "Medications shipped to your door**",
+        "Medications shipped to your door",
         "Taper off or stop anytime",
       ],
       footnote1: "**Some prescriptions may be sent to a local pharmacy for more timely access.",
+      oversightLabFootnote: "*Basic lab panel is $36.",
       initialConsultTitle: "Initial consultation with Dr. Roohani — ",
       free: "FREE",
       initialConsultDetails:
@@ -363,11 +364,11 @@ export const translations = {
     trustBar: [
       {
         value: "GLP-1 Disponible",
-        label: "Semaglutida y Tirzepatida†",
+        label: "Semaglutida y Tirzepatida",
         sub: "Opciones orales disponibles",
       },
       { value: "100% Virtual", label: "Disponible en CA, NV y FL", sub: "Telesalud" },
-      { value: "Transparente", label: "Precios claros y directos", sub: "Sin cargos ocultos" },
+      { value: "Transparente", label: "Precios claros y directos", sub: "Sin cargos sorpresa" },
     ],
     trustBarDisclaimer:
       "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
@@ -510,7 +511,7 @@ export const translations = {
         {
           name: "Supervisión Médica",
           tagline:
-            "Wegovy®, Zepbound®, u Ozempic®, opciones orales de GLP-1, o tratamiento no GLP-1 disponible. Costo de medicamento no incluido.",
+            "Wegovy®, Zepbound®, u Ozempic®, opciones orales de GLP-1, o tratamiento no GLP-1 disponible. Costo de medicamento y costo de órdenes de laboratorio no incluidos*.",
         },
       ],
       includeHeading: "Todos los planes de tratamiento incluyen:",
@@ -519,11 +520,12 @@ export const translations = {
         "Mensajería directa ilimitada con el doctor",
         "Órdenes y revisión de laboratorio integral",
         "Doctor de guardia para asuntos urgentes",
-        "Medicamentos enviados a su puerta**",
+        "Medicamentos enviados a su puerta",
         "Reducción gradual o suspensión en cualquier momento",
       ],
       footnote1:
         "**Algunas recetas pueden enviarse a una farmacia local para un acceso más oportuno.",
+      oversightLabFootnote: "*El panel básico de laboratorio cuesta $36.",
       initialConsultTitle: "Consulta inicial con el Dr. Roohani — ",
       free: "GRATIS",
       initialConsultDetails:

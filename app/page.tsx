@@ -296,7 +296,6 @@ function TrustBar() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-gray-500 mt-6 text-center">{withDagger(t.trustBarDisclaimer)}</p>
       </div>
     </section>
   );
@@ -771,7 +770,7 @@ function Pricing() {
     },
     {
       id: "oversight" as const,
-      price: "$155",
+      price: "$149",
       priceSuffix: "/month",
       cardStyle: undefined as { backgroundColor: string; borderColor: string } | undefined,
       titleClass: "text-gray-900",
@@ -883,10 +882,8 @@ function Pricing() {
               </li>
             ))}
           </ul>
-          <p className="text-xs text-gray-400 mt-5">
-            {t.pricing.footnote1}
-          </p>
         </div>
+        <p className="text-xs text-gray-400 -mt-3 mb-6">{t.pricing.oversightLabFootnote}</p>
 
         {/* Initial consult callout */}
         <div
