@@ -17,7 +17,7 @@ const structuredData = {
       url: SITE_URL,
       telephone: "+1-909-293-8095",
       email: "admin@yooshmd.com",
-      priceRange: "$155-$400",
+      priceRange: "$149-$400",
       medicalSpecialty: "Obesity Medicine",
       address: {
         "@type": "PostalAddress",
@@ -83,12 +83,12 @@ const structuredData = {
           "@type": "Offer",
           name: "Physician Oversight",
           description:
-            "Physician-supervised weight loss care billed monthly; medication cost not included.",
-          price: "155",
+            "Physician-supervised weight loss care billed monthly; medication and lab order cost not included.",
+          price: "149",
           priceCurrency: "USD",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: "155",
+            price: "149",
             priceCurrency: "USD",
             unitText: "MONTH",
           },
