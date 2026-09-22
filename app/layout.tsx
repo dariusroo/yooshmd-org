@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { LanguageProvider } from "./lib/LanguageContext";
+import AnalyticsGate from "./components/AnalyticsGate";
 
 const SITE_URL = "https://www.yooshmd.com";
 
@@ -182,7 +182,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          {children}
+          <AnalyticsGate />
+        </LanguageProvider>
         <Analytics />
         <Script
           data-goatcounter="https://yooshmd.goatcounter.com/count"
@@ -190,7 +193,6 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </body>
-      <GoogleAnalytics gaId="G-8LGK2LG2JF" />
     </html>
   );
 }

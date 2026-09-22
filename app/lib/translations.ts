@@ -3,6 +3,12 @@ export type Lang = "en" | "es";
 export const translations = {
   en: {
     bookingUrl: "https://intakeq.com/new/tfe8ap",
+    analyticsNotice: {
+      text: "We use privacy-friendly analytics and Google Analytics to understand site traffic. This website does not collect any patient or health information — that's handled securely through our patient portal. See our",
+      linkText: "Privacy Policy",
+      accept: "Got it",
+      optOut: "Turn off Google Analytics",
+    },
     nav: {
       bookShort: "Start Here",
       bookFull: "Book Free Consultation",
@@ -253,6 +259,7 @@ export const translations = {
         "Physician-guided medical weight loss. 100% online. Serving California, Nevada, and Florida.",
       links: {
         privacy: "Privacy Policy",
+        privacyChoices: "Your Privacy Choices",
         disclaimers: "Disclosures & Disclaimers",
         terms: "Terms of Service",
         telehealth: "Telehealth Notice",
@@ -329,6 +336,12 @@ export const translations = {
   },
   es: {
     bookingUrl: "https://intakeq.com/new/wsoc7d",
+    analyticsNotice: {
+      text: "Utilizamos análisis respetuosos con la privacidad y Google Analytics para entender el tráfico del sitio. Este sitio web no recopila información médica ni de pacientes — eso se maneja de forma segura a través de nuestro portal de pacientes. Consulte nuestra",
+      linkText: "Política de Privacidad",
+      accept: "Entendido",
+      optOut: "Desactivar Google Analytics",
+    },
     nav: {
       bookShort: "Empezar",
       bookFull: "Reserve su Consulta Gratis",
@@ -580,6 +593,7 @@ export const translations = {
         "Pérdida de peso médica dirigida por un doctor. 100% en línea. Sirviendo California, Nevada y Florida.",
       links: {
         privacy: "Política de Privacidad",
+        privacyChoices: "Sus Opciones de Privacidad",
         disclaimers: "Divulgaciones y Descargos de Responsabilidad",
         terms: "Términos de Servicio",
         telehealth: "Aviso de Telesalud",

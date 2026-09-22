@@ -76,6 +76,12 @@ export default function Footer() {
             >
               {t.footer.links.privacy}
             </a>
+            <a
+              href="/privacy-policy#california-privacy-rights"
+              className="hover:text-white transition-colors"
+            >
+              {t.footer.links.privacyChoices}
+            </a>
             <a href="/disclaimers" className="hover:text-white transition-colors">
               {t.footer.links.disclaimers}
             </a>

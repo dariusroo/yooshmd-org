@@ -7,6 +7,7 @@ type Block =
 
 type Section = {
   heading: string;
+  id?: string;
   blocks: Block[];
 };
 
@@ -128,15 +129,19 @@ const sections: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "We may use cookies or similar technologies to support website functionality and security.",
+        text: "This website does not collect or store any patient or health information. Medical records, intake forms, and treatment information are collected and stored separately, through our secure, HIPAA-compliant patient portal.",
       },
       {
         type: "p",
-        text: "You may control cookies through your browser settings. Disabling cookies may affect certain features of the website.",
+        text: "We use Google Analytics, Vercel Analytics, and GoatCounter to understand general website traffic, such as which pages are visited. These tools do not have access to patient or health information.",
       },
       {
         type: "p",
-        text: "We do not use tracking technologies for cross-context behavioral advertising in connection with health-related interactions.",
+        text: "We do not enable Google Signals and do not link this website's analytics to any Google Ads account. We do not use tracking technologies for cross-context behavioral advertising.",
+      },
+      {
+        type: "p",
+        text: "A notice shown on your first visit lets you decline Google Analytics. You may also control cookies through your browser settings; disabling cookies may affect certain features of the website.",
       },
     ],
   },
@@ -174,6 +179,7 @@ const sections: Section[] = [
   },
   {
     heading: "9. Your Privacy Rights",
+    id: "california-privacy-rights",
     blocks: [
       { type: "h3", text: "HIPAA Rights" },
       {
@@ -292,12 +298,12 @@ export default function PrivacyPolicyPage() {
             Darius Roohani Medical PC d/b/a YooshMD
           </p>
           <p className="text-sm text-gray-500 mb-10">
-            Effective date: February 4, 2026
+            Effective date: September 21, 2026
           </p>
 
           <div className="space-y-8">
             {sections.map((section) => (
-              <div key={section.heading}>
+              <div key={section.heading} id={section.id} className={section.id ? "scroll-mt-24" : undefined}>
                 <h2 className="text-lg font-semibold text-gray-900 mb-2">
                   {section.heading}
                 </h2>
