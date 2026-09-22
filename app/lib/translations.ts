@@ -26,10 +26,9 @@ export const translations = {
       titlePre: "Choose a ",
       titleEmph: "doctor",
       titlePost: ", not a faceless brand.",
-      subheadPre:
-        "Personally accountable for your weight loss care, from your first visit onward. ",
+      subheadPre: "",
       subheadEmph: "Board-certified obesity medicine specialist.",
-      subheadPost: " Science-backed expertise.",
+      subheadPost: " Personally accountable for your weight loss care.",
       ctaBook: "Book Free Consultation",
       ctaCall: "Call (909) 293-8095",
       checklist: [
@@ -359,10 +358,9 @@ export const translations = {
       titlePre: "Elige un ",
       titleEmph: "doctor",
       titlePost: ", no una marca sin rostro.",
-      subheadPre:
-        "Responsable personalmente de su cuidado para la pérdida de peso, desde su primera visita en adelante. ",
+      subheadPre: "",
       subheadEmph: "Especialista certificado en medicina de la obesidad.",
-      subheadPost: " Experiencia respaldada por la ciencia.",
+      subheadPost: " Responsable personalmente de su cuidado para la pérdida de peso.",
       ctaBook: "Reserve su Consulta Gratis",
       ctaCall: "Llame al (909) 293-8095",
       checklist: [
