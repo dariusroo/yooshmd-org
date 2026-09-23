@@ -73,17 +73,19 @@ function Header() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[560px] sm:min-h-0 flex items-center py-10 sm:py-12">
+    <section
+      className="relative overflow-hidden bg-[var(--green-light)] sm:bg-transparent sm:min-h-0 sm:flex sm:items-center py-10 sm:py-12"
+    >
       <Image
         src="/community-hero.png"
         alt="A physician reviews care options with a family in their community"
         fill
         priority
-        className="object-cover"
+        className="hidden sm:block object-cover"
         style={{ objectPosition: "25% center" }}
       />
       <div className="relative w-full max-w-6xl mx-auto px-6 sm:px-8">
-        <div className="max-w-[540px] rounded-3xl bg-white/80 backdrop-blur-sm p-5 sm:p-6 my-8 sm:my-0">
+        <div className="max-w-[540px] rounded-3xl bg-white/80 sm:backdrop-blur-sm p-5 sm:p-6">
           <p
             className="text-xs font-semibold uppercase tracking-widest mb-2"
             style={{ color: "var(--green-mid)" }}
