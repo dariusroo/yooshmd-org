@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { sendGAEvent } from "@next/third-parties/google";
+import { track } from "@vercel/analytics";
 import Footer from "../components/Footer";
 
 const PARTNERSHIP_EMAIL = "admin@yooshmd.com";
@@ -7,6 +11,14 @@ const CONTACT_HREF = `mailto:${PARTNERSHIP_EMAIL}?subject=${encodeURIComponent(
   PARTNERSHIP_SUBJECT
 )}`;
 const MEETING_HREF = "https://calendar.app.google/dFo75P1hVsodgrWo8";
+
+// Fires the same conversion event to both Google Analytics and Vercel
+// Analytics, so CTA clicks on this page can be attributed by traffic
+// source (referrer / UTM params) in either dashboard.
+function trackCta(event: string, location: string) {
+  sendGAEvent("event", event, { location, page: "community" });
+  track(event, { location, page: "community" });
+}
 
 export default function CommunityPage() {
   return (
@@ -98,6 +110,7 @@ function Hero() {
               href={MEETING_HREF}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackCta("schedule_call_click", "hero")}
               className="inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold text-white transition-opacity hover:opacity-90 h-10 px-5 text-sm"
               style={{ backgroundColor: "var(--green-deep)" }}
             >
@@ -105,6 +118,7 @@ function Hero() {
             </a>
             <a
               href={CONTACT_HREF}
+              onClick={() => trackCta("email_click", "hero")}
               className="inline-flex items-center justify-center h-10 px-5 rounded-full border-2 border-gray-200 text-gray-700 font-semibold text-sm hover:border-gray-300 hover:bg-gray-50 transition-colors"
             >
               Email Us
@@ -322,6 +336,7 @@ function ContactCta() {
               href={MEETING_HREF}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackCta("schedule_call_click", "bottom_cta")}
               className="inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold bg-white transition-opacity hover:opacity-90 h-13 px-7 text-base"
               style={{ color: "var(--green-deep)" }}
             >
@@ -329,6 +344,7 @@ function ContactCta() {
             </a>
             <a
               href={CONTACT_HREF}
+              onClick={() => trackCta("email_click", "bottom_cta")}
               className="inline-flex items-center justify-center h-13 px-6 rounded-full border-2 border-white/40 text-white font-semibold text-base hover:border-white transition-colors"
             >
               Email Us
