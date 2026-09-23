@@ -19,6 +19,7 @@ export const translations = {
       faq: "FAQ",
       blog: "Blog",
       referPatient: "Refer a Patient",
+      communityPartners: "Community Partners",
       phone: "(909) 293-8095",
     },
     hero: {
@@ -351,6 +352,7 @@ export const translations = {
       faq: "Preguntas Frecuentes",
       blog: "Blog",
       referPatient: "Referir a un Paciente",
+      communityPartners: "Socios Comunitarios",
       phone: "(909) 293-8095",
     },
     hero: {
