@@ -200,7 +200,7 @@ function HowItWorks() {
 
 function Outcomes() {
   const stats = [
-    { value: "14%", label: "Average reduction in body weight" },
+    { value: "12%", label: "Average reduction in body weight" },
     {
       value: "0",
       label: "Adverse events unique to compounded medications",
