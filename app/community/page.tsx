@@ -114,7 +114,7 @@ function Hero() {
               className="inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold text-white transition-opacity hover:opacity-90 h-10 px-5 text-sm"
               style={{ backgroundColor: "var(--green-deep)" }}
             >
-              Schedule a Partnership Call
+              Schedule a Discovery Call
             </a>
             <a
               href={CONTACT_HREF}
