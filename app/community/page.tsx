@@ -71,7 +71,7 @@ function Hero() {
         style={{ objectPosition: "25% center" }}
       />
       <div className="relative w-full max-w-6xl mx-auto px-6 sm:px-8">
-        <div className="max-w-md rounded-3xl bg-white/80 backdrop-blur-sm p-5 sm:p-6 my-8 sm:my-0">
+        <div className="max-w-[540px] rounded-3xl bg-white/80 backdrop-blur-sm p-5 sm:p-6 my-8 sm:my-0">
           <p
             className="text-xs font-semibold uppercase tracking-widest mb-2"
             style={{ color: "var(--green-mid)" }}
