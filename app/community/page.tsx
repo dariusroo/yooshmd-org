@@ -207,6 +207,11 @@ function Outcomes() {
       value: "0",
       label: "Adverse events unique to compounded medications",
     },
+    {
+      value: "72%",
+      label:
+        "Reduction in out-of-pocket medication costs for patients without insurance coverage",
+    },
   ];
 
   return (
@@ -224,7 +229,7 @@ function Outcomes() {
           reports outcomes transparently as the partnership program grows.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-5">
+        <div className="grid sm:grid-cols-3 gap-5">
           {stats.map((stat) => (
             <div
               key={stat.label}
