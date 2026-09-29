@@ -25,7 +25,7 @@ export default function BookPage() {
 
       <main className="flex-1 bg-white">
         <div className="max-w-3xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight tracking-tight mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight tracking-tight mb-10 text-center">
             Book Your Free Consultation
           </h1>
 
