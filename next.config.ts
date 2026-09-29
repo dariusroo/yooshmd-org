@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       { source: "/privacypolicy", destination: "/privacy-policy", permanent: true },
       { source: "/telehealthconsent", destination: "/telehealth-notice", permanent: true },
       { source: "/hipaa", destination: "/notice-of-privacy-practices", permanent: true },
+      { source: "/intake", destination: "https://intakeq.com/new/1upd4e", permanent: false },
     ];
   },
 };
