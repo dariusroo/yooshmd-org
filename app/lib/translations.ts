@@ -2,7 +2,7 @@ export type Lang = "en" | "es";
 
 export const translations = {
   en: {
-    bookingUrl: "https://intakeq.com/new/tfe8ap",
+    bookingUrl: "/book",
     analyticsNotice: {
       text: "We use privacy-friendly analytics and Google Analytics to understand site traffic. This website does not collect any patient or health information — that's handled securely through our patient portal. See our",
       linkText: "Privacy Policy",
@@ -335,7 +335,7 @@ export const translations = {
     },
   },
   es: {
-    bookingUrl: "https://intakeq.com/new/wsoc7d",
+    bookingUrl: "/book",
     analyticsNotice: {
       text: "Utilizamos análisis respetuosos con la privacidad y Google Analytics para entender el tráfico del sitio. Este sitio web no recopila información médica ni de pacientes — eso se maneja de forma segura a través de nuestro portal de pacientes. Consulte nuestra",
       linkText: "Política de Privacidad",
