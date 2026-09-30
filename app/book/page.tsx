@@ -28,7 +28,7 @@ export default function BookPage() {
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight tracking-tight text-center">
             Book Your Free Consultation
           </h1>
-          <p className="text-sm text-gray-500 text-center mt-2 mb-10">
+          <p className="text-sm text-black text-center mt-2 mb-10">
             Services currently available in: CA, NV, FL
           </p>
 
