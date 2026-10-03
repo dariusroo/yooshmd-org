@@ -23,13 +23,16 @@ export const translations = {
       phone: "(909) 293-8095",
     },
     hero: {
-      eyebrow: "Physician-Led Medical Weight Loss · Semaglutide and Tirzepatide",
-      titlePre: "Choose a ",
-      titleEmph: "doctor",
-      titlePost: ", not a faceless brand.",
-      subheadPre: "",
-      subheadEmph: "Board-certified obesity medicine specialist.",
-      subheadPost: " Personally accountable for your weight loss care, every step of the way.",
+      eyebrow: "Virtual Medical Weight Loss · Semaglutide and Tirzepatide",
+      titlePre: "A smarter, more ",
+      titleEmph: "personalized",
+      titlePost: " approach to weight loss.",
+      subheadLead: "Direct access",
+      subheadPre: " to the same physician, ",
+      subheadEmph: "board-certified in obesity medicine",
+      subheadMid: ". Start with a ",
+      subheadEmph2: "cost-intelligent",
+      subheadPost: " treatment plan tailored to your health, goals, and budget.",
       ctaBook: "Book Free Consultation",
       ctaCall: "Call (909) 293-8095",
       checklist: [
@@ -38,16 +41,16 @@ export const translations = {
       ],
       doctorName: "Darius Roohani, MD",
       doctorCred:
-        "Board-certified · Internal Medicine & Obesity Medicine · Cedars-Sinai '24 · 5+ years experience",
+        "Board-certified · Internal Medicine & Obesity Medicine · Cedars-Sinai Residency Graduate · 5+ years experience",
       readMore: "Read more about Dr. Roohani",
     },
     trustBar: [
       {
-        value: "GLP-1 Available",
+        value: "GLP-1s and more",
         label: "Semaglutide and Tirzepatide",
-        sub: "Oral options available",
+        sub: "Oral and non-GLP-1 available",
       },
-      { value: "100% Virtual", label: "Available in CA, NV & FL", sub: "Telehealth" },
+      { value: "100% Virtual", label: "Available in CA, NV & FL", sub: "Care from the comfort of home" },
       { value: "Transparent", label: "Clear, upfront pricing", sub: "No surprise charges" },
     ],
     trustBarDisclaimer:
@@ -56,14 +59,14 @@ export const translations = {
       eyebrow: "What Makes Us Different",
       heading:
         "Most programs are built around a brand. Yours is concierge care from an experienced doctor.",
-      body: "At YooshMD, one physician is personally responsible for your care. Whether you choose a GLP-1 or non-GLP-1 option, that decision is based on your medical needs — not a sales target.",
+      body: "At YooshMD, one physician is personally responsible for your care. When questions come up, side effects interfere, or medication costs change, you can contact your doctor directly, without going through a call center. Your treatment plan evolves with your progress, medical needs, and budget.",
       cardTitle: "YooshMD Highlights",
       points: [
         "Direct access to your doctor — call or message — no barriers",
         "Medication decision during first visit — no waiting for approval",
         "Clear, transparent pricing for medications and comprehensive care",
         "Side effects managed proactively — before they become a reason to stop",
-        "Medically supervised plan, including tapering off medication if desired",
+        "Medically supervised plan, including a maintenance plan or taper if desired",
       ],
     },
     howItWorks: {
@@ -72,28 +75,28 @@ export const translations = {
       steps: [
         {
           n: "01",
-          title: "Free consultation",
-          body: "You meet with Dr. Roohani by video for a comprehensive medical assessment and a discussion of your goals.",
+          title: "Meet your physician",
+          body: "Meet Dr. Roohani by video to discuss your health history, goals, and treatment options.",
         },
         {
           n: "02",
-          title: "Determine your treatment plan",
-          body: "Transparent pricing, invoiced monthly. No hidden charges, no calculations, no waiting for approval.**",
+          title: "Build your treatment plan",
+          body: "Develop a personalized, cost-intelligent plan with Dr. Roohani based on your health, goals, and budget. Understand your care fees and medication costs before you begin.",
         },
         {
           n: "03",
-          title: "Baseline bloodwork",
-          body: "Lab work is completed as part of your plan, included in your plan cost.",
+          title: "Complete baseline lab work",
+          body: "Complete any needed lab work to help inform your treatment. Dr. Roohani reviews the results with you.",
         },
         {
           n: "04",
-          title: "Receive medications",
-          body: "Medications shipped right to your door — hassle-free.",
+          title: "Start your medication",
+          body: "Receive your prescription through the pharmacy or delivery option arranged for your treatment plan.",
         },
         {
           n: "05",
-          title: "Ongoing care",
-          body: "Dr. Roohani will adjust your treatment to help you reach your goals. Available by phone and secure message anytime. Custom dosing, side effects, or tapering - he can manage it all.*",
+          title: "Stay connected",
+          body: "Contact Dr. Roohani directly between visits. Get help managing side effects, reviewing progress, and adjusting treatment, including when coverage or medication costs change.",
         },
       ],
       footnotes: [
@@ -115,7 +118,7 @@ export const translations = {
         {
           question: "What is YooshMD?",
           answer:
-            "YooshMD was built on a simple premise: one physician, personally managing your care. We prioritize direct access, specialist expertise, and transparent pricing. No call center, no rotating providers, no hidden fees. Just physician-led care.",
+            "YooshMD is built on a simple belief: weight-loss care should be personal, accessible, and thoughtful about cost. One physician, board-certified in obesity medicine, works directly with you to put that philosophy into practice.",
         },
         {
           question: "How do I get started with YooshMD?",
@@ -176,17 +179,17 @@ export const translations = {
     },
     pricing: {
       eyebrow: "Transparent Pricing",
-      heading: "Transparent pricing. No recurrent charges or surprises.",
+      heading: "Clear, upfront pricing. No surprises.",
       subhead:
-        "All patients receive direct, personalized care from Dr. Roohani. Choose a GLP-1 program or physician oversight alone — he'll help you decide what's right for you at your first consultation.",
+        "Flexible plans available - with or without medication included. Explore the most cost-effective option for your treatment needs at your free consultation.",
       plans: [
         {
           name: "Semaglutide Program†",
-          tagline: "",
+          tagline: "Includes labs and medication, shipped to your door.",
         },
         {
           name: "Tirzepatide Program†",
-          tagline: "",
+          tagline: "Includes labs and medication, shipped to your door.",
         },
         {
           name: "Physician Oversight",
@@ -194,14 +197,14 @@ export const translations = {
             "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment available. Medication cost and lab order cost not included*.",
         },
       ],
-      includeHeading: "All treatment plans include:",
+      includeHeading: "Every plan includes",
       included: [
-        "Physician supervision with monthly video visits",
-        "Unlimited direct messaging with the doctor",
-        "Comprehensive lab orders and review",
-        "On-call doctor for urgent matters",
-        "Medications shipped to your door",
-        "Taper off or stop anytime",
+        "Monthly video visits with Dr. Roohani",
+        "Unlimited direct secure messaging",
+        "Personalized treatment and dose adjustments",
+        "Side-effect management and support",
+        "Ongoing review of medication options and costs",
+        "Weight-maintenance planning",
       ],
       footnote1: "**Some prescriptions may be sent to a local pharmacy for more timely access.",
       oversightLabFootnote: "*Basic lab panel is $36.",
@@ -220,7 +223,7 @@ export const translations = {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide or tirzepatide programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy®, Zepbound®, Ozempic®), or non-GLP-1 options too.",
+        "Semaglutide or tirzepatide programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy®, Zepbound®, Ozempic®), or non-GLP-1 options such as phentermine.",
       options: [
         {
           title: "Semaglutide",
@@ -237,7 +240,7 @@ export const translations = {
         {
           title: "Oral, Branded & Non-GLP-1 Options",
           descriptor:
-            "We can also prescribe oral GLP-1s (Wegovy®, Foundayo®), brand-name injectables (Zepbound®, Wegovy®, or Ozempic®), or non-GLP-1 options based on your goals and history.",
+            "We can also prescribe oral GLP-1s (Wegovy®, Foundayo®), brand-name injectables (Zepbound®, Wegovy®, or Ozempic®), or non-GLP-1 options such as phentermine, based on your goals and history.",
         },
       ],
       footnote:
@@ -254,9 +257,9 @@ export const translations = {
       { href: "#faq", label: "FAQ" },
     ],
     footer: {
-      tagline: "Choose a doctor, not a faceless brand.",
+      tagline: "A smarter, more personalized approach to weight loss.",
       description:
-        "Physician-guided medical weight loss. 100% online. Serving California, Nevada, and Florida.",
+        "Virtual medical weight loss - California, Nevada, and Florida",
       links: {
         privacy: "Privacy Policy",
         privacyChoices: "Your Privacy Choices",
@@ -267,7 +270,7 @@ export const translations = {
         accessibility: "Accessibility",
       },
       medicalDisclaimer:
-        "This site does not constitute medical advice. Results vary. Individual outcomes depend on factors including health history, adherence to the program, and physician recommendations. This service is not intended for medical emergencies — if you are experiencing a medical emergency, call 911.",
+        "This site does not constitute medical advice. Results vary. Individual outcomes depend on factors including health history, adherence to the program, and physician recommendations. This service is not intended for medical emergencies. If you are experiencing a medical emergency, call 911.",
       copyright: "© 2026 YooshMD. All rights reserved.",
     },
     disclaimersPage: {
@@ -356,13 +359,16 @@ export const translations = {
       phone: "(909) 293-8095",
     },
     hero: {
-      eyebrow: "Pérdida de Peso Médica Dirigida por un Doctor · Semaglutida y Tirzepatida",
-      titlePre: "Elige un ",
-      titleEmph: "doctor",
-      titlePost: ", no una marca sin rostro.",
-      subheadPre: "",
-      subheadEmph: "Especialista certificado en medicina de la obesidad.",
-      subheadPost: " Responsable personalmente de su cuidado para la pérdida de peso, en cada paso del camino.",
+      eyebrow: "Pérdida de Peso Médica Virtual · Semaglutida y Tirzepatida",
+      titlePre: "Un enfoque más inteligente y ",
+      titleEmph: "personalizado",
+      titlePost: " para perder peso.",
+      subheadLead: "Acceso directo",
+      subheadPre: " al mismo médico, ",
+      subheadEmph: "certificado en medicina de la obesidad",
+      subheadMid: ". Comience con un plan de tratamiento ",
+      subheadEmph2: "inteligente y accesible",
+      subheadPost: ", adaptado a su salud, sus metas y su presupuesto.",
       ctaBook: "Reserve su Consulta Gratis",
       ctaCall: "Llame al (909) 293-8095",
       checklist: [
@@ -371,16 +377,16 @@ export const translations = {
       ],
       doctorName: "Darius Roohani, MD",
       doctorCred:
-        "Certificado por dos juntas médicas · Medicina Interna y Medicina de la Obesidad · Cedars-Sinai '24 · Más de 5 años de experiencia",
+        "Certificado por dos juntas médicas · Medicina Interna y Medicina de la Obesidad · Egresado de la Residencia de Cedars-Sinai · Más de 5 años de experiencia",
       readMore: "Conozca más sobre el Dr. Roohani",
     },
     trustBar: [
       {
-        value: "GLP-1 Disponible",
+        value: "GLP-1 y más",
         label: "Semaglutida y Tirzepatida",
-        sub: "Opciones orales disponibles",
+        sub: "Opciones orales y no GLP-1 disponibles",
       },
-      { value: "100% Virtual", label: "Disponible en CA, NV y FL", sub: "Telesalud" },
+      { value: "100% Virtual", label: "Disponible en CA, NV y FL", sub: "Atención desde la comodidad de su hogar" },
       { value: "Transparente", label: "Precios claros y directos", sub: "Sin cargos sorpresa" },
     ],
     trustBarDisclaimer:
@@ -389,14 +395,14 @@ export const translations = {
       eyebrow: "Qué Nos Hace Diferentes",
       heading:
         "La mayoría de los programas se construyen alrededor de una marca. El suyo es atención personalizada de un doctor con experiencia.",
-      body: "En YooshMD, un doctor es personalmente responsable de su cuidado. Ya sea que elija una opción GLP-1 o no GLP-1, esa decisión se basa en sus necesidades médicas — no en una meta de ventas.",
+      body: "En YooshMD, un doctor es personalmente responsable de su cuidado. Cuando surjan preguntas, los efectos secundarios interfieran o cambien los costos de los medicamentos, puede comunicarse directamente con su doctor, sin pasar por un centro de llamadas. Su plan de tratamiento evoluciona con su progreso, sus necesidades médicas y su presupuesto.",
       cardTitle: "Lo Más Destacado de YooshMD",
       points: [
         "Acceso directo a su doctor — llame o envíe un mensaje — sin barreras",
         "Decisión sobre medicamentos durante la primera visita — sin esperar aprobación",
         "Precios claros y transparentes para medicamentos y cuidado integral",
         "Efectos secundarios manejados de forma proactiva — antes de que se conviertan en un motivo para detenerse",
-        "Plan supervisado médicamente, incluyendo la reducción gradual del medicamento si así lo desea",
+        "Plan supervisado médicamente, incluyendo un plan de mantenimiento o reducción gradual si así lo desea",
       ],
     },
     howItWorks: {
@@ -405,28 +411,28 @@ export const translations = {
       steps: [
         {
           n: "01",
-          title: "Consulta gratuita",
-          body: "Se reúne con el Dr. Roohani por video para una evaluación médica integral y una conversación sobre sus objetivos.",
+          title: "Conozca a su médico",
+          body: "Reúnase con el Dr. Roohani por video para hablar sobre su historial de salud, sus objetivos y sus opciones de tratamiento.",
         },
         {
           n: "02",
-          title: "Determine su plan de tratamiento",
-          body: "Precios transparentes, facturados mensualmente. Sin cargos ocultos, sin cálculos, sin esperar aprobación.**",
+          title: "Cree su plan de tratamiento",
+          body: "Desarrolle con el Dr. Roohani un plan personalizado e inteligente en costos, basado en su salud, sus objetivos y su presupuesto. Conozca sus tarifas de atención y los costos de sus medicamentos antes de comenzar.",
         },
         {
           n: "03",
-          title: "Análisis de laboratorio inicial",
-          body: "El trabajo de laboratorio se incluye como parte de su plan, dentro del costo de su plan.",
+          title: "Complete sus análisis de laboratorio iniciales",
+          body: "Complete los análisis de laboratorio necesarios para orientar su tratamiento. El Dr. Roohani revisa los resultados con usted.",
         },
         {
           n: "04",
-          title: "Reciba sus medicamentos",
-          body: "Medicamentos enviados directamente a su puerta — sin complicaciones.",
+          title: "Comience su medicamento",
+          body: "Reciba su receta a través de la farmacia u opción de entrega establecida para su plan de tratamiento.",
         },
         {
           n: "05",
-          title: "Cuidado continuo",
-          body: "El Dr. Roohani ajustará su tratamiento para ayudarle a alcanzar sus objetivos. Disponible por teléfono y mensaje seguro en cualquier momento. Dosis personalizada, efectos secundarios o reducción gradual - él puede manejarlo todo.*",
+          title: "Manténgase en contacto",
+          body: "Comuníquese directamente con el Dr. Roohani entre visitas. Reciba ayuda para manejar efectos secundarios, revisar su progreso y ajustar su tratamiento, incluso cuando cambien la cobertura o los costos de los medicamentos.",
         },
       ],
       footnotes: [
@@ -448,7 +454,7 @@ export const translations = {
         {
           question: "¿Qué es YooshMD?",
           answer:
-            "YooshMD se creó sobre una premisa simple: un solo médico, administrando personalmente su atención. Priorizamos el acceso directo, la experiencia especializada y precios transparentes. Sin centro de llamadas, sin proveedores rotativos, sin cargos ocultos. Solo atención dirigida por un médico.",
+            "YooshMD se basa en una creencia simple: la atención para la pérdida de peso debe ser personal, accesible y consciente del costo. Un médico, certificado en medicina de la obesidad, trabaja directamente con usted para poner esa filosofía en práctica.",
         },
         {
           question: "¿Cómo empiezo con YooshMD?",
@@ -509,17 +515,17 @@ export const translations = {
     },
     pricing: {
       eyebrow: "Precios Transparentes",
-      heading: "Precios transparentes. Sin cargos recurrentes ni sorpresas.",
+      heading: "Precios claros y por adelantado. Sin sorpresas.",
       subhead:
-        "Todos los pacientes reciben atención directa y personalizada del Dr. Roohani. Elija entre un programa GLP-1 o solo supervisión médica — él le ayudará a decidir qué es lo más adecuado para usted en su primera consulta.",
+        "Planes flexibles disponibles - con o sin medicamento incluido. Explore la opción más rentable para sus necesidades de tratamiento en su consulta gratuita.",
       plans: [
         {
           name: "Programa de Semaglutida†",
-          tagline: "",
+          tagline: "Incluye análisis de laboratorio y medicamento, enviado a su puerta.",
         },
         {
           name: "Programa de Tirzepatida†",
-          tagline: "",
+          tagline: "Incluye análisis de laboratorio y medicamento, enviado a su puerta.",
         },
         {
           name: "Supervisión Médica",
@@ -527,14 +533,14 @@ export const translations = {
             "Wegovy®, Zepbound®, u Ozempic®, opciones orales de GLP-1, o tratamiento no GLP-1 disponible. Costo de medicamento y costo de órdenes de laboratorio no incluidos*.",
         },
       ],
-      includeHeading: "Todos los planes de tratamiento incluyen:",
+      includeHeading: "Todos los planes incluyen",
       included: [
-        "Supervisión médica con visitas mensuales por video",
-        "Mensajería directa ilimitada con el doctor",
-        "Órdenes y revisión de laboratorio integral",
-        "Doctor de guardia para asuntos urgentes",
-        "Medicamentos enviados a su puerta",
-        "Reducción gradual o suspensión en cualquier momento",
+        "Visitas mensuales por video con el Dr. Roohani",
+        "Mensajería segura directa e ilimitada",
+        "Tratamiento personalizado y ajustes de dosis",
+        "Manejo y apoyo para efectos secundarios",
+        "Revisión continua de opciones y costos de medicamentos",
+        "Planificación para el mantenimiento del peso",
       ],
       footnote1:
         "**Algunas recetas pueden enviarse a una farmacia local para un acceso más oportuno.",
@@ -554,7 +560,7 @@ export const translations = {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "Programas de semaglutida o tirzepatida disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy®, Zepbound®, Ozempic®), o no GLP-1 también.",
+        "Programas de semaglutida o tirzepatida disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy®, Zepbound®, Ozempic®), o no GLP-1, como la fentermina.",
       options: [
         {
           title: "Semaglutida",
@@ -571,7 +577,7 @@ export const translations = {
         {
           title: "Opciones Orales, de Marca y No GLP-1",
           descriptor:
-            "También podemos recetar GLP-1 orales (Wegovy®, Foundayo®), inyectables de marca (Zepbound®, Wegovy®, u Ozempic®), o opciones no GLP-1 según sus objetivos e historial.",
+            "También podemos recetar GLP-1 orales (Wegovy®, Foundayo®), inyectables de marca (Zepbound®, Wegovy®, u Ozempic®), o opciones no GLP-1 como la fentermina, según sus objetivos e historial.",
         },
       ],
       footnote:
@@ -588,9 +594,9 @@ export const translations = {
       { href: "#faq", label: "Preguntas Frecuentes" },
     ],
     footer: {
-      tagline: "Elige un doctor, no una marca sin rostro.",
+      tagline: "Un enfoque más inteligente y personalizado para perder peso.",
       description:
-        "Pérdida de peso médica dirigida por un doctor. 100% en línea. Sirviendo California, Nevada y Florida.",
+        "Pérdida de peso médica virtual - California, Nevada y Florida",
       links: {
         privacy: "Política de Privacidad",
         privacyChoices: "Sus Opciones de Privacidad",
@@ -601,7 +607,7 @@ export const translations = {
         accessibility: "Accesibilidad",
       },
       medicalDisclaimer:
-        "Este sitio no constituye asesoramiento médico. Los resultados varían. Los resultados individuales dependen de factores que incluyen el historial médico, la adherencia al programa y las recomendaciones médicas. Este servicio no está destinado para emergencias médicas — si tiene una emergencia médica, llame al 911.",
+        "Este sitio no constituye asesoramiento médico. Los resultados varían. Los resultados individuales dependen de factores que incluyen el historial médico, la adherencia al programa y las recomendaciones médicas. Este servicio no está destinado para emergencias médicas. Si tiene una emergencia médica, llame al 911.",
       copyright: "© 2026 YooshMD. Todos los derechos reservados.",
     },
     disclaimersPage: {

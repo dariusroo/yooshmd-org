@@ -147,7 +147,7 @@ const structuredData = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.yooshmd.com"),
-  title: "YooshMD — Medical Weight Loss | Physician-Guided Program",
+  title: "Online Medical Weight Loss | YooshMD",
   description:
     "Physician-guided weight loss (semaglutide and tirzepatide) by an expert obesity medicine specialist. 100% online in CA, NV & FL. Book a free consultation.",
   keywords: [

@@ -189,9 +189,16 @@ function Hero() {
               </h1>
 
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
+                <strong className="font-semibold" style={{ color: "var(--green-deep)" }}>
+                  {t.hero.subheadLead}
+                </strong>
                 {t.hero.subheadPre}
                 <strong className="font-semibold text-gray-900">
                   {t.hero.subheadEmph}
+                </strong>
+                {t.hero.subheadMid}
+                <strong className="font-semibold text-gray-900">
+                  {t.hero.subheadEmph2}
                 </strong>
                 {t.hero.subheadPost}
               </p>
@@ -240,17 +247,14 @@ function Hero() {
                 <p className="text-sm text-gray-600">
                   {t.hero.doctorCred}
                 </p>
+                <a
+                  href="#reviews"
+                  className="mt-1 inline-block text-sm font-semibold underline underline-offset-2 hover:opacity-80"
+                  style={{ color: "var(--green-deep)" }}
+                >
+                  {t.hero.readMore}
+                </a>
               </div>
-            </div>
-
-            <div className="mt-4 flex justify-center sm:justify-start">
-              <a
-                href="#reviews"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold text-white transition-opacity hover:opacity-90 h-9 px-4 text-sm"
-                style={{ backgroundColor: "var(--green-deep)" }}
-              >
-                {t.hero.readMore}
-              </a>
             </div>
           </div>
 
@@ -860,14 +864,6 @@ function Pricing() {
                     })}
                   </div>
                 )}
-                {doses && (
-                  <p className={`text-xs mt-2 ${plan.subClass}`}>
-                    {t.pricing.doseDisclaimer}
-                    <a href="/disclaimers" className="underline">
-                      {t.pricing.doseDisclaimerLink}
-                    </a>
-                  </p>
-                )}
                 {plan.tagline && (
                   <p className={`text-sm font-medium mt-3 ${plan.subClass}`}>
                     {withDagger(plan.tagline)}
@@ -882,10 +878,10 @@ function Pricing() {
         <div className="bg-gray-50 rounded-2xl border border-gray-100 p-7 mb-6">
           <p className="font-semibold text-gray-900 mb-5">{t.pricing.includeHeading}</p>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-            {included.map((item, i) => (
+            {included.map((item) => (
               <li key={item} className="flex items-center gap-3 text-sm text-gray-700">
                 <CheckIcon />
-                {i === 3 ? <strong className="font-semibold">{item}</strong> : item}
+                {item}
               </li>
             ))}
           </ul>
@@ -922,7 +918,12 @@ function Pricing() {
         </div>
 
         <p className="text-xs text-gray-400">
-          {withDagger(t.pricing.footnote2)}
+          {withDagger(t.pricing.footnote2)}{" "}
+          {t.pricing.doseDisclaimer}
+          <a href="/disclaimers" className="underline">
+            {t.pricing.doseDisclaimerLink}
+          </a>
+          .
         </p>
       </div>
     </section>
