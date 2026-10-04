@@ -7,10 +7,10 @@ export default function BlogIndexPage() {
   return (
     <div className="max-w-3xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight tracking-tight">
-        Blog
+        Articles and insights into medical weight loss
       </h1>
       <p className="mt-3 text-gray-600">
-        Physician-written articles on GLP-1 medications and weight-loss care.
+        Written by the Founder and Medical Director of YooshMD — Dr. Darius Roohani
       </p>
 
       {posts.length === 0 ? (
