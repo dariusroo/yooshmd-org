@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
 import { useEffect, useRef, useState } from "react";
 import Footer from "./components/Footer";
@@ -102,6 +103,13 @@ function Nav() {
             >
               {t.nav.faq}
             </a>
+            <Link
+              href="/blog"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {t.nav.blog}
+            </Link>
             <a
               href="/refer"
               onClick={() => setMenuOpen(false)}
