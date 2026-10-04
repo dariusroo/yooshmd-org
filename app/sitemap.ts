@@ -1,8 +1,11 @@
 import type { MetadataRoute } from "next";
+import { getAllPosts } from "./blog/lib/posts";
 
 const BASE_URL = "https://www.yooshmd.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const posts = getAllPosts().filter((post) => !post.draft);
+
   return [
     {
       url: BASE_URL,
@@ -16,6 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...posts.map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.date ? new Date(post.date) : new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     {
       url: `${BASE_URL}/privacy-policy`,
       lastModified: new Date("2026-02-04"),
