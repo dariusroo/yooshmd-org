@@ -42,3 +42,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# article briefs and drafts (unpublished clinical notes; repo is public)
+/articles/briefs/*
+!/articles/briefs/_TEMPLATE.md
+/articles/drafts/
