@@ -60,11 +60,12 @@ export default async function BlogPostPage({
 
       <div className="mt-6 pb-8 border-b border-gray-100 text-sm text-gray-500">
         {post.author && <p className="font-medium text-gray-900">By {post.author}</p>}
-        <p className="mt-1">
-          {[formatDate(post.date), post.reviewed && `Medically reviewed: ${post.reviewed}`]
-            .filter(Boolean)
-            .join(" · ")}
-        </p>
+        {post.credentials.map((line) => (
+          <p key={line} className="mt-0.5">
+            {line}
+          </p>
+        ))}
+        {post.date && <p className="mt-3">{formatDate(post.date)}</p>}
       </div>
 
       <div className="article-content mt-10">
