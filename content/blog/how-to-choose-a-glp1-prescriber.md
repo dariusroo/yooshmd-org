@@ -8,7 +8,7 @@ date: 2026-10-04
 draft: false
 ---
 
-When you choose a clinician to prescribe a GLP-1 medication, look at two things: their credentials and the breadth of their medical knowledge. Then ask whether they will actually monitor you, not just write the prescription.
+When you choose a clinician to prescribe a GLP-1 medication such as semaglutide or tirzepatide, look at two things: their credentials and the breadth of their medical knowledge. Then ask whether they will actually monitor you, not just write the prescription.
 
 The right background depends on your health. If you have several chronic conditions, such as high blood pressure, diabetes, high cholesterol, or liver disease, and you take many medications, a physician with an internal medicine background may suit you better. If fertility or pregnancy is part of the picture, a clinician with an OB/GYN background may be a better match. A physician certified by the American Board of Obesity Medicine (ABOM) has completed obesity-specific training and passed an examination in comprehensive weight-management care, whatever their original specialty.
 
@@ -16,7 +16,7 @@ The right background depends on your health. If you have several chronic conditi
 
 This is the distinction I see patients miss most often.
 
-Signing off on a prescription is easy. The hard part comes after it. Someone has to watch for side effects, judge how well you are tolerating the medication, and adjust the dose over time so you can actually reach your weight-loss goals.
+Signing off on a prescription is easy. The hard part comes after it. Someone has to watch for side effects, judge how well you are tolerating the medication, and adjust the dose of semaglutide or tirzepatide over time so you can actually reach your weight-loss goals.
 
 That work gets more involved when your medical history is complex. If you have other conditions and take other medications, your clinician has to work out what is causing a new symptom. It could be the GLP-1 medication, the treatment for another condition, or the condition itself. Getting that wrong can mean stopping a medication that was working, or missing a problem that needed attention.
 
@@ -42,7 +42,7 @@ At YooshMD, the practice and the physician are the same. I am the clinician you 
 
 Price matters, and I take cost seriously when I build a treatment plan. But choosing a medication deal over a clinician can cost more in the end.
 
-Some companies offer bulk pricing, such as a discounted three-month supply at a starting dose. That can look like savings. But many patients need a higher dose before those three months are up, either because they plateau or because the starting dose was never meant to be the long-term dose. Then you are paying for new medication on top of what you already bought.
+Some companies offer bulk pricing, such as a discounted three-month supply of tirzepatide at the starting dose. That can look like savings. But many patients need a higher dose before those three months are up, either because they plateau or because the starting dose was never meant to be the long-term dose. Then you are paying for new medication on top of what you already bought.
 
 More medication is not the same as more cost-effective treatment. In my experience, patients who choose a medication offer over a physician often spend more and still don't reach their goal, because they are working in the dark.
 
@@ -83,7 +83,7 @@ A good GLP-1 prescriber does more than approve a medication. When you compare op
 
 ## Talk with an obesity-medicine physician
 
-If you are thinking about starting a GLP-1 medication, or you already take one and can't get the follow-up you need, YooshMD offers ongoing care with the same board-certified obesity-medicine physician throughout your treatment. [Book a free consultation](/book) to talk through whether this approach is a good fit for you.
+If you are thinking about starting semaglutide or tirzepatide, or you already take a GLP-1 medication and can't get the follow-up you need, YooshMD offers ongoing care with the same board-certified obesity-medicine physician throughout your treatment. [Book a free consultation](/book) to talk through whether this approach is a good fit for you.
 
 ---
 
