@@ -447,6 +447,21 @@ function HowItWorks() {
           ))}
         </div>
 
+        <div
+          className="mt-8 rounded-2xl border p-7 sm:flex sm:items-start sm:gap-8"
+          style={{ borderColor: "var(--green-border)" }}
+        >
+          <h3
+            className="text-lg font-semibold sm:w-48 flex-shrink-0 mb-2 sm:mb-0"
+            style={{ color: "var(--green-deep)" }}
+          >
+            {t.howItWorks.ongoing.title}
+          </h3>
+          <p className="text-gray-700 text-sm leading-relaxed">
+            {t.howItWorks.ongoing.body}
+          </p>
+        </div>
+
         <div className="mt-10 space-y-2 max-w-3xl">
           {t.howItWorks.footnotes.map((note) => (
             <p key={note} className="text-xs text-gray-400 leading-relaxed">
@@ -900,7 +915,7 @@ function Pricing() {
             <div>
               <p className="font-semibold text-gray-900 text-lg">
                 {t.pricing.initialConsultTitle}
-                <span style={{ color: "var(--green-deep)" }}>{t.pricing.free}</span>
+                <span style={{ color: "var(--green-deep)" }}>{t.pricing.initialConsultTitleEmph}</span>
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 {t.pricing.initialConsultDetails}

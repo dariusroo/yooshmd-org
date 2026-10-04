@@ -58,7 +58,7 @@ export const translations = {
     why: {
       eyebrow: "What Makes Us Different",
       heading:
-        "Most programs are built around a brand. Yours is concierge care from an experienced doctor.",
+        "Most programs give you a platform. We give you direct access to your physician.",
       body: "At YooshMD, one physician is personally responsible for your care. When questions come up, side effects interfere, or medication costs change, you can contact your doctor directly, without going through a call center. Your treatment plan evolves with your progress, medical needs, and budget.",
       cardTitle: "YooshMD Highlights",
       points: [
@@ -71,34 +71,28 @@ export const translations = {
     },
     howItWorks: {
       eyebrow: "How It Works",
-      heading: "Five steps. One doctor, the whole way through.",
+      heading: "Three steps. One doctor, the whole way through.",
       steps: [
         {
           n: "01",
-          title: "Meet your physician",
-          body: "Meet Dr. Roohani by video to discuss your health history, goals, and treatment options.",
+          title: "Meet and build a personalized plan with your physician",
+          body: "Meet Dr. Roohani by video and build a personalized, cost-intelligent plan around your health, goals, and budget. Know your costs before you begin.",
         },
         {
           n: "02",
-          title: "Build your treatment plan",
-          body: "Develop a personalized, cost-intelligent plan with Dr. Roohani based on your health, goals, and budget. Understand your care fees and medication costs before you begin.",
-        },
-        {
-          n: "03",
           title: "Complete baseline lab work",
           body: "Complete any needed lab work to help inform your treatment. Dr. Roohani reviews the results with you.",
         },
         {
-          n: "04",
-          title: "Start your medication",
+          n: "03",
+          title: "Start your treatment",
           body: "Receive your prescription through the pharmacy or delivery option arranged for your treatment plan.",
         },
-        {
-          n: "05",
-          title: "Stay connected",
-          body: "Contact Dr. Roohani directly between visits. Get help managing side effects, reviewing progress, and adjusting treatment, including when coverage or medication costs change.",
-        },
       ],
+      ongoing: {
+        title: "Stay connected",
+        body: "Contact Dr. Roohani directly between visits. Get help managing side effects, reviewing progress, and adjusting treatment, including when coverage or medication costs change.",
+      },
       footnotes: [
         "*Individual results vary. Weight loss outcomes depend on factors including dosage, adherence, and individual response to treatment, and are not guaranteed.",
         "**No specific medication is guaranteed. The decision will be determined solely by the licensed doctor based on independent clinical judgment following a medical evaluation.",
@@ -208,11 +202,11 @@ export const translations = {
       ],
       footnote1: "**Some prescriptions may be sent to a local pharmacy for more timely access.",
       oversightLabFootnote: "*Basic lab panel is $36.",
-      initialConsultTitle: "Initial consultation with Dr. Roohani — ",
-      free: "FREE",
+      initialConsultTitle: "Already on a GLP-1? ",
+      initialConsultTitleEmph: "Transfer your care seamlessly",
       initialConsultDetails:
         "30-minute video visit · Comprehensive medical review · Goal exploration · Medication overview",
-      initialConsultNote: "No ongoing charges until you decide to continue.",
+      initialConsultNote: "No charges until you decide to continue.",
       initialConsultCta: "Book Free Visit",
       footnote2:
         "†Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness, or quality.",
@@ -394,7 +388,7 @@ export const translations = {
     why: {
       eyebrow: "Qué Nos Hace Diferentes",
       heading:
-        "La mayoría de los programas se construyen alrededor de una marca. El suyo es atención personalizada de un doctor con experiencia.",
+        "La mayoría de los programas le dan una plataforma. Nosotros le damos acceso directo a su médico.",
       body: "En YooshMD, un doctor es personalmente responsable de su cuidado. Cuando surjan preguntas, los efectos secundarios interfieran o cambien los costos de los medicamentos, puede comunicarse directamente con su doctor, sin pasar por un centro de llamadas. Su plan de tratamiento evoluciona con su progreso, sus necesidades médicas y su presupuesto.",
       cardTitle: "Lo Más Destacado de YooshMD",
       points: [
@@ -407,34 +401,28 @@ export const translations = {
     },
     howItWorks: {
       eyebrow: "Cómo Funciona",
-      heading: "Cinco pasos. Un doctor, todo el camino.",
+      heading: "Tres pasos. Un doctor, todo el camino.",
       steps: [
         {
           n: "01",
-          title: "Conozca a su médico",
-          body: "Reúnase con el Dr. Roohani por video para hablar sobre su historial de salud, sus objetivos y sus opciones de tratamiento.",
+          title: "Reúnase y cree un plan personalizado con su médico",
+          body: "Reúnase con el Dr. Roohani por video y cree un plan personalizado e inteligente en costos, según su salud, sus objetivos y su presupuesto. Conozca sus costos antes de comenzar.",
         },
         {
           n: "02",
-          title: "Cree su plan de tratamiento",
-          body: "Desarrolle con el Dr. Roohani un plan personalizado e inteligente en costos, basado en su salud, sus objetivos y su presupuesto. Conozca sus tarifas de atención y los costos de sus medicamentos antes de comenzar.",
-        },
-        {
-          n: "03",
           title: "Complete sus análisis de laboratorio iniciales",
           body: "Complete los análisis de laboratorio necesarios para orientar su tratamiento. El Dr. Roohani revisa los resultados con usted.",
         },
         {
-          n: "04",
-          title: "Comience su medicamento",
+          n: "03",
+          title: "Comience su tratamiento",
           body: "Reciba su receta a través de la farmacia u opción de entrega establecida para su plan de tratamiento.",
         },
-        {
-          n: "05",
-          title: "Manténgase en contacto",
-          body: "Comuníquese directamente con el Dr. Roohani entre visitas. Reciba ayuda para manejar efectos secundarios, revisar su progreso y ajustar su tratamiento, incluso cuando cambien la cobertura o los costos de los medicamentos.",
-        },
       ],
+      ongoing: {
+        title: "Manténgase en contacto",
+        body: "Comuníquese directamente con el Dr. Roohani entre visitas. Reciba ayuda para manejar efectos secundarios, revisar su progreso y ajustar su tratamiento, incluso cuando cambien la cobertura o los costos de los medicamentos.",
+      },
       footnotes: [
         "*Los resultados individuales varían. Los resultados de pérdida de peso dependen de factores que incluyen la dosis, la adherencia y la respuesta individual al tratamiento, y no están garantizados.",
         "**Ningún medicamento específico está garantizado. La decisión será determinada únicamente por el doctor con licencia, basada en su juicio clínico independiente tras una evaluación médica.",
@@ -545,11 +533,11 @@ export const translations = {
       footnote1:
         "**Algunas recetas pueden enviarse a una farmacia local para un acceso más oportuno.",
       oversightLabFootnote: "*El panel básico de laboratorio cuesta $36.",
-      initialConsultTitle: "Consulta inicial con el Dr. Roohani — ",
-      free: "GRATIS",
+      initialConsultTitle: "¿Ya usa un GLP-1? ",
+      initialConsultTitleEmph: "Transfiera su atención sin complicaciones",
       initialConsultDetails:
         "Visita por video de 30 minutos · Revisión médica integral · Exploración de objetivos · Resumen de medicamentos",
-      initialConsultNote: "Sin cargos continuos hasta que decida continuar.",
+      initialConsultNote: "Sin cargos hasta que decida continuar.",
       initialConsultCta: "Reserve su Visita Gratis",
       footnote2:
         "†Los medicamentos compuestos no están aprobados por la FDA y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad.",
