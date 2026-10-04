@@ -9,7 +9,7 @@ export type PostSummary = {
   subtitle?: string;
   description?: string;
   author?: string;
-  credentials: string[];
+  bio?: string;
   date?: string;
   draft: boolean;
 };
@@ -35,10 +35,7 @@ function parse(slug: string, raw: string): Post {
     subtitle: fields.subtitle,
     description: fields.description,
     author: fields.author,
-    credentials: (fields.credentials ?? "")
-      .split(";")
-      .map((line) => line.trim())
-      .filter(Boolean),
+    bio: fields.bio,
     date: fields.date,
     draft: fields.draft === "true",
     body: match ? raw.slice(match[0].length) : raw,

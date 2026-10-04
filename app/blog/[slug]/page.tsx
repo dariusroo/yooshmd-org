@@ -59,18 +59,25 @@ export default async function BlogPostPage({
       )}
 
       <div className="mt-6 pb-8 border-b border-gray-100 text-sm text-gray-500">
-        {post.author && <p className="font-medium text-gray-900">By {post.author}</p>}
-        {post.credentials.map((line) => (
-          <p key={line} className="mt-0.5">
-            {line}
-          </p>
-        ))}
-        {post.date && <p className="mt-3">{formatDate(post.date)}</p>}
+        {post.author && <p className="font-medium text-gray-900">{post.author}</p>}
+        {post.date && <p className="mt-1">{formatDate(post.date)}</p>}
       </div>
 
       <div className="article-content mt-10">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.body}</ReactMarkdown>
       </div>
+
+      {post.bio && (
+        <aside
+          className="mt-12 rounded-2xl p-6 sm:p-8 text-gray-700 leading-relaxed"
+          style={{ backgroundColor: "var(--green-light)" }}
+        >
+          <p className="text-sm font-semibold uppercase tracking-wide" style={{ color: "var(--green-deep)" }}>
+            About the author
+          </p>
+          <p className="mt-2">{post.bio}</p>
+        </aside>
+      )}
     </article>
   );
 }

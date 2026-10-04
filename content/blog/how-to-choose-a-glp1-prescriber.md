@@ -3,7 +3,7 @@ title: How to Choose a Clinician to Prescribe Your GLP-1 Medication
 subtitle: What separates a clinician who signs a prescription from one who actually manages your treatment, and how to tell the difference before you commit.
 description: Choosing a GLP-1 prescriber? An obesity-medicine physician explains which credentials matter, why ongoing monitoring counts, and the red flags to watch for.
 author: Darius Roohani, MD
-credentials: Diplomate, American Board of Internal Medicine; Diplomate, American Board of Obesity Medicine; Founder and Medical Director of YooshMD
+bio: Dr. Darius Roohani is a board-certified physician, a Diplomate of the American Board of Internal Medicine and the American Board of Obesity Medicine, and the Founder and Medical Director of YooshMD.
 date: 2026-10-04
 draft: false
 ---

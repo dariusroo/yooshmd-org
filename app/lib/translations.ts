@@ -9,6 +9,11 @@ export const translations = {
       accept: "Got it",
       optOut: "Turn off Google Analytics",
     },
+    latestArticle: {
+      heading: "Latest Article from YooshMD",
+      readMore: "Read the article",
+      allArticles: "See all articles",
+    },
     nav: {
       bookShort: "Start Here",
       bookFull: "Book Free Consultation",
@@ -338,6 +343,11 @@ export const translations = {
       linkText: "Política de Privacidad",
       accept: "Entendido",
       optOut: "Desactivar Google Analytics",
+    },
+    latestArticle: {
+      heading: "Último artículo de YooshMD",
+      readMore: "Leer el artículo",
+      allArticles: "Ver todos los artículos",
     },
     nav: {
       bookShort: "Empezar",
