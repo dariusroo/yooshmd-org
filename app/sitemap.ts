@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/disclaimers`,
-      lastModified: new Date("2026-08-11"),
+      lastModified: new Date("2026-10-05"),
       changeFrequency: "yearly",
       priority: 0.3,
     },

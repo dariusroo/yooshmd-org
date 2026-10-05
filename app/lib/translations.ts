@@ -275,7 +275,7 @@ export const translations = {
     disclaimersPage: {
       backHome: "← Back to home",
       title: "Disclosures & Disclaimers",
-      lastUpdated: "Last updated: July 17, 2026",
+      lastUpdated: "Last updated: October 5, 2026",
       sections: [
         {
           heading: "General Information",
@@ -283,11 +283,11 @@ export const translations = {
         },
         {
           heading: "Important Safety Information — GLP-1 Medications",
-          body: "Semaglutide and tirzepatide belong to a class of medications that carries an FDA boxed warning regarding the risk of thyroid C-cell tumors observed in animal studies. These medications are contraindicated in patients with a personal or family history of medullary thyroid carcinoma (MTC) or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2). Additional risks associated with this medication class may include pancreatitis, gallbladder disease, hypoglycemia, kidney injury, and hypersensitivity reactions. This is not a complete list of risks. You must disclose your full personal and family medical history to your provider during your consultation so that eligibility and appropriateness can be properly assessed. Ask your provider for full prescribing and safety information for your specific medication.",
+          body: "Semaglutide and tirzepatide belong to a class of medications that carries an FDA boxed warning regarding the risk of thyroid C-cell tumors observed in animal studies. These medications are contraindicated in patients with a personal or family history of medullary thyroid carcinoma (MTC) or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2). Additional risks associated with this medication class may include pancreatitis, gallbladder disease, hypoglycemia, kidney injury, and hypersensitivity reactions. This is not a complete list of risks. You must disclose your full personal and family medical history to your provider during your consultation so that eligibility and appropriateness can be properly assessed. Ask your provider for full prescribing and safety information for your specific medication. This safety information is drawn from the FDA-approved labeling for these medications. Compounded versions have not been evaluated by the FDA, and their safety profile has not been established through FDA review.",
         },
         {
           heading: "Clinical Outcomes",
-          body: "Individual results vary. We do not guarantee specific weight loss outcomes. Any percentage estimates referenced on this website are derived from randomized clinical trials evaluating lifestyle modification in combination with weight loss medications compared to placebo. Outcomes in clinical practice may differ based on individual health history, adherence, comorbidities, and other factors.",
+          body: "Individual results vary. We do not guarantee specific weight loss outcomes. Any percentage estimates referenced on this website are derived from randomized clinical trials of FDA-approved weight loss medications, used in combination with lifestyle modification and compared to placebo. These results were not obtained with compounded medications and should not be attributed to them. Compounded GLP-1 products have not been clinically proven to produce these or any specific results. Outcomes in clinical practice may differ based on individual health history, adherence, comorbidities, and other factors.",
         },
         {
           heading: "Medication Taper & Program Completion",
@@ -312,6 +312,10 @@ export const translations = {
         {
           heading: "Compounded Medications",
           body: "Certain medications offered through YooshMD may be compounded by state-licensed compounding pharmacies. Compounded medications are not approved by the U.S. Food and Drug Administration (FDA) and have not undergone FDA review for safety, effectiveness, or quality. A compounded medication may be prescribed only when a licensed healthcare provider determines it is medically appropriate for an individual patient. FDA-approved alternatives may be available. Patients should discuss the risks, benefits, and available treatment options with their healthcare provider before starting therapy. Individual results vary and no specific outcome is guaranteed. YooshMD does not manufacture, compound, or dispense medications. All prescriptions are issued solely at the discretion of the treating provider and are fulfilled by appropriately licensed pharmacies in accordance with applicable state and federal laws.",
+        },
+        {
+          heading: "How We Describe Compounded Medications",
+          body: "YooshMD does not represent compounded GLP-1 products as generic versions of, equivalent to, or the same as FDA-approved products. YooshMD also does not claim that a compounded product uses the \u201csame active ingredient\u201d as an FDA-approved product or that compounded GLP-1 products are clinically proven to produce patient results.\n\nWebsite content concerning compounded medications is reviewed to ensure that:\n\u2022 Compounded products are clearly identified as compounded and not FDA-approved;\n\u2022 No equivalence, sameness, generic, or substitution claims are made;\n\u2022 Results from studies of FDA-approved products are not attributed to compounded products;\n\u2022 No safety, efficacy, or outcome claim is made without appropriate support;\n\u2022 Price or convenience is not presented as establishing medical necessity; and\n\u2022 Treatment and formulation decisions are described as individualized clinical decisions.",
         },
         {
           heading: "Telehealth Services",
@@ -611,7 +615,7 @@ export const translations = {
     disclaimersPage: {
       backHome: "← Volver al inicio",
       title: "Divulgaciones y Descargos de Responsabilidad",
-      lastUpdated: "Última actualización: 17 de julio de 2026",
+      lastUpdated: "Última actualización: 5 de octubre de 2026",
       sections: [
         {
           heading: "Información General",
@@ -619,11 +623,11 @@ export const translations = {
         },
         {
           heading: "Información Importante de Seguridad — Medicamentos GLP-1",
-          body: "La semaglutida y la tirzepatida pertenecen a una clase de medicamentos que lleva una advertencia destacada (boxed warning) de la FDA sobre el riesgo de tumores de células C de la tiroides observados en estudios con animales. Estos medicamentos están contraindicados en pacientes con antecedentes personales o familiares de carcinoma medular de tiroides (CMT) o síndrome de Neoplasia Endocrina Múltiple tipo 2 (NEM 2). Los riesgos adicionales asociados con esta clase de medicamentos pueden incluir pancreatitis, enfermedad de la vesícula biliar, hipoglucemia, lesión renal y reacciones de hipersensibilidad. Esta no es una lista completa de riesgos. Debe revelar su historial médico personal y familiar completo a su proveedor durante su consulta para que se pueda evaluar adecuadamente su elegibilidad e idoneidad. Pregunte a su proveedor por la información completa de prescripción y seguridad de su medicamento específico.",
+          body: "La semaglutida y la tirzepatida pertenecen a una clase de medicamentos que lleva una advertencia destacada (boxed warning) de la FDA sobre el riesgo de tumores de células C de la tiroides observados en estudios con animales. Estos medicamentos están contraindicados en pacientes con antecedentes personales o familiares de carcinoma medular de tiroides (CMT) o síndrome de Neoplasia Endocrina Múltiple tipo 2 (NEM 2). Los riesgos adicionales asociados con esta clase de medicamentos pueden incluir pancreatitis, enfermedad de la vesícula biliar, hipoglucemia, lesión renal y reacciones de hipersensibilidad. Esta no es una lista completa de riesgos. Debe revelar su historial médico personal y familiar completo a su proveedor durante su consulta para que se pueda evaluar adecuadamente su elegibilidad e idoneidad. Pregunte a su proveedor por la información completa de prescripción y seguridad de su medicamento específico. Esta información de seguridad proviene del etiquetado aprobado por la FDA para estos medicamentos. Las versiones compuestas no han sido evaluadas por la FDA, y su perfil de seguridad no se ha establecido mediante una revisión de la FDA.",
         },
         {
           heading: "Resultados Clínicos",
-          body: "Los resultados individuales varían. No garantizamos resultados específicos de pérdida de peso. Cualquier estimación porcentual mencionada en este sitio web se deriva de ensayos clínicos aleatorizados que evalúan la modificación del estilo de vida en combinación con medicamentos para la pérdida de peso en comparación con un placebo. Los resultados en la práctica clínica pueden diferir según el historial médico individual, la adherencia, las comorbilidades y otros factores.",
+          body: "Los resultados individuales varían. No garantizamos resultados específicos de pérdida de peso. Cualquier estimación porcentual mencionada en este sitio web se deriva de ensayos clínicos aleatorizados de medicamentos para la pérdida de peso aprobados por la FDA, utilizados en combinación con la modificación del estilo de vida y en comparación con un placebo. Estos resultados no se obtuvieron con medicamentos compuestos y no deben atribuirse a ellos. No se ha comprobado clínicamente que los productos GLP-1 compuestos produzcan estos ni ningún resultado específico. Los resultados en la práctica clínica pueden diferir según el historial médico individual, la adherencia, las comorbilidades y otros factores.",
         },
         {
           heading: "Reducción Gradual del Medicamento y Finalización del Programa",
@@ -648,6 +652,10 @@ export const translations = {
         {
           heading: "Medicamentos Compuestos",
           body: "Ciertos medicamentos ofrecidos a través de YooshMD pueden ser compuestos por farmacias de compuestos con licencia estatal. Los medicamentos compuestos no están aprobados por la Administración de Alimentos y Medicamentos de EE. UU. (FDA) y no han sido evaluados por la FDA en cuanto a seguridad, eficacia o calidad. Un medicamento compuesto solo puede recetarse cuando un proveedor de atención médica con licencia determina que es médicamente apropiado para un paciente individual. Pueden estar disponibles alternativas aprobadas por la FDA. Los pacientes deben discutir los riesgos, beneficios y opciones de tratamiento disponibles con su proveedor de atención médica antes de comenzar la terapia. Los resultados individuales varían y no se garantiza ningún resultado específico. YooshMD no fabrica, compone ni dispensa medicamentos. Todas las recetas se emiten únicamente a discreción del proveedor tratante y se surten en farmacias debidamente autorizadas de acuerdo con las leyes estatales y federales aplicables.",
+        },
+        {
+          heading: "Cómo Describimos los Medicamentos Compuestos",
+          body: "YooshMD no presenta los productos GLP-1 compuestos como versiones genéricas de, equivalentes a, ni iguales que los productos aprobados por la FDA. YooshMD tampoco afirma que un producto compuesto utilice el \u201cmismo ingrediente activo\u201d que un producto aprobado por la FDA ni que los productos GLP-1 compuestos estén clínicamente comprobados para producir resultados en los pacientes.\n\nEl contenido del sitio web relacionado con medicamentos compuestos se revisa para asegurar que:\n\u2022 Los productos compuestos se identifiquen claramente como compuestos y no aprobados por la FDA;\n\u2022 No se hagan afirmaciones de equivalencia, igualdad, genéricos o sustitución;\n\u2022 Los resultados de estudios de productos aprobados por la FDA no se atribuyan a productos compuestos;\n\u2022 No se haga ninguna afirmación de seguridad, eficacia o resultados sin el respaldo adecuado;\n\u2022 El precio o la conveniencia no se presenten como base de la necesidad médica; y\n\u2022 Las decisiones de tratamiento y formulación se describan como decisiones clínicas individualizadas.",
         },
         {
           heading: "Servicios de Telesalud",

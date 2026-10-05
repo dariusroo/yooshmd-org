@@ -43,7 +43,7 @@ export default function DisclaimersPage() {
                 <h2 className="text-lg font-semibold text-gray-900 mb-2">
                   {section.heading}
                 </h2>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">
                   {section.body}
                 </p>
               </div>
