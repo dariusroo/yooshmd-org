@@ -780,7 +780,7 @@ function FAQSection() {
                   style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
+                    <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed whitespace-pre-line">
                       {withLinks(faq.answer, faqAnswerLinks)}
                     </p>
                   </div>

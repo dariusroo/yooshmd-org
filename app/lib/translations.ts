@@ -137,7 +137,7 @@ export const translations = {
         {
           question: "When will I get charged?",
           answer:
-            "Each month, you will receive an invoice covering that month's treatment (and medication, if included in your plan). There are no automatic recurring charges — you're billed and pay invoice by invoice.",
+            "Your first step is a free initial consultation, during which the clinician evaluates whether treatment is appropriate for you. If treatment is approved, any prescription is signed before your first invoice is issued.\n\nFor each subsequent month, your assigned clinician reviews your treatment before issuing a new prescription and invoice. Each invoice covers that month's treatment and, when included in your plan, medication.\n\nThere are no automatic recurring charges. You review and pay each invoice individually before medication is sent for fulfillment and any other treatment services are provided.",
         },
         {
           question: "Do you accept insurance?",
@@ -147,7 +147,7 @@ export const translations = {
         {
           question: "Are there any recurring charges?",
           answer:
-            "No. You will receive a line-item invoice before treatment is rendered. Once the invoice is paid, your medication will be sent or prescribed and your labs will be ordered. If not, your slot will be released.",
+            "No. We do not automatically charge you on a recurring basis.\n\nAfter your consultation, if the clinician determines that treatment is appropriate, any prescription will be signed before you receive a line-item invoice. Once the invoice is paid, the prescribed medication will be sent for fulfillment and any applicable lab orders will be placed.\n\nEach refill or additional treatment period requires a new clinical review and a separate invoice. You will not be charged automatically. If an invoice is not paid, the associated appointment or treatment slot may be released.",
         },
         {
           question: "Do I have to enroll in a monthly program?",
@@ -157,7 +157,7 @@ export const translations = {
         {
           question: "What is your refund policy?",
           answer:
-            "Once medications have been ordered, they are non-refundable. Invoices that are paid are also non-refundable.",
+            "The initial consultation is free. If the clinician determines that treatment is not appropriate, no prescription is issued and no invoice is sent.\n\nIf you have paid an invoice but the prescribed medication cannot be ordered or provided, the applicable medication charge will be refunded to your original payment method.\n\nOnce a prescription medication has been ordered for fulfillment, it cannot be returned or refunded. Fees for clinical services that have already been provided are also non-refundable. Any refund requests involving services or medication that have not yet been provided will be reviewed based on the status of the order.",
         },
         {
           question: "Where is your medication sourced from?",
@@ -472,7 +472,7 @@ export const translations = {
         {
           question: "¿Cuándo se me cobrará?",
           answer:
-            "Cada mes recibirá una factura que cubre el tratamiento (y el medicamento, si está incluido en su plan) de ese mes. No hay cargos automáticos recurrentes — se le factura y paga factura por factura.",
+            "Su primer paso es una consulta inicial gratuita, durante la cual el clínico evalúa si el tratamiento es apropiado para usted. Si se aprueba el tratamiento, cualquier receta se firma antes de emitir su primera factura.\n\nCada mes siguiente, su clínico asignado revisa su tratamiento antes de emitir una nueva receta y factura. Cada factura cubre el tratamiento de ese mes y, cuando esté incluido en su plan, el medicamento.\n\nNo hay cargos automáticos recurrentes. Usted revisa y paga cada factura por separado antes de que el medicamento se envíe para su surtido y se presten otros servicios de tratamiento.",
         },
         {
           question: "¿Aceptan seguro médico?",
@@ -482,7 +482,7 @@ export const translations = {
         {
           question: "¿Hay cargos recurrentes?",
           answer:
-            "No. Recibirá una factura detallada antes de que se administre el tratamiento. Una vez pagada la factura, su medicamento será enviado o recetado y se ordenarán sus análisis de laboratorio. Si no se paga, su cupo será liberado.",
+            "No. No le cobramos automáticamente de forma recurrente.\n\nDespués de su consulta, si el clínico determina que el tratamiento es apropiado, cualquier receta se firmará antes de que reciba una factura detallada. Una vez pagada la factura, el medicamento recetado se enviará para su surtido y se ordenarán los análisis de laboratorio correspondientes.\n\nCada resurtido o período de tratamiento adicional requiere una nueva revisión clínica y una factura por separado. No se le cobrará automáticamente. Si una factura no se paga, la cita o el cupo de tratamiento asociado puede ser liberado.",
         },
         {
           question: "¿Tengo que inscribirme en un programa mensual?",
@@ -492,7 +492,7 @@ export const translations = {
         {
           question: "¿Cuál es su política de reembolso?",
           answer:
-            "Una vez que los medicamentos han sido pedidos, no son reembolsables. Las facturas ya pagadas tampoco son reembolsables.",
+            "La consulta inicial es gratuita. Si el clínico determina que el tratamiento no es apropiado, no se emite ninguna receta ni se envía ninguna factura.\n\nSi usted ha pagado una factura pero el medicamento recetado no puede pedirse o proporcionarse, el cargo correspondiente al medicamento se reembolsará a su método de pago original.\n\nUna vez que un medicamento recetado ha sido pedido para su surtido, no puede devolverse ni reembolsarse. Las tarifas por servicios clínicos ya prestados tampoco son reembolsables. Cualquier solicitud de reembolso relacionada con servicios o medicamentos que aún no se hayan proporcionado se revisará según el estado del pedido.",
         },
         {
           question: "¿De dónde proviene su medicamento?",
