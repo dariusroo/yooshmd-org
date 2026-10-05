@@ -35,9 +35,9 @@ export const translations = {
       subheadLead: "Direct access",
       subheadPre: " to the same physician, ",
       subheadEmph: "board-certified in obesity medicine",
-      subheadMid: ". Start with a ",
-      subheadEmph2: "cost-intelligent",
-      subheadPost: " treatment plan tailored to your health, goals, and budget.",
+      subheadMid: ". Start with an ",
+      subheadEmph2: "individualized",
+      subheadPost: " treatment plan tailored to your medical history and goals.",
       ctaBook: "Book Free Consultation",
       ctaCall: "Call (909) 293-8095",
       checklist: [
@@ -64,7 +64,7 @@ export const translations = {
       eyebrow: "What Makes Us Different",
       heading:
         "Most programs give you a platform. We give you direct access to your physician.",
-      body: "At YooshMD, one physician is personally responsible for your care. When questions come up, side effects interfere, or medication costs change, you can contact your doctor directly, without going through a call center. Your treatment plan evolves with your progress, medical needs, and budget.",
+      body: "At YooshMD, one physician is personally responsible for your care. When questions come up, side effects interfere, or medication costs change, you can contact your doctor directly, without going through a call center. Your treatment plan evolves with your progress and medical needs.",
       cardTitle: "YooshMD Highlights",
       points: [
         "Direct access to your doctor — call or message — no barriers",
@@ -81,7 +81,7 @@ export const translations = {
         {
           n: "01",
           title: "Meet and build a personalized plan with your physician",
-          body: "Meet Dr. Roohani by video and build a personalized, cost-intelligent plan around your health, goals, and budget. Know your costs before you begin.",
+          body: "Meet Dr. Roohani by video and build a personalized plan around your health and goals. Know your costs before you begin.",
         },
         {
           n: "02",
@@ -180,7 +180,7 @@ export const translations = {
       eyebrow: "Transparent Pricing",
       heading: "Clear, upfront pricing. No surprises.",
       subhead:
-        "Flexible plans available - with or without medication included. Explore the most cost-effective option for your treatment needs at your free consultation.",
+        "Flexible plans available - with or without medication included. Explore the right option for your treatment needs at your free consultation.",
       plans: [
         {
           name: "Semaglutide Program†",
@@ -200,12 +200,14 @@ export const translations = {
       included: [
         "Monthly video visits with Dr. Roohani",
         "Unlimited direct secure messaging",
+        "On-call physician for urgent matters",
         "Personalized treatment and dose adjustments",
         "Side-effect management and support",
-        "Ongoing review of medication options and costs",
         "Weight-maintenance planning",
       ],
       footnote1: "**Some prescriptions may be sent to a local pharmacy for more timely access.",
+      compoundingNote:
+        "YooshMD does not prescribe compounded medications based on cost or convenience alone. Whether any medication, including a compounded formulation, is appropriate for you is an individualized clinical decision made during your consultation.",
       oversightLabFootnote: "*Basic lab panel is $36.",
       initialConsultTitle: "Already on a GLP-1? ",
       initialConsultTitleEmph: "Transfer your care seamlessly",
@@ -222,7 +224,7 @@ export const translations = {
       eyebrow: "Medications",
       heading: "Injectables or tablets - many options, personalized to your needs.",
       subhead:
-        "Semaglutide or tirzepatide programs available. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy®, Zepbound®, Ozempic®), or non-GLP-1 options such as phentermine.",
+        "Semaglutide or tirzepatide programs available, if clinically appropriate. Prefer something else? Dr. Roohani can prescribe oral, brand-name (Wegovy®, Zepbound®, Ozempic®), or non-GLP-1 options such as phentermine.",
       options: [
         {
           title: "Semaglutide",
@@ -375,8 +377,8 @@ export const translations = {
       subheadPre: " al mismo médico, ",
       subheadEmph: "certificado en medicina de la obesidad",
       subheadMid: ". Comience con un plan de tratamiento ",
-      subheadEmph2: "inteligente y accesible",
-      subheadPost: ", adaptado a su salud, sus metas y su presupuesto.",
+      subheadEmph2: "individualizado",
+      subheadPost: ", adaptado a su historial médico y sus metas.",
       ctaBook: "Reserve su Consulta Gratis",
       ctaCall: "Llame al (909) 293-8095",
       checklist: [
@@ -403,7 +405,7 @@ export const translations = {
       eyebrow: "Qué Nos Hace Diferentes",
       heading:
         "La mayoría de los programas le dan una plataforma. Nosotros le damos acceso directo a su médico.",
-      body: "En YooshMD, un doctor es personalmente responsable de su cuidado. Cuando surjan preguntas, los efectos secundarios interfieran o cambien los costos de los medicamentos, puede comunicarse directamente con su doctor, sin pasar por un centro de llamadas. Su plan de tratamiento evoluciona con su progreso, sus necesidades médicas y su presupuesto.",
+      body: "En YooshMD, un doctor es personalmente responsable de su cuidado. Cuando surjan preguntas, los efectos secundarios interfieran o cambien los costos de los medicamentos, puede comunicarse directamente con su doctor, sin pasar por un centro de llamadas. Su plan de tratamiento evoluciona con su progreso y sus necesidades médicas.",
       cardTitle: "Lo Más Destacado de YooshMD",
       points: [
         "Acceso directo a su doctor — llame o envíe un mensaje — sin barreras",
@@ -420,7 +422,7 @@ export const translations = {
         {
           n: "01",
           title: "Reúnase y cree un plan personalizado con su médico",
-          body: "Reúnase con el Dr. Roohani por video y cree un plan personalizado e inteligente en costos, según su salud, sus objetivos y su presupuesto. Conozca sus costos antes de comenzar.",
+          body: "Reúnase con el Dr. Roohani por video y cree un plan personalizado según su salud y sus objetivos. Conozca sus costos antes de comenzar.",
         },
         {
           n: "02",
@@ -519,7 +521,7 @@ export const translations = {
       eyebrow: "Precios Transparentes",
       heading: "Precios claros y por adelantado. Sin sorpresas.",
       subhead:
-        "Planes flexibles disponibles - con o sin medicamento incluido. Explore la opción más rentable para sus necesidades de tratamiento en su consulta gratuita.",
+        "Planes flexibles disponibles - con o sin medicamento incluido. Explore la opción adecuada para sus necesidades de tratamiento en su consulta gratuita.",
       plans: [
         {
           name: "Programa de Semaglutida†",
@@ -539,13 +541,15 @@ export const translations = {
       included: [
         "Visitas mensuales por video con el Dr. Roohani",
         "Mensajería segura directa e ilimitada",
+        "Médico de guardia para asuntos urgentes",
         "Tratamiento personalizado y ajustes de dosis",
         "Manejo y apoyo para efectos secundarios",
-        "Revisión continua de opciones y costos de medicamentos",
         "Planificación para el mantenimiento del peso",
       ],
       footnote1:
         "**Algunas recetas pueden enviarse a una farmacia local para un acceso más oportuno.",
+      compoundingNote:
+        "YooshMD no receta medicamentos compuestos únicamente por su costo o conveniencia. Si algún medicamento, incluida una formulación compuesta, es apropiado para usted es una decisión clínica individualizada que se toma durante su consulta.",
       oversightLabFootnote: "*El panel básico de laboratorio cuesta $36.",
       initialConsultTitle: "¿Ya usa un GLP-1? ",
       initialConsultTitleEmph: "Transfiera su atención sin complicaciones",
@@ -562,7 +566,7 @@ export const translations = {
       eyebrow: "Medicamentos",
       heading: "Inyectables o tabletas - muchas opciones, personalizadas a sus necesidades.",
       subhead:
-        "Programas de semaglutida o tirzepatida disponibles. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy®, Zepbound®, Ozempic®), o no GLP-1, como la fentermina.",
+        "Programas de semaglutida o tirzepatida disponibles, si es clínicamente apropiado. ¿Prefiere algo más? El Dr. Roohani puede recetar opciones orales, de marca (Wegovy®, Zepbound®, Ozempic®), o no GLP-1, como la fentermina.",
       options: [
         {
           title: "Semaglutida",

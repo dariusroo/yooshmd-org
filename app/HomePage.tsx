@@ -947,6 +947,9 @@ function Pricing() {
               </li>
             ))}
           </ul>
+          <p className="mt-6 pt-5 border-t border-gray-200 text-sm text-gray-600 leading-relaxed">
+            {t.pricing.compoundingNote}
+          </p>
         </div>
         <p className="text-xs text-gray-400 -mt-3 mb-6">{t.pricing.oversightLabFootnote}</p>
 
