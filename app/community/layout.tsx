@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/community",
   },
+  // Still reachable by direct link, but kept out of search results.
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     title: "Community Health Partnerships | YooshMD",
     description:
