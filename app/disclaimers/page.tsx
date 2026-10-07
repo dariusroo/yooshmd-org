@@ -50,7 +50,7 @@ export default function DisclaimersPage() {
             ))}
           </div>
 
-          <p className="text-sm text-gray-400 mt-16 pt-8 border-t border-gray-100">
+          <p className="text-sm text-gray-600 mt-16 pt-8 border-t border-gray-100">
             {t.disclaimersPage.lastUpdated}
           </p>
         </div>

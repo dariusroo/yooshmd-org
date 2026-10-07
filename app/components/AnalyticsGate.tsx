@@ -40,7 +40,11 @@ export default function AnalyticsGate() {
     <>
       {!optedOut && <GoogleAnalytics gaId={GA_ID} />}
       {showNotice && (
-        <div className="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
+        <div
+          role="region"
+          aria-label={t.analyticsNotice.label}
+          className="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)]"
+        >
           <div className="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
             <p className="text-xs text-gray-600 leading-relaxed flex-1">
               {t.analyticsNotice.text}{" "}

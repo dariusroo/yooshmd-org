@@ -8,6 +8,7 @@ export const translations = {
       linkText: "Privacy Policy",
       accept: "Got it",
       optOut: "Turn off Google Analytics",
+      label: "Analytics notice",
     },
     latestArticle: {
       heading: "Latest Article from YooshMD",
@@ -196,6 +197,7 @@ export const translations = {
             "Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment available. Medication cost and lab order cost not included*.",
         },
       ],
+      doseOptions: "dose options",
       includeHeading: "Every plan includes",
       included: [
         "Monthly video visits with Dr. Roohani",
@@ -349,6 +351,7 @@ export const translations = {
       linkText: "Política de Privacidad",
       accept: "Entendido",
       optOut: "Desactivar Google Analytics",
+      label: "Aviso de análisis",
     },
     latestArticle: {
       heading: "Último artículo de YooshMD",
@@ -522,6 +525,7 @@ export const translations = {
       heading: "Precios claros y por adelantado. Sin sorpresas.",
       subhead:
         "Planes flexibles disponibles - con o sin medicamento incluido. Explore la opción adecuada para sus necesidades de tratamiento en su consulta gratuita.",
+      doseOptions: "opciones de dosis",
       plans: [
         {
           name: "Programa de Semaglutida†",

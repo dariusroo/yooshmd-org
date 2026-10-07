@@ -28,7 +28,7 @@ export default function BlogIndexPage() {
                 {post.subtitle && (
                   <p className="mt-2 text-gray-600 leading-relaxed">{post.subtitle}</p>
                 )}
-                <p className="mt-3 text-sm text-gray-400">
+                <p className="mt-3 text-sm text-gray-600">
                   {[post.author, formatDate(post.date)].filter(Boolean).join(" · ")}
                   {post.draft && (
                     <span className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-800">

@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 space-y-3 text-xs text-gray-500 leading-relaxed">
+        <div className="border-t border-gray-800 pt-8 space-y-3 text-xs text-gray-400 leading-relaxed">
           <p>{t.footer.medicalDisclaimer}</p>
           <p>{t.footer.copyright}</p>
         </div>

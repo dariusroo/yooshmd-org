@@ -16,14 +16,14 @@ export default function ChatTranscript({
       <header className="sticky top-0 z-10 bg-[#212121]/95 backdrop-blur border-b border-[#2f2f2f] px-5 md:px-8 py-3">
         <h1 className="text-sm font-medium text-gray-200 truncate pl-10 md:pl-0">{title}</h1>
         {date && (
-          <p className="text-xs text-gray-500 truncate pl-10 md:pl-0">{date}</p>
+          <p className="text-xs text-gray-400 truncate pl-10 md:pl-0">{date}</p>
         )}
       </header>
 
       <div className="flex-1 overflow-y-auto">
         <div className="max-w-3xl mx-auto px-4 md:px-6 py-8 space-y-6">
           {messages.length === 0 && (
-            <p className="text-sm text-gray-500">This transcript couldn&rsquo;t be parsed.</p>
+            <p className="text-sm text-gray-400">This transcript couldn&rsquo;t be parsed.</p>
           )}
           {messages.map((message, i) => (
             <ChatBubble key={i} message={message} />

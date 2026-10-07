@@ -80,6 +80,15 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useLanguage();
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setMenuOpen(false);
+    }
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
@@ -113,59 +122,58 @@ function Nav() {
         </div>
       </div>
 
-      {menuOpen && (
-        <div
-          id="nav-links-panel"
-          className="border-t border-gray-100 bg-white"
-        >
-          <div className="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex flex-col items-end gap-3">
-            <a
-              href="https://mqiu0i.intakeq.com/portal"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.patientPortal}
-            </a>
-            <a
-              href="#pricing"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.pricing}
-            </a>
-            <a
-              href="#reviews"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.about}
-            </a>
-            <a
-              href="#faq"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.faq}
-            </a>
-            <Link
-              href="/blog"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.blog}
-            </Link>
-            <a
-              href="/refer"
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t.nav.referPatient}
-            </a>
-          </div>
+      <div
+        id="nav-links-panel"
+        hidden={!menuOpen}
+        className="border-t border-gray-100 bg-white"
+      >
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex flex-col items-end gap-3">
+          <a
+            href="https://mqiu0i.intakeq.com/portal"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t.nav.patientPortal}
+          </a>
+          <a
+            href="#pricing"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t.nav.pricing}
+          </a>
+          <a
+            href="#reviews"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t.nav.about}
+          </a>
+          <a
+            href="#faq"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t.nav.faq}
+          </a>
+          <Link
+            href="/blog"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t.nav.blog}
+          </Link>
+          <a
+            href="/refer"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t.nav.referPatient}
+          </a>
         </div>
-      )}
+      </div>
 
       {/* Phone — below the dropdown menu */}
       <div className="border-t border-gray-100 bg-white">
@@ -351,7 +359,7 @@ function TrustBar() {
               <p className="text-xs sm:text-sm font-semibold text-gray-800 mt-0.5">
                 {withDagger(item.label)}
               </p>
-              <p className="text-sm text-gray-500 mt-0.5">{item.sub}</p>
+              <p className="text-sm text-gray-600 mt-0.5">{item.sub}</p>
             </div>
           ))}
         </div>
@@ -430,7 +438,7 @@ function CompareCard({
     >
       <p
         className={`text-xs font-bold uppercase tracking-widest mb-4 ${
-          isUs ? "text-white/70" : "text-gray-400"
+          isUs ? "text-white" : "text-gray-600"
         }`}
       >
         {title}
@@ -481,7 +489,7 @@ function HowItWorks() {
             >
               <span
                 className="text-4xl font-bold tabular-nums"
-                style={{ color: "var(--green-border)" }}
+                style={{ color: "var(--green-deep)" }}
               >
                 {step.n}
               </span>
@@ -512,7 +520,7 @@ function HowItWorks() {
 
         <div className="mt-10 space-y-2 max-w-3xl">
           {t.howItWorks.footnotes.map((note) => (
-            <p key={note} className="text-xs text-gray-400 leading-relaxed">
+            <p key={note} className="text-xs text-gray-600 leading-relaxed">
               {note}
             </p>
           ))}
@@ -742,35 +750,45 @@ function FAQSection() {
                 key={faq.question}
                 className="rounded-2xl border border-gray-100 bg-white overflow-hidden"
               >
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? null : i)}
-                  aria-expanded={isOpen}
-                  className="w-full flex items-center justify-between gap-4 text-left px-6 py-5"
-                >
-                  <span className="font-semibold text-gray-900">
-                    {faq.question}
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    className={`w-5 h-5 flex-shrink-0 text-gray-500 transition-transform ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                <h3>
+                  <button
+                    type="button"
+                    id={`faq-question-${i}`}
+                    onClick={() => setOpenIndex(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${i}`}
+                    className="w-full flex items-center justify-between gap-4 text-left px-6 py-5"
                   >
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                    <span className="font-semibold text-gray-900">
+                      {faq.question}
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className={`w-5 h-5 flex-shrink-0 text-gray-500 transition-transform ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </button>
+                </h3>
                 {/* Answer stays in the DOM at all times — grid-rows animates
                     0fr -> 1fr instead of conditional mounting, so crawlers
-                    that don't execute click events still see the full text. */}
+                    that don't execute click events still see the full text.
+                    `inert` keeps the collapsed answer out of the tab order and
+                    the accessibility tree. */}
                 <div
+                  id={`faq-answer-${i}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${i}`}
+                  inert={!isOpen}
                   className="grid transition-all duration-300 ease-out"
                   style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                 >
@@ -837,9 +855,9 @@ function Pricing() {
       cardStyle: { backgroundColor: "var(--green-deep)", borderColor: "var(--green-deep)" },
       titleClass: "text-white",
       priceClass: "text-white",
-      subClass: "text-white/70",
+      subClass: "text-white",
       doseActive: "bg-white text-gray-900 border-white",
-      doseInactive: "bg-transparent text-white/80 border-white/30 hover:border-white/60",
+      doseInactive: "bg-transparent text-white border-white/40 hover:border-white/60",
       icon: "/greenvial.png",
       iconAlt: "Medication vial icon representing the Tirzepatide Program",
     },
@@ -902,12 +920,19 @@ function Pricing() {
                     className="w-10 h-10 object-contain flex-shrink-0"
                   />
                 </div>
-                <p className={`text-3xl font-bold mt-2 ${plan.priceClass}`}>
+                <p
+                  className={`text-3xl font-bold mt-2 ${plan.priceClass}`}
+                  aria-live={doses ? "polite" : undefined}
+                >
                   {displayPrice}
                   <span className="text-base font-medium">{plan.priceSuffix}</span>
                 </p>
                 {doses && (
-                  <div className="flex flex-wrap gap-1.5 mt-3">
+                  <div
+                    role="group"
+                    aria-label={`${plan.name.replace("†", "")} ${t.pricing.doseOptions}`}
+                    className="flex flex-wrap gap-1.5 mt-3"
+                  >
                     {doses.map((dose, i) => {
                       const active = i === doseIndex[plan.id as DosedPlanId];
                       return (
@@ -953,7 +978,7 @@ function Pricing() {
             {t.pricing.compoundingNote}
           </p>
         </div>
-        <p className="text-xs text-gray-400 -mt-3 mb-6">{t.pricing.oversightLabFootnote}</p>
+        <p className="text-xs text-gray-600 -mt-3 mb-6">{t.pricing.oversightLabFootnote}</p>
 
         {/* Initial consult callout */}
         <div
@@ -972,7 +997,7 @@ function Pricing() {
               <p className="text-sm text-gray-600 mt-1">
                 {t.pricing.initialConsultDetails}
               </p>
-              <p className="text-sm text-gray-500 mt-1">
+              <p className="text-sm text-gray-600 mt-1">
                 {t.pricing.initialConsultNote}
               </p>
             </div>
@@ -984,7 +1009,7 @@ function Pricing() {
           </div>
         </div>
 
-        <p className="text-xs text-gray-400">
+        <p className="text-xs text-gray-600">
           {withDagger(t.pricing.footnote2)}{" "}
           {t.pricing.doseDisclaimer}
           <a href="/disclaimers" className="underline">
@@ -1071,7 +1096,7 @@ function MedicationOptions() {
                   </p>
                 )}
                 {option.body && (
-                  <p className="text-gray-600 text-xs leading-relaxed">
+                  <p className="text-gray-700 text-xs leading-relaxed">
                     {option.body}
                   </p>
                 )}
@@ -1080,10 +1105,10 @@ function MedicationOptions() {
           ))}
         </div>
 
-        <p className="text-xs text-gray-400 mt-6">
+        <p className="text-xs text-gray-600 mt-6">
           {withDagger(t.medications.footnote)}
         </p>
-        <p className="text-xs text-gray-400 mt-1">
+        <p className="text-xs text-gray-600 mt-1">
           {t.medications.trademarkFootnote}
         </p>
       </div>

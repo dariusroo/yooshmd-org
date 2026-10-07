@@ -10,6 +10,8 @@ export default function LanguageToggle() {
     <button
       type="button"
       onClick={() => setLang(nextLang)}
+      aria-label={nextLang === "es" ? "Ver en español" : "View in English"}
+      lang={nextLang}
       className="flex-shrink-0 flex items-center gap-1.5 h-9 px-3 rounded-full text-sm font-bold text-gray-600 bg-gray-100 hover:text-gray-900 hover:bg-gray-200 transition-colors"
     >
       <svg

@@ -18,6 +18,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   function setLang(next: Lang) {
     setLangState(next);
     window.localStorage.setItem("yooshmd-lang", next);
