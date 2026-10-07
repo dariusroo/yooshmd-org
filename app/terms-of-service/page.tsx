@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "../components/Footer";
 
 type Block =
@@ -274,20 +275,20 @@ export default function TermsOfServicePage() {
     <div className="flex flex-col flex-1">
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
-          <a href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0">
             <span
               className="text-2xl sm:text-3xl font-bold tracking-tight"
               style={{ color: "var(--green-deep)" }}
             >
               YooshMD
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             ← Back to home
-          </a>
+          </Link>
         </div>
       </header>
 
