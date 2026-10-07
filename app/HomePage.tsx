@@ -176,6 +176,7 @@ function Nav() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
               className="w-4 h-4"
               viewBox="0 0 24 24"
               fill="none"
@@ -590,7 +591,7 @@ function Reviews() {
             <FadeIn className="mb-10">
               <SectionLabel>{t.reviews.eyebrow}</SectionLabel>
               <div className="flex items-center gap-2 mt-4">
-                <StarRow />
+                <StarRow decorative />
                 <span className="font-bold text-gray-900 text-xl">5.0 / 5</span>
               </div>
               <p className="text-sm text-gray-500 mt-1">
@@ -752,6 +753,7 @@ function FAQSection() {
                   </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                     className={`w-5 h-5 flex-shrink-0 text-gray-500 transition-transform ${
                       isOpen ? "rotate-180" : ""
                     }`}
@@ -1252,6 +1254,7 @@ function SectionLabel({
 function CheckIcon() {
   return (
     <svg
+      aria-hidden="true"
       className="w-3.5 h-3.5 flex-shrink-0"
       style={{ color: "var(--green-mid)" }}
       viewBox="0 0 20 20"
@@ -1266,13 +1269,25 @@ function CheckIcon() {
   );
 }
 
-function StarRow({ small = false }: { small?: boolean }) {
+function StarRow({
+  small = false,
+  decorative = false,
+}: {
+  small?: boolean;
+  decorative?: boolean;
+}) {
   const size = small ? "w-3.5 h-3.5" : "w-5 h-5";
   return (
-    <div className="flex gap-0.5">
+    <div
+      className="flex gap-0.5"
+      {...(decorative
+        ? { "aria-hidden": true }
+        : { role: "img", "aria-label": "Rated 5 out of 5 stars" })}
+    >
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
+          aria-hidden="true"
           className={size}
           style={{ color: "var(--green-deep)" }}
           viewBox="0 0 20 20"

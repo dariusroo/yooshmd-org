@@ -12,7 +12,7 @@ export default function ChatsIndexPage() {
         <div>
           <Image
             src="/chats/mascot.png"
-            alt=""
+            alt="Pixel-art robot doctor mascot wearing a white coat and stethoscope"
             width={220}
             height={220}
             priority
