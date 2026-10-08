@@ -85,6 +85,8 @@ A good GLP-1 prescriber does more than approve a medication. When you compare op
 
 If you are thinking about starting semaglutide or tirzepatide, or you already take a GLP-1 medication and can't get the follow-up you need, YooshMD offers ongoing care with the same board-certified obesity-medicine physician throughout your treatment. [Book a free consultation](/book) to talk through whether this approach is a good fit for you.
 
+<!-- end-of-article -->
+
 ---
 
 *Semaglutide and tirzepatide may be prescribed in compounded form. Compounded medications are not FDA-approved and have not been reviewed by the FDA for safety, effectiveness, or quality. Individual results vary. See our [disclosures](/disclaimers) for important safety information.*

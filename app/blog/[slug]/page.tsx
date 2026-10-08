@@ -36,6 +36,18 @@ export default async function BlogPostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
+  // The author box goes after the article itself, ahead of end matter like
+  // disclaimers and references. Posts mark that point with
+  // <!-- end-of-article -->; without it, fall back to the References heading.
+  const marker = "<!-- end-of-article -->";
+  let splitAt = post.body.indexOf(marker);
+  let resumeAt = splitAt + marker.length;
+  if (splitAt === -1) {
+    splitAt = resumeAt = post.body.search(/^## References/m);
+  }
+  const articleBody = splitAt === -1 ? post.body : post.body.slice(0, splitAt);
+  const endMatter = splitAt === -1 ? "" : post.body.slice(resumeAt);
+
   return (
     <article className="max-w-3xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
       <Link
@@ -64,7 +76,7 @@ export default async function BlogPostPage({
       </div>
 
       <div className="article-content mt-10">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.body}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{articleBody}</ReactMarkdown>
       </div>
 
       {post.bio && (
@@ -77,6 +89,12 @@ export default async function BlogPostPage({
           </p>
           <p className="mt-2">{post.bio}</p>
         </aside>
+      )}
+
+      {endMatter.trim() && (
+        <div className="article-content mt-10">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{endMatter}</ReactMarkdown>
+        </div>
       )}
     </article>
   );

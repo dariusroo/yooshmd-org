@@ -99,6 +99,8 @@ A GLP-1 prescription is the start of treatment, not the whole plan. Begin with a
 
 If you're taking a GLP-1 medication but aren't getting regular follow-up, YooshMD offers monthly video visits and direct messaging with the same obesity-medicine physician throughout your care. [Book a free consultation](/book) to talk through whether this approach is a good fit for you.
 
+<!-- end-of-article -->
+
 ---
 
 *Semaglutide and tirzepatide may be prescribed in compounded form. Compounded medications are not FDA-approved and have not been reviewed by the FDA for safety, effectiveness, or quality. Individual results vary. See our [disclosures](/disclaimers) for important safety information.*
