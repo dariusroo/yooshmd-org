@@ -5,6 +5,25 @@ import { useLanguage } from "../lib/LanguageContext";
 export default function Footer() {
   const { t } = useLanguage();
 
+  // Official LegitScript seal: keep the provided image URL and 73x79 size unscaled.
+  const legitScriptSeal = (
+    <a
+      href="https://www.legitscript.com/websites/?checker_keywords=yooshmd.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Verify LegitScript Approval for www.yooshmd.com"
+      className="inline-block"
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="https://static.legitscript.com/seals/49120675.png"
+        alt="Verify Approval for www.yooshmd.com"
+        width={73}
+        height={79}
+      />
+    </a>
+  );
+
   return (
     <footer className="bg-gray-950 text-gray-400 py-12">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
@@ -69,6 +88,7 @@ export default function Footer() {
             </div>
           </div>
 
+          <div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
             <a
               href="/privacy-policy"
@@ -110,29 +130,16 @@ export default function Footer() {
               {t.footer.links.accessibility}
             </a>
           </div>
+            <div className="hidden sm:block mt-6">{legitScriptSeal}</div>
+          </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row sm:items-start gap-6">
+        <div className="border-t border-gray-800 pt-8 flex flex-col gap-6">
           <div className="space-y-3 text-xs text-gray-400 leading-relaxed flex-1">
             <p>{t.footer.medicalDisclaimer}</p>
             <p>{t.footer.copyright}</p>
           </div>
-          {/* Official LegitScript seal: keep the provided image URL and 73x79 size unscaled. */}
-          <a
-            href="https://www.legitscript.com/websites/?checker_keywords=yooshmd.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Verify LegitScript Approval for www.yooshmd.com"
-            className="flex-shrink-0"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://static.legitscript.com/seals/49120675.png"
-              alt="Verify Approval for www.yooshmd.com"
-              width={73}
-              height={79}
-            />
-          </a>
+          <div className="sm:hidden">{legitScriptSeal}</div>
         </div>
       </div>
     </footer>
