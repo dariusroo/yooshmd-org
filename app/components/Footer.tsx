@@ -112,9 +112,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 space-y-3 text-xs text-gray-400 leading-relaxed">
-          <p>{t.footer.medicalDisclaimer}</p>
-          <p>{t.footer.copyright}</p>
+        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row sm:items-start gap-6">
+          <div className="space-y-3 text-xs text-gray-400 leading-relaxed flex-1">
+            <p>{t.footer.medicalDisclaimer}</p>
+            <p>{t.footer.copyright}</p>
+          </div>
+          {/* Official LegitScript seal: keep the provided image URL and 73x79 size unscaled. */}
+          <a
+            href="https://www.legitscript.com/websites/?checker_keywords=yooshmd.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Verify LegitScript Approval for www.yooshmd.com"
+            className="flex-shrink-0"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://static.legitscript.com/seals/49120675.png"
+              alt="Verify Approval for www.yooshmd.com"
+              width={73}
+              height={79}
+            />
+          </a>
         </div>
       </div>
     </footer>
