@@ -4,10 +4,10 @@ export const translations = {
   en: {
     bookingUrl: "/book",
     analyticsNotice: {
-      text: "We use privacy-friendly analytics and Google Analytics to understand site traffic. This website does not collect any patient or health information — that's handled securely through our patient portal. See our",
+      text: "We use privacy-friendly analytics and Google Analytics to understand site traffic, and the Meta Pixel on our homepage to measure our ads. This website does not collect any patient or health information — that's handled securely through our patient portal. See our",
       linkText: "Privacy Policy",
       accept: "Got it",
-      optOut: "Turn off Google Analytics",
+      optOut: "Turn off Google & Meta tracking",
       label: "Analytics notice",
     },
     latestArticle: {
@@ -347,10 +347,10 @@ export const translations = {
   es: {
     bookingUrl: "/book",
     analyticsNotice: {
-      text: "Utilizamos análisis respetuosos con la privacidad y Google Analytics para entender el tráfico del sitio. Este sitio web no recopila información médica ni de pacientes — eso se maneja de forma segura a través de nuestro portal de pacientes. Consulte nuestra",
+      text: "Utilizamos análisis respetuosos con la privacidad y Google Analytics para entender el tráfico del sitio, y el Píxel de Meta en nuestra página principal para medir nuestros anuncios. Este sitio web no recopila información médica ni de pacientes — eso se maneja de forma segura a través de nuestro portal de pacientes. Consulte nuestra",
       linkText: "Política de Privacidad",
       accept: "Entendido",
-      optOut: "Desactivar Google Analytics",
+      optOut: "Desactivar el seguimiento de Google y Meta",
       label: "Aviso de análisis",
     },
     latestArticle: {
