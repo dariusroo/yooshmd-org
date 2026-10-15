@@ -16,7 +16,7 @@ export const translations = {
       allArticles: "See all articles",
     },
     nav: {
-      bookShort: "Start Here",
+      bookShort: "Book Now",
       bookFull: "Book Free Consultation",
       menu: "Menu",
       patientPortal: "Patient Portal",
@@ -359,7 +359,7 @@ export const translations = {
       allArticles: "Ver todos los artículos",
     },
     nav: {
-      bookShort: "Empezar",
+      bookShort: "Reservar",
       bookFull: "Reserve su Consulta Gratis",
       menu: "Menú",
       patientPortal: "Portal del Paciente",
