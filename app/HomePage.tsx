@@ -1217,31 +1217,38 @@ function BookButton({
 
 const faqAnswerLinks = [
   { text: "Boudreaux's New Drug Store", href: "https://boudreauxsnewdrug.com/" },
+  { text: "Pharmatron Compounding Pharmacy", href: "https://qualitypeptide.store/" },
 ];
 
+// Links the first occurrence of each link text, in order of appearance.
 function withLinks(
   text: string,
   links: { text: string; href: string }[]
 ): React.ReactNode {
+  let first: { link: (typeof links)[number]; idx: number } | undefined;
   for (const link of links) {
     const idx = text.indexOf(link.text);
-    if (idx === -1) continue;
-    return (
-      <>
-        {text.slice(0, idx)}
-        <a
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:opacity-80"
-        >
-          {link.text}
-        </a>
-        {text.slice(idx + link.text.length)}
-      </>
-    );
+    if (idx !== -1 && (!first || idx < first.idx)) first = { link, idx };
   }
-  return text;
+  if (!first) return text;
+  const { link, idx } = first;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <a
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:opacity-80"
+      >
+        {link.text}
+      </a>
+      {withLinks(
+        text.slice(idx + link.text.length),
+        links.filter((l) => l !== link)
+      )}
+    </>
+  );
 }
 
 function withDagger(text: string): React.ReactNode {
