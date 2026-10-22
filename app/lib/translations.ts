@@ -163,7 +163,7 @@ export const translations = {
         {
           question: "Where is your medication sourced from?",
           answer:
-            "Compounded medications are sourced from two licensed 503A U.S. pharmacies. Boudreaux's New Drug Store is based in Lake Charles, Louisiana, has operated since 1923, and is inspected by the National Association of Boards of Pharmacy (NABP). Pharmatron Compounding Pharmacy is certified by LegitScript. Brand-name GLP-1 medications are fulfilled through LillyDirect Pharmacy Solutions and NovoCare Pharmacy. Other medications are fulfilled either via Cost Plus Drugs, which delivers, or prescriptions are sent to a local pharmacy of your choice.",
+            "- Compounded medications: Boudreaux's New Drug Store (Lake Charles, LA; NABP-inspected; since 1923) or Pharmatron Compounding Pharmacy (LegitScript-certified), both licensed 503A U.S. pharmacies\n- Brand-name GLP-1s: LillyDirect Pharmacy Solutions or NovoCare Pharmacy\n- Other medications: Cost Plus Drugs (home delivery) or your local pharmacy",
         },
         {
           question: "My medication came in a vial. How do I take it?",
@@ -506,7 +506,7 @@ export const translations = {
         {
           question: "¿De dónde proviene su medicamento?",
           answer:
-            "Los medicamentos compuestos provienen de dos farmacias 503A con licencia en EE. UU. Boudreaux's New Drug Store está ubicada en Lake Charles, Luisiana, opera desde 1923 y es inspeccionada por la Asociación Nacional de Juntas de Farmacia (NABP). Pharmatron Compounding Pharmacy cuenta con la certificación de LegitScript. Los medicamentos GLP-1 de marca se entregan a través de LillyDirect Pharmacy Solutions y NovoCare Pharmacy. Otros medicamentos se entregan a través de Cost Plus Drugs, que ofrece envío a domicilio, o las recetas se envían a la farmacia local de su elección.",
+            "- Medicamentos compuestos: Boudreaux's New Drug Store (Lake Charles, Luisiana; inspeccionada por la NABP; desde 1923) o Pharmatron Compounding Pharmacy (certificada por LegitScript), ambas farmacias 503A con licencia en EE. UU.\n- GLP-1 de marca: LillyDirect Pharmacy Solutions o NovoCare Pharmacy\n- Otros medicamentos: Cost Plus Drugs (envío a domicilio) o la farmacia local de su elección",
         },
         {
           question: "Mi medicamento llegó en un vial. ¿Cómo lo tomo?",

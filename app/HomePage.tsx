@@ -793,9 +793,33 @@ function FAQSection() {
                   style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed whitespace-pre-line">
-                      {withLinks(faq.answer, faqAnswerLinks)}
-                    </p>
+                    {faq.answer.startsWith("- ") ? (
+                      <ul className="px-6 pb-5 pl-11 text-sm text-gray-600 leading-relaxed list-disc space-y-2">
+                        {faq.answer.split("\n").map((item) => {
+                          const text = item.replace(/^- /, "");
+                          const colon = text.indexOf(": ");
+                          return (
+                            <li key={item}>
+                              {colon !== -1 && (
+                                <>
+                                  <strong className="font-semibold text-gray-800">
+                                    {text.slice(0, colon + 1)}
+                                  </strong>{" "}
+                                </>
+                              )}
+                              {withLinks(
+                                colon === -1 ? text : text.slice(colon + 2),
+                                faqAnswerLinks
+                              )}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    ) : (
+                      <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed whitespace-pre-line">
+                        {withLinks(faq.answer, faqAnswerLinks)}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
