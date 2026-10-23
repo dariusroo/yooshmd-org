@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   description:
     "Physician-led, white-label prior authorization support for GLP-1 medications, including the Medicare GLP-1 Bridge.",
   alternates: { canonical: "/pa" },
-  robots: { index: false, follow: false },
 };
 
 const MEETING_URL = "/b2bmeet";
