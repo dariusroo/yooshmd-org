@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Lets /PA (as shared) serve the /pa page. Redirects can't do this:
+  // their path matching ignores case, so a /PA -> /pa redirect loops.
+  async rewrites() {
+    return [{ source: "/PA", destination: "/pa" }];
+  },
   async redirects() {
     return [
       { source: "/home", destination: "/", permanent: true },
