@@ -23,6 +23,7 @@ const nextConfig: NextConfig = {
       { source: "/hipaa", destination: "/notice-of-privacy-practices", permanent: true },
       { source: "/intake", destination: "https://intakeq.com/new/1upd4e", permanent: false },
       { source: "/refill", destination: "https://intakeq.com/new/27yvsq", permanent: false },
+      { source: "/phoneintake", destination: "https://intakeq.com/new/tfe8ap", permanent: false },
     ];
   },
 };
