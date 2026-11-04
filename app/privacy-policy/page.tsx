@@ -118,7 +118,6 @@ const sections: Section[] = [
         items: [
           "To healthcare providers and staff involved in your care",
           "To service providers that support our operations (e.g., hosting, IT, billing), under confidentiality and security obligations",
-          "To advertising partners, such as Meta, through the Meta Pixel on our homepage (see Section 6)",
           "As required by law, regulation, or legal process",
           "To protect the rights, safety, or property of YooshMD, patients, or others",
         ],
@@ -139,15 +138,11 @@ const sections: Section[] = [
       },
       {
         type: "p",
-        text: "We do not enable Google Signals and do not link this website's analytics to any Google Ads account.",
+        text: "We do not enable Google Signals and do not link this website's analytics to any Google Ads account. We do not use tracking technologies for cross-context behavioral advertising.",
       },
       {
         type: "p",
-        text: "On our homepage only, we use the Meta Pixel, a tool provided by Meta Platforms, Inc., to measure how well our advertising on Facebook and Instagram performs. The Meta Pixel may set cookies and collect information such as your IP address, browser and device information, and the fact that you visited our homepage. Meta may combine this information with other information it holds about you and use it to measure and deliver ads. The Meta Pixel does not run on our booking page or any other page of this website, and we do not send Meta any patient or health information. Meta's use of this information is governed by Meta's Privacy Policy.",
-      },
-      {
-        type: "p",
-        text: "A notice shown on your first visit lets you turn off Google Analytics and the Meta Pixel, and you can reopen it at any time from the \u201cYour Privacy Choices\u201d link in our website footer. We do not load the Meta Pixel if your browser sends a Global Privacy Control (GPC) signal. You may also control cookies through your browser settings; disabling cookies may affect certain features of the website.",
+        text: "A notice shown on your first visit lets you turn off Google Analytics, and you can reopen it at any time from the \u201cYour Privacy Choices\u201d link in our website footer. You may also control cookies through your browser settings; disabling cookies may affect certain features of the website.",
       },
     ],
   },
@@ -199,7 +194,7 @@ const sections: Section[] = [
       },
       {
         type: "p",
-        text: "We do not sell personal information. Our use of the Meta Pixel on our homepage, described in Section 6, may be considered \u201csharing\u201d personal information for cross-context behavioral advertising under California law. You may opt out of this sharing at any time by selecting \u201cTurn off Google & Meta tracking\u201d in the notice available from the \u201cYour Privacy Choices\u201d link in our website footer, or by enabling Global Privacy Control in your browser. We do not knowingly sell or share the personal information of consumers under 16.",
+        text: "We do not sell or share personal information for cross-context behavioral advertising. We do not knowingly sell or share the personal information of consumers under 16.",
       },
       {
         type: "p",
@@ -304,7 +299,7 @@ export default function PrivacyPolicyPage() {
             Darius Roohani Medical PC d/b/a YooshMD
           </p>
           <p className="text-sm text-gray-500 mb-10">
-            Effective date: October 14, 2026
+            Effective date: November 4, 2026
           </p>
 
           <div className="space-y-8">

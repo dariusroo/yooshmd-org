@@ -4,20 +4,16 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { useLanguage } from "../lib/LanguageContext";
-import MetaPixel from "./MetaPixel";
 
 const GA_ID = "G-8LGK2LG2JF";
-// Bumped when the Meta Pixel was added so earlier visitors see the updated
-// notice once. An opt-out stored under the old key is still honored.
+// An opt-out stored under the older key is still honored.
 const STORAGE_KEY = "yooshmd-analytics-optout";
 const LEGACY_STORAGE_KEY = "yooshmd-ga-optout";
 const PRIVACY_CHOICES_HASH = "#california-privacy-rights";
 
-// Discloses our use of Google Analytics and the Meta Pixel on first visit and
-// lets visitors opt out of both. The Meta Pixel loads on the homepage only,
-// and never for visitors whose browser sends a Global Privacy Control signal.
-// Vercel Analytics and GoatCounter aren't gated here — neither uses cookies
-// or identifies individual visitors.
+// Discloses our use of Google Analytics on first visit and lets visitors opt
+// out of it. Vercel Analytics and GoatCounter aren't gated here — neither
+// uses cookies or identifies individual visitors.
 export default function AnalyticsGate() {
   const { t } = useLanguage();
   const pathname = usePathname();
@@ -56,7 +52,6 @@ export default function AnalyticsGate() {
     } catch {
       // Ignore — the choice just won't persist across visits.
     }
-    if (optOut) window.fbq?.("consent", "revoke");
     setOptedOut(optOut);
     setShowNotice(false);
   }
@@ -64,7 +59,6 @@ export default function AnalyticsGate() {
   return (
     <>
       {!optedOut && <GoogleAnalytics gaId={GA_ID} />}
-      {!optedOut && pathname === "/" && <MetaPixel />}
       {showNotice && (
         <div
           role="region"
