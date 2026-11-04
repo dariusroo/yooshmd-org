@@ -8,7 +8,7 @@ YooshMD is run by Darius Roohani, MD — double board-certified in Internal Medi
 
 - Semaglutide Program: from $220/month, compounded semaglutide included, price scales with prescribed dose ($220–$290/month across 0.5mg–2.5mg).
 - Tirzepatide Program: from $260/month, compounded tirzepatide included, price scales with prescribed dose ($260–$400/month across 2.5mg–15mg).
-- Physician Oversight: $199 per visit, billed quarterly. Medication cost not included. For patients using brand-name Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment.
+- Physician Oversight: $149/month. Medication cost not included. For patients using brand-name Wegovy®, Zepbound®, or Ozempic®, oral GLP-1 options, or non-GLP-1 treatment.
 - Initial consultation: free 30-minute video visit with Dr. Roohani, no obligation to continue.
 - Billing: monthly-program patients receive a line-item invoice covering that month's treatment and medication; Physician Oversight patients are charged per visit. There are no automatic recurring/subscription charges beyond each invoice or visit.
 - Refunds: shipped medications are non-refundable. Visit fees are refundable if cancelled within 24 hours of the appointment time.
@@ -20,7 +20,7 @@ Telehealth only, for patients physically located in California, Nevada, or Flori
 ## Pages
 
 - [Homepage](https://www.yooshmd.com/): Program overview, pricing, medications, and FAQ
-- [Blog](https://blog.yooshmd.com): Articles on weight loss and GLP-1 medications
+- [Blog](https://www.yooshmd.com/blog): Articles on weight loss and GLP-1 medications
 - [FAQ (plain text)](https://www.yooshmd.com/FAQ.txt): Full list of frequently asked questions and answers
 - [Disclosures & Disclaimers](https://www.yooshmd.com/disclaimers)
 - [Terms of Service](https://www.yooshmd.com/terms-of-service)
