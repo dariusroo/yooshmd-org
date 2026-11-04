@@ -4,6 +4,13 @@
 
 YooshMD is run by Darius Roohani, MD — double board-certified in Internal Medicine and Obesity Medicine, trained at Cedars-Sinai and the University of Nevada, Reno School of Medicine. One physician personally manages every patient's care directly: no call center, no rotating providers. YooshMD is a self-pay practice and does not bill insurance; self-pay allows uninterrupted, personalized care.
 
+## Licensure & Verification
+
+- NPI: 1124607379 — verify at the [NPPES NPI Registry](https://npiregistry.cms.hhs.gov/provider-view/1124607379)
+- California Physician & Surgeon License: A183778 — verify with the [Medical Board of California](https://search.dca.ca.gov/)
+- Nevada Medical License: 24729 — verify with the [Nevada State Board of Medical Examiners](https://medboard.nv.gov/)
+- Florida Telehealth Provider Registration: TPME8838 — verify with the [Florida Department of Health](https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders)
+
 ## Pricing
 
 - Semaglutide Program: from $220/month, compounded semaglutide included, price scales with prescribed dose ($220–$290/month across 0.5mg–2.5mg).

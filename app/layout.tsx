@@ -103,11 +103,24 @@ const structuredData = {
       jobTitle: "Physician",
       url: SITE_URL,
       telephone: "+1-909-293-8095",
-      identifier: {
-        "@type": "PropertyValue",
-        name: "NPI",
-        value: "1124607379",
-      },
+      identifier: [
+        { "@type": "PropertyValue", name: "NPI", value: "1124607379" },
+        {
+          "@type": "PropertyValue",
+          name: "California Physician & Surgeon License",
+          value: "A183778",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Nevada Medical License",
+          value: "24729",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Florida Telehealth Provider Registration",
+          value: "TPME8838",
+        },
+      ],
       worksFor: { "@id": `${SITE_URL}/#practice` },
       knowsAbout: ["Internal Medicine", "Obesity Medicine"],
       alumniOf: [
